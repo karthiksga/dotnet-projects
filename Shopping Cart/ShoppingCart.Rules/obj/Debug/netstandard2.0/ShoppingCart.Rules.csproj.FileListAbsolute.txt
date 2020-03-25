@@ -1,0 +1,12 @@
+C:\Docs\TaxCalculator\ShoppingCart.Rules\bin\Debug\netstandard2.0\ShoppingCart.Rules.deps.json
+C:\Docs\TaxCalculator\ShoppingCart.Rules\bin\Debug\netstandard2.0\ShoppingCart.Rules.dll
+C:\Docs\TaxCalculator\ShoppingCart.Rules\bin\Debug\netstandard2.0\ShoppingCart.Rules.pdb
+C:\Docs\TaxCalculator\ShoppingCart.Rules\bin\Debug\netstandard2.0\ShoppingCart.DataModel.dll
+C:\Docs\TaxCalculator\ShoppingCart.Rules\bin\Debug\netstandard2.0\ShoppingCart.DataModel.pdb
+C:\Docs\TaxCalculator\ShoppingCart.Rules\obj\Debug\netstandard2.0\ShoppingCart.Rules.csprojAssemblyReference.cache
+C:\Docs\TaxCalculator\ShoppingCart.Rules\obj\Debug\netstandard2.0\ShoppingCart.Rules.csproj.CoreCompileInputs.cache
+C:\Docs\TaxCalculator\ShoppingCart.Rules\obj\Debug\netstandard2.0\ShoppingCart.Rules.AssemblyInfoInputs.cache
+C:\Docs\TaxCalculator\ShoppingCart.Rules\obj\Debug\netstandard2.0\ShoppingCart.Rules.AssemblyInfo.cs
+C:\Docs\TaxCalculator\ShoppingCart.Rules\obj\Debug\netstandard2.0\ShoppingCart.Rules.csproj.CopyComplete
+C:\Docs\TaxCalculator\ShoppingCart.Rules\obj\Debug\netstandard2.0\ShoppingCart.Rules.dll
+C:\Docs\TaxCalculator\ShoppingCart.Rules\obj\Debug\netstandard2.0\ShoppingCart.Rules.pdb

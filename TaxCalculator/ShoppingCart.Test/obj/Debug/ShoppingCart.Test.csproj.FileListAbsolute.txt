@@ -1,0 +1,14 @@
+D:\One Drive\OneDrive\Source\TaxCalculator\ShoppingCart.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+D:\One Drive\OneDrive\Source\TaxCalculator\ShoppingCart.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+D:\One Drive\OneDrive\Source\TaxCalculator\ShoppingCart.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+D:\One Drive\OneDrive\Source\TaxCalculator\ShoppingCart.Test\bin\Debug\ShoppingCart.Test.dll
+D:\One Drive\OneDrive\Source\TaxCalculator\ShoppingCart.Test\bin\Debug\ShoppingCart.Test.pdb
+D:\One Drive\OneDrive\Source\TaxCalculator\ShoppingCart.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+D:\One Drive\OneDrive\Source\TaxCalculator\ShoppingCart.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+D:\One Drive\OneDrive\Source\TaxCalculator\ShoppingCart.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+D:\One Drive\OneDrive\Source\TaxCalculator\ShoppingCart.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+D:\One Drive\OneDrive\Source\TaxCalculator\ShoppingCart.Test\obj\Debug\ShoppingCart.Test.csprojAssemblyReference.cache
+D:\One Drive\OneDrive\Source\TaxCalculator\ShoppingCart.Test\obj\Debug\ShoppingCart.Test.csproj.CoreCompileInputs.cache
+D:\One Drive\OneDrive\Source\TaxCalculator\ShoppingCart.Test\obj\Debug\ShoppingCart.Test.csproj.CopyComplete
+D:\One Drive\OneDrive\Source\TaxCalculator\ShoppingCart.Test\obj\Debug\ShoppingCart.Test.dll
+D:\One Drive\OneDrive\Source\TaxCalculator\ShoppingCart.Test\obj\Debug\ShoppingCart.Test.pdb

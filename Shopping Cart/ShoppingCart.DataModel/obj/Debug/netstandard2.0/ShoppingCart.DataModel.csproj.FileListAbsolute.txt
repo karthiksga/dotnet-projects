@@ -1,0 +1,40 @@
+D:\One Drive\OneDrive\Source\TaxCalculator\ShoppingCart.DataModel\obj\Debug\netstandard2.0\ShoppingCart.DataModel.csprojAssemblyReference.cache
+D:\One Drive\OneDrive\Source\TaxCalculator\ShoppingCart.DataModel\obj\Debug\netstandard2.0\ShoppingCart.DataModel.csproj.CoreCompileInputs.cache
+D:\One Drive\OneDrive\Source\TaxCalculator\ShoppingCart.DataModel\obj\Debug\netstandard2.0\ShoppingCart.DataModel.AssemblyInfoInputs.cache
+D:\One Drive\OneDrive\Source\TaxCalculator\ShoppingCart.DataModel\obj\Debug\netstandard2.0\ShoppingCart.DataModel.AssemblyInfo.cs
+C:\Docs\TaxCalculator\ShoppingCart.DataModel\bin\Debug\netstandard2.0\ShoppingCart.DataModel.deps.json
+C:\Docs\TaxCalculator\ShoppingCart.DataModel\bin\Debug\netstandard2.0\ShoppingCart.DataModel.dll
+C:\Docs\TaxCalculator\ShoppingCart.DataModel\bin\Debug\netstandard2.0\ShoppingCart.DataModel.pdb
+C:\Docs\TaxCalculator\ShoppingCart.DataModel\obj\Debug\netstandard2.0\ShoppingCart.DataModel.csprojAssemblyReference.cache
+C:\Docs\TaxCalculator\ShoppingCart.DataModel\obj\Debug\netstandard2.0\ShoppingCart.DataModel.csproj.CoreCompileInputs.cache
+C:\Docs\TaxCalculator\ShoppingCart.DataModel\obj\Debug\netstandard2.0\ShoppingCart.DataModel.AssemblyInfoInputs.cache
+C:\Docs\TaxCalculator\ShoppingCart.DataModel\obj\Debug\netstandard2.0\ShoppingCart.DataModel.AssemblyInfo.cs
+C:\Docs\TaxCalculator\ShoppingCart.DataModel\obj\Debug\netstandard2.0\ShoppingCart.DataModel.dll
+C:\Docs\TaxCalculator\ShoppingCart.DataModel\obj\Debug\netstandard2.0\ShoppingCart.DataModel.pdb
+C:\Docs\ShoppingCart\ShoppingCart.DataModel\bin\Debug\netstandard2.0\ShoppingCart.DataModel.deps.json
+C:\Docs\ShoppingCart\ShoppingCart.DataModel\bin\Debug\netstandard2.0\ShoppingCart.DataModel.dll
+C:\Docs\ShoppingCart\ShoppingCart.DataModel\bin\Debug\netstandard2.0\ShoppingCart.DataModel.pdb
+C:\Docs\ShoppingCart\ShoppingCart.DataModel\obj\Debug\netstandard2.0\ShoppingCart.DataModel.csprojAssemblyReference.cache
+C:\Docs\ShoppingCart\ShoppingCart.DataModel\obj\Debug\netstandard2.0\ShoppingCart.DataModel.csproj.CoreCompileInputs.cache
+C:\Docs\ShoppingCart\ShoppingCart.DataModel\obj\Debug\netstandard2.0\ShoppingCart.DataModel.AssemblyInfoInputs.cache
+C:\Docs\ShoppingCart\ShoppingCart.DataModel\obj\Debug\netstandard2.0\ShoppingCart.DataModel.AssemblyInfo.cs
+C:\Docs\ShoppingCart\ShoppingCart.DataModel\obj\Debug\netstandard2.0\ShoppingCart.DataModel.dll
+C:\Docs\ShoppingCart\ShoppingCart.DataModel\obj\Debug\netstandard2.0\ShoppingCart.DataModel.pdb
+C:\Users\ksubram3\Source\Repos\ShoppingCart\src\ShoppingCart\ShoppingCart.DataModel\bin\Debug\netstandard2.0\ShoppingCart.DataModel.deps.json
+C:\Users\ksubram3\Source\Repos\ShoppingCart\src\ShoppingCart\ShoppingCart.DataModel\bin\Debug\netstandard2.0\ShoppingCart.DataModel.dll
+C:\Users\ksubram3\Source\Repos\ShoppingCart\src\ShoppingCart\ShoppingCart.DataModel\bin\Debug\netstandard2.0\ShoppingCart.DataModel.pdb
+C:\Users\ksubram3\Source\Repos\ShoppingCart\src\ShoppingCart\ShoppingCart.DataModel\obj\Debug\netstandard2.0\ShoppingCart.DataModel.csprojAssemblyReference.cache
+C:\Users\ksubram3\Source\Repos\ShoppingCart\src\ShoppingCart\ShoppingCart.DataModel\obj\Debug\netstandard2.0\ShoppingCart.DataModel.csproj.CoreCompileInputs.cache
+C:\Users\ksubram3\Source\Repos\ShoppingCart\src\ShoppingCart\ShoppingCart.DataModel\obj\Debug\netstandard2.0\ShoppingCart.DataModel.AssemblyInfoInputs.cache
+C:\Users\ksubram3\Source\Repos\ShoppingCart\src\ShoppingCart\ShoppingCart.DataModel\obj\Debug\netstandard2.0\ShoppingCart.DataModel.AssemblyInfo.cs
+C:\Users\ksubram3\Source\Repos\ShoppingCart\src\ShoppingCart\ShoppingCart.DataModel\obj\Debug\netstandard2.0\ShoppingCart.DataModel.dll
+C:\Users\ksubram3\Source\Repos\ShoppingCart\src\ShoppingCart\ShoppingCart.DataModel\obj\Debug\netstandard2.0\ShoppingCart.DataModel.pdb
+C:\Users\ksubram3\Source\Repos\KarthikGangadaranDevTest\src\ShoppingCart.DataModel\bin\Debug\netstandard2.0\ShoppingCart.DataModel.deps.json
+C:\Users\ksubram3\Source\Repos\KarthikGangadaranDevTest\src\ShoppingCart.DataModel\bin\Debug\netstandard2.0\ShoppingCart.DataModel.dll
+C:\Users\ksubram3\Source\Repos\KarthikGangadaranDevTest\src\ShoppingCart.DataModel\bin\Debug\netstandard2.0\ShoppingCart.DataModel.pdb
+C:\Users\ksubram3\Source\Repos\KarthikGangadaranDevTest\src\ShoppingCart.DataModel\obj\Debug\netstandard2.0\ShoppingCart.DataModel.csprojAssemblyReference.cache
+C:\Users\ksubram3\Source\Repos\KarthikGangadaranDevTest\src\ShoppingCart.DataModel\obj\Debug\netstandard2.0\ShoppingCart.DataModel.csproj.CoreCompileInputs.cache
+C:\Users\ksubram3\Source\Repos\KarthikGangadaranDevTest\src\ShoppingCart.DataModel\obj\Debug\netstandard2.0\ShoppingCart.DataModel.AssemblyInfoInputs.cache
+C:\Users\ksubram3\Source\Repos\KarthikGangadaranDevTest\src\ShoppingCart.DataModel\obj\Debug\netstandard2.0\ShoppingCart.DataModel.AssemblyInfo.cs
+C:\Users\ksubram3\Source\Repos\KarthikGangadaranDevTest\src\ShoppingCart.DataModel\obj\Debug\netstandard2.0\ShoppingCart.DataModel.dll
+C:\Users\ksubram3\Source\Repos\KarthikGangadaranDevTest\src\ShoppingCart.DataModel\obj\Debug\netstandard2.0\ShoppingCart.DataModel.pdb

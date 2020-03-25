@@ -1,0 +1,103 @@
+﻿{
+  "Products": [
+    {
+      "Id": "1",
+      "Name": "Watch",
+      "Description": "Watch",
+      "Cost": "100.00",
+      "TypeLookup": "Standard",
+      "TaxPercent": 0.5
+    },
+    {
+      "Id": "2",
+      "Name": "Toy",
+      "Description": "Toy",
+      "Cost": "50.00",
+      "TypeLookup": "Standard",
+      "TaxPercent": 0.5
+    },
+    {
+      "Id": "3",
+      "Name": "Gold",
+      "Description": "Gold",
+      "Cost": "500.00",
+      "TypeLookup": "Luxury",
+      "TaxPercent": 1.5
+    }
+  ],
+  "Discounts": [
+    {
+      "Id": "1",
+      "Code": "abcd",
+      "Value": "5.00",
+      "StartDate": "5/2/2019",
+      "DaysAfterExpire": 5,
+      "TypeLookup": "Promotion"
+    },
+    {
+      "Id": "2",
+      "Code": "efgh",
+      "Value": "15.00",
+      "StartDate": "5/2/2019",
+      "DaysAfterExpire": 5,
+      "TypeLookup": "Coupon"
+    },
+    {
+      "Id": "3",
+      "Code": "ijkl",
+      "Value": "10.00",
+      "StartDate": "5/2/2019",
+      "DaysAfterExpire": 5,
+      "TypeLookup": "Coupon"
+    }
+  ],
+  "Rules": [
+    {
+      "Id": "1",
+      "LuxuryItemTaxRatio": "2",
+      "IsTaxAppliedBeforeDiscount": "true",
+      "TypeLookup": "Product"
+    },
+    {
+      "Id": "1",
+      "LuxuryItemTaxRatio": "2",      
+      "TypeLookup": "Order",
+      "TaxPercent": 1.5
+    },
+    {
+      "Id": "2",
+      "LuxuryItemTaxRatio": "2",
+      "IsTaxAppliedBeforeDiscount": "false",
+      "TypeLookup": "Product"
+    },
+    {
+      "Id": "2",
+      "LuxuryItemTaxRatio": "1",     
+      "TypeLookup": "Order",
+      "TaxPercent": 1.5
+    }
+  ],
+  "StateRules": [
+    {
+      "State": "GA",
+      "RuleId": "2"
+    },
+    {
+      "State": "NY",
+      "RuleId": "2"
+    },
+    {
+      "State": "FL",
+      "RuleId": "1"
+    },
+    {
+      "State": "NM",
+      "RuleId": "1"
+    },
+    {
+      "State": "NV",
+      "RuleId": "1"
+    }
+
+  ]
+}
