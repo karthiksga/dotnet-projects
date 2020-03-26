@@ -1,0 +1,10 @@
+D:\Visual Studio Projects\WCF\WCFTraining\FaultException\MsmqHost\bin\Debug\MsmqHost.exe
+D:\Visual Studio Projects\WCF\WCFTraining\FaultException\MsmqHost\bin\Debug\MsmqHost.pdb
+D:\Visual Studio Projects\WCF\WCFTraining\FaultException\MsmqHost\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Visual Studio Projects\WCF\WCFTraining\FaultException\MsmqHost\obj\x86\Debug\MsmqHost.exe
+D:\Visual Studio Projects\WCF\WCFTraining\FaultException\MsmqHost\obj\x86\Debug\MsmqHost.pdb
+D:\Visual Studio Projects\WCF\WCFTraining\FaultException\MsmqHost\bin\Debug\MsmqHost.exe.config
+D:\Visual Studio Projects\WCF\WCFTraining\FaultException\MsmqHost\bin\Debug\ServiceLib.dll
+D:\Visual Studio Projects\WCF\WCFTraining\FaultException\MsmqHost\bin\Debug\Domain.dll
+D:\Visual Studio Projects\WCF\WCFTraining\FaultException\MsmqHost\bin\Debug\ServiceLib.pdb
+D:\Visual Studio Projects\WCF\WCFTraining\FaultException\MsmqHost\bin\Debug\Domain.pdb

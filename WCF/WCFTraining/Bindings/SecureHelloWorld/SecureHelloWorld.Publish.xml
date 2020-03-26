@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="C:\inetpub\wwwroot\SecureHelloWorld" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="True" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="bin/Domain.pdb" publishTime="08/19/2012 19:47:08" />
+    <file relUrl="bin/Domain.dll" publishTime="08/19/2012 19:47:08" />
+    <file relUrl="bin/SecureHelloWorld.dll" publishTime="08/22/2012 10:26:11" />
+    <file relUrl="HelloWorldService.svc" publishTime="08/18/2012 20:07:01" />
+    <file relUrl="Web.config" publishTime="08/23/2012 10:43:27" />
+    <file relUrl="bin/SecureHelloWorld.pdb" publishTime="08/22/2012 10:26:11" />
+    <file relUrl="bin/ServiceLib.pdb" publishTime="08/22/2012 10:26:10" />
+    <file relUrl="bin/ServiceLib.dll" publishTime="08/22/2012 10:26:10" />
+  </publishProfile>
+</publishData>

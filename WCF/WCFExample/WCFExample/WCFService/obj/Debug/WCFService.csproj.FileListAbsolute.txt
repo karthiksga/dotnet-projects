@@ -1,0 +1,24 @@
+C:\Dummy\WCFService\WCFService\obj\Debug\ResolveAssemblyReference.cache
+C:\Dummy\WCFService\WCFService\bin\Debug\WCFService.exe
+C:\Dummy\WCFService\WCFService\bin\Debug\WCFService.pdb
+C:\Dummy\WCFService\WCFService\bin\Debug\WCFServiceLibrary.dll
+C:\Dummy\WCFService\WCFService\bin\Debug\WCFServiceLibrary.pdb
+C:\Dummy\WCFService\WCFService\obj\Debug\WCFService.exe
+C:\Dummy\WCFService\WCFService\obj\Debug\WCFService.pdb
+C:\Dummy\WCFService\WCFService\bin\Debug\WCFService.exe.config
+E:\Visual Studio Projects\WCF\WCFExample\WCFExample\WCFService\bin\Debug\WCFService.exe.config
+E:\Visual Studio Projects\WCF\WCFExample\WCFExample\WCFService\bin\Debug\WCFService.exe
+E:\Visual Studio Projects\WCF\WCFExample\WCFExample\WCFService\bin\Debug\WCFService.pdb
+E:\Visual Studio Projects\WCF\WCFExample\WCFExample\WCFService\bin\Debug\WCFServiceLibrary.dll
+E:\Visual Studio Projects\WCF\WCFExample\WCFExample\WCFService\bin\Debug\WCFServiceLibrary.pdb
+E:\Visual Studio Projects\WCF\WCFExample\WCFExample\WCFService\obj\Debug\ResolveAssemblyReference.cache
+E:\Visual Studio Projects\WCF\WCFExample\WCFExample\WCFService\obj\Debug\WCFService.exe
+E:\Visual Studio Projects\WCF\WCFExample\WCFExample\WCFService\obj\Debug\WCFService.pdb
+D:\Visual Studio Projects\WCF\WCFExample\WCFExample\WCFService\bin\Debug\WCFService.exe.config
+D:\Visual Studio Projects\WCF\WCFExample\WCFExample\WCFService\obj\Debug\WCFService.exe
+D:\Visual Studio Projects\WCF\WCFExample\WCFExample\WCFService\obj\Debug\WCFService.pdb
+D:\Visual Studio Projects\WCF\WCFExample\WCFExample\WCFService\bin\Debug\WCFService.exe
+D:\Visual Studio Projects\WCF\WCFExample\WCFExample\WCFService\bin\Debug\WCFService.pdb
+D:\Visual Studio Projects\WCF\WCFExample\WCFExample\WCFService\bin\Debug\WCFServiceLibrary.dll
+D:\Visual Studio Projects\WCF\WCFExample\WCFExample\WCFService\bin\Debug\WCFServiceLibrary.pdb
+D:\Visual Studio Projects\WCF\WCFExample\WCFExample\WCFService\obj\Debug\ResolveAssemblyReference.cache

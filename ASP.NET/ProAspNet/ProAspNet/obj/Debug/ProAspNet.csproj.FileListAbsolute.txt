@@ -1,0 +1,5 @@
+F:\Visual Studio Projects\ASP.NET\ProAspNet\ProAspNet\bin\ProAspNet.dll
+F:\Visual Studio Projects\ASP.NET\ProAspNet\ProAspNet\bin\ProAspNet.pdb
+F:\Visual Studio Projects\ASP.NET\ProAspNet\ProAspNet\obj\Debug\ResolveAssemblyReference.cache
+F:\Visual Studio Projects\ASP.NET\ProAspNet\ProAspNet\obj\Debug\ProAspNet.dll
+F:\Visual Studio Projects\ASP.NET\ProAspNet\ProAspNet\obj\Debug\ProAspNet.pdb

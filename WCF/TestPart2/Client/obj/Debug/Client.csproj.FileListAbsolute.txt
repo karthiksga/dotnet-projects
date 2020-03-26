@@ -1,0 +1,12 @@
+F:\Visual Studio Projects\WCF\TestPart2\Client\bin\Debug\Client.exe
+F:\Visual Studio Projects\WCF\TestPart2\Client\bin\Debug\Client.pdb
+F:\Visual Studio Projects\WCF\TestPart2\Client\obj\Debug\ResolveAssemblyReference.cache
+F:\Visual Studio Projects\WCF\TestPart2\Client\obj\Debug\Client.exe
+F:\Visual Studio Projects\WCF\TestPart2\Client\obj\Debug\Client.pdb
+F:\Visual Studio Projects\WCF\TestPart2\Client\bin\Debug\Client.exe.config
+E:\Visual Studio Projects\WCF\TestPart2\Client\bin\Debug\Client.exe.config
+E:\Visual Studio Projects\WCF\TestPart2\Client\bin\Debug\Client.exe
+E:\Visual Studio Projects\WCF\TestPart2\Client\bin\Debug\Client.pdb
+E:\Visual Studio Projects\WCF\TestPart2\Client\obj\Debug\ResolveAssemblyReference.cache
+E:\Visual Studio Projects\WCF\TestPart2\Client\obj\Debug\Client.exe
+E:\Visual Studio Projects\WCF\TestPart2\Client\obj\Debug\Client.pdb

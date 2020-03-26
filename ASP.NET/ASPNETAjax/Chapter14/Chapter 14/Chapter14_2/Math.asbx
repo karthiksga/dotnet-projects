@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<bridge namespace="CustomComponents" className="MyMath">
+    <proxy type="CustomComponents.Math, App_Code"/>
+    <method name="Divide">
+        <input>
+            <parameter name="x" />
+            <parameter name="y" />
+        </input>
+    </method>
+</bridge>

@@ -1,0 +1,74 @@
+﻿<%@ Page Language="C#" %>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+  <title>Untitled Page</title>
+</head>
+<body>
+  <form id="form1" runat="server">
+  <asp:ScriptManager runat="server" ID="ScriptManager1" />
+
+  <script language="JavaScript" type="text/javascript">
+    Type.registerNamespace("Department");
+    Department.IEmployee = function Department$IEmployee()
+    {
+      throw Error.notImplemented();
+    };
+    
+    function Department$IEmployee$get_employeeID ()
+    {
+      throw Error.notImplemented();
+    };
+    
+    function Department$IEmployee$set_employeeID ()
+    {
+      throw Error.notImplemented();
+    };
+    
+    Department.IEmployee.prototype =
+    {
+      get_employeeID : Department$IEmployee$get_employeeID,
+      set_employeeID: Department$IEmployee$set_employeeID
+    }
+    
+    Department.IEmployee.registerInterface("Department.IEmployee");
+    Department.Employee = function (firstName, lastName)
+    {
+      this._firstName = firstName;
+      this._lastName = lastName;
+    }
+    
+    Department.Employee.prototype =
+    {
+      get_firstName : function () {return this._firstName;},
+      set_firstName : function (value) {this._firstName = value;},
+      get_lastName : function() {return this._lastName;},
+      set_lastName : function (value) {this._lastName = value;},
+      get_employeeID : function () {return this._employeeID;},
+      set_employeeID : function (value) {this._employeeID = value;}
+    }
+    
+    Department.Employee.registerClass("Department.Employee", null, Department.IEmployee);
+    Department.Manager = function (firstName, lastName, department)
+    {
+      Department.Manager.initializeBase(this,[firstName,lastName]);
+      this._department = department;
+    };
+    
+    Department.Manager.prototype =
+    {
+      get_department : function () {return this._department;},
+      set_department : function (value) {this._department = value;}
+    };
+    
+    Department.Manager.registerClass("Department.Manager", Department.Employee);
+    var mgr = new Department.Manager("SomeFirstName", "SomeLastName", "SomeDepartment");
+    var str = "First Name: " + mgr.get_firstName() + "\n";
+    str += ("Last Name: " + mgr.get_lastName() + "\n");
+    str += ("Department: " + mgr.get_department() + "\n");
+    alert(str);
+  </script>
+
+  </form>
+</body>
+</html>

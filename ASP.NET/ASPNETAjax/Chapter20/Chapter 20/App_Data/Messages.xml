@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Messages>
+    <Message AddedDate="1/15/2007" UserName="User1">
+        <Subject>Looking for a good book on ASP.NET</Subject>
+        <Body>I’m looking for a book with lot of examples.</Body>
+        <Message AddedDate="1/16/2007" UserName="User2">
+            <Subject>Are you looking for a book for beginners?</Subject>
+            <Body>What kind of book are you looking for?</Body>
+            <Message AddedDate="1/16/2007" UserName="User1">
+                <Subject>Books for beginers with lot of examples</Subject>
+                <Body>I’m looking for a book with lot of examples</Body>
+                <Message AddedDate="1/16/2007" UserName="User3">
+                    <Subject>What sort of examples?</Subject>
+                    <Body>Could you be more specific?</Body>
+                    <Message AddedDate="1/16/2007" UserName="User1">
+                        <Subject>Examples with practical applications</Subject>
+                        <Body>Code examples that I could use in my work</Body>
+                    </Message>
+                </Message>
+            </Message>
+        </Message>
+        <Message AddedDate="1/16/2007" UserName="User4">
+            <Subject>New ASP.NET books are coming out</Subject>
+            <Body>You may want to checkout amazon.com for new books on ASP.NET</Body>
+            <Message AddedDate="1/16/2007" UserName="User1">
+                <Subject>Thanks, I will</Subject>
+                <Body>I will check out amazon.com. I may get lucky there.</Body>
+            </Message>
+        </Message>
+    </Message>
+    <Message AddedDate="1/16/2007" UserName="User5">
+        <Subject>Any one has code examples for data source controls</Subject>
+        <Body>
+            I need code examples that show how to use data source controls in big
+            applications
+        </Body>
+        <Message AddedDate="1/16/2007" UserName="User6">
+            <Subject>What type of data source controls?</Subject>
+            <Body>
+                There are all kinds of data source controls. Which ones are you
+                planning on using?
+            </Body>
+        </Message>
+    </Message>
+</Messages>

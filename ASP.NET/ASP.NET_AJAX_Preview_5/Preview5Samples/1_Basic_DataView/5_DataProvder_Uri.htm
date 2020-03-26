@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Creating DataView in Code - DataProvider using Service URI</title>
+    <link href="styles/list.css" rel="stylesheet" type="text/css" />
+    
+    <script type="text/javascript" src="../MicrosoftAjax/MicrosoftAjax.debug.js"></script>
+    <script type="text/javascript" src="../MicrosoftAjax/MicrosoftAjaxTemplates.debug.js"></script>
+
+    <script type="text/javascript">
+        
+        Sys.Application.add_init(appInit);
+        
+        function appInit() {
+            $create(
+                Sys.UI.DataView,
+                {
+                    autoFetch: true,
+                    dataProvider: "../Services/ImagesWcfService.svc",
+                    fetchOperation: "GetImages",
+                    fetchParameters: {orderby: 'Name'}
+                },
+                null,
+                null,
+                $get("imagesListView")
+            );
+        }
+   </script>
+</head>
+
+<body>
+   
+    <!--DataView calls dataProvider URL directly. No code-->
+    <ul id="imagesListView" class="list sys-template">
+        <li>
+            <span>{{ Name }}</span>
+            <span class="value">{{ Description }}</span>
+        </li>
+    </ul>
+</body>
+</html>

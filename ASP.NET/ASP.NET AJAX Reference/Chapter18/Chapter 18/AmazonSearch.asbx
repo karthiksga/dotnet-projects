@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<bridge namespace="MyServices" className="AmazonService">
+    <proxy type="CustomComponents3.AmazonService, App_Code"/>
+    <method name="Search">
+        <input>
+            <parameter name="pageIndex" />
+            <parameter name="searchQuery" />
+        </input>
+    </method>
+</bridge>

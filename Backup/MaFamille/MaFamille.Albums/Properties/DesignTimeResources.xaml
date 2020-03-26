@@ -1,0 +1,10 @@
+﻿<ResourceDictionary
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+	<ResourceDictionary.MergedDictionaries>
+		<!--<ResourceDictionary Source="/MaFamille.Common;component/Styles/MyPhotoStyle.xaml"/>-->
+		<ResourceDictionary Source="/MaFamille.Albums;component/Views/MyPhotoStyle.xaml"/>
+		<ResourceDictionary Source="/MaFamille.Common;component/Styles/MyPhotoStyle.xaml"/>
+	</ResourceDictionary.MergedDictionaries>
+	<!-- Resource dictionary entries should be defined here. -->
+</ResourceDictionary>

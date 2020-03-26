@@ -1,0 +1,6 @@
+D:\Visual Studio Projects\WF_WCF_Samples\WCF\Setup\FindPrivateKey\CS\bin\FindPrivateKey.exe.config
+D:\Visual Studio Projects\WF_WCF_Samples\WCF\Setup\FindPrivateKey\CS\bin\FindPrivateKey.exe
+D:\Visual Studio Projects\WF_WCF_Samples\WCF\Setup\FindPrivateKey\CS\bin\FindPrivateKey.pdb
+D:\Visual Studio Projects\WF_WCF_Samples\WCF\Setup\FindPrivateKey\CS\obj\Debug\ResolveAssemblyReference.cache
+D:\Visual Studio Projects\WF_WCF_Samples\WCF\Setup\FindPrivateKey\CS\obj\Debug\FindPrivateKey.exe
+D:\Visual Studio Projects\WF_WCF_Samples\WCF\Setup\FindPrivateKey\CS\obj\Debug\FindPrivateKey.pdb

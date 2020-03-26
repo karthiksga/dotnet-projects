@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Creating DataView Declaratively - DataProvider using Service URI</title>
+    <link href="styles/list.css" rel="stylesheet" type="text/css" />
+    
+    <script type="text/javascript" src="../MicrosoftAjax/MicrosoftAjax.debug.js"></script>
+    <script type="text/javascript" src="../MicrosoftAjax/MicrosoftAjaxTemplates.debug.js"></script>
+</head>
+
+<body xmlns:dataview="javascript:Sys.UI.DataView" xmlns:sys="javascript:Sys">
+    <!--DataView calls dataProvider URL directly. No code-->
+    <ul id="imagesListView" class="list sys-template"
+        sys:attach="dataview"
+        dataview:autofetch="true"
+        dataview:dataprovider="../Services/ImagesWcfService.svc"
+        dataview:fetchoperation="GetImages"
+        dataview:fetchparameters="{{ {orderby: 'Name'} }}"
+    >
+        <li>
+            <span>{{ Name }}</span>
+            <span class="value">{{ Description }}</span>
+        </li>
+    </ul>
+</body>
+</html>

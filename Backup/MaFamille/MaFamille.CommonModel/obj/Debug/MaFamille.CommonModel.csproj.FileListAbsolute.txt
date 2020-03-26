@@ -1,0 +1,5 @@
+D:\Visual Studio Projects\Silverlight Samples\MaFamille\MaFamille.CommonModel\Bin\Debug\MaFamille.CommonModel.dll
+D:\Visual Studio Projects\Silverlight Samples\MaFamille\MaFamille.CommonModel\Bin\Debug\MaFamille.CommonModel.pdb
+D:\Visual Studio Projects\Silverlight Samples\MaFamille\MaFamille.CommonModel\Bin\Debug\System.Runtime.Serialization.dll
+D:\Visual Studio Projects\Silverlight Samples\MaFamille\MaFamille.CommonModel\obj\Debug\MaFamille.CommonModel.dll
+D:\Visual Studio Projects\Silverlight Samples\MaFamille\MaFamille.CommonModel\obj\Debug\MaFamille.CommonModel.pdb

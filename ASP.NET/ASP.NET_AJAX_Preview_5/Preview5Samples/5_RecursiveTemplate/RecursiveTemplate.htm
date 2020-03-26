@@ -1,0 +1,89 @@
+﻿<!doctype html public "-//w3c//dtd xhtml 1.0 transitional//en" "http://www.w3.org/tr/xhtml1/dtd/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script type="text/javascript" src="../MicrosoftAjax/MicrosoftAjax.debug.js"></script>
+    <script type="text/javascript" src="../MicrosoftAjax/MicrosoftAjaxTemplates.debug.js"></script>
+    <link href="Styles/recursiveTemplate.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+        
+        function onCommand(sender, args) {
+            var commandName = args.get_commandName();
+            var source = args.get_commandSource();
+
+            if (commandName === 'toggle') {
+                var item = getDataViewContainer(source);
+                var e = item.getObjectByKey('contents');
+                var img = item.getObjectByKey('folder');
+                if (e.className === 'collapsed') {
+                    e.className = '';
+                    img.setAttribute('src', 'images/collapse.png');
+                }
+                else {
+                    e.className = 'collapsed';
+                    img.setAttribute('src', 'images/expand.png');
+                }
+            }
+        }
+
+        function getDataViewContainer(source) {
+            var dv = source;
+            while (!dv.control || Object.getType(dv.control) !== Sys.UI.DataView) {
+                dv = dv.parentNode;
+            }
+            return dv.control.findContext(source);
+        }
+
+        var directoryHierarchyData = {
+            name: 'inetpub',
+            files: [],
+            directories: [
+                {     
+                    name: 'wwwroot',
+                    files: ['iisstartt.htm', 'index.htm', 'welcome.png'],
+                    directories: [
+                        {
+                            name: 'settings',
+                            files: ['index.htm'],
+                            directories: []
+                        }
+                    ]
+                },
+                { 
+                    name: 'logs',
+                    files: ['failed.log', 'passed.log', '404.log'],
+                    directories: []
+                }
+            ]
+        };
+    
+    </script>
+</head>
+<body xmlns:sys="javascript:Sys" xmlns:dataview="javascript:Sys.UI.DataView">
+    
+    <ul id="treeView" sys:attach="dataview" class="root" 
+        dataview:data="{{ directoryHierarchyData }}"
+        dataview:itemtemplate="folderTemplate"
+        dataview:oncommand="{{ onCommand }}">
+    </ul>
+    
+    <ul class="sys-template" id="folderTemplate">
+        <li style="list-style: none">
+            <a href="#" onclick="return false;" sys:command="toggle">
+            <img sys:key="folder" src="images/collapse.png" alt="toggle" />
+            </a>
+            <img src="images/folder.png" alt="folder" />
+            <span>{{ name }}</span>       
+        </li>
+        <li sys:key="contents" style="list-style: none">
+            <ul sys:attach="dataview" dataview:data="{{ directories }}" class="folder" dataview:itemtemplate="folderTemplate">
+            </ul>
+            <ul sys:attach="dataview" dataview:data="{{ files }}" class="file sys-template">
+                <li>                        
+                    <span>{{ $dataItem }}</span>                            
+                </li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>

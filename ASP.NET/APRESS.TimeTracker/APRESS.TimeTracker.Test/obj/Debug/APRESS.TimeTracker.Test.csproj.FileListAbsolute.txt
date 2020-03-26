@@ -1,0 +1,17 @@
+E:\Visual Studio Projects\APRESS.TimeTracker\APRESS.TimeTracker.Test\bin\Debug\APRESS.TimeTracker.Test.dll
+E:\Visual Studio Projects\APRESS.TimeTracker\APRESS.TimeTracker.Test\bin\Debug\APRESS.TimeTracker.Test.pdb
+E:\Visual Studio Projects\APRESS.TimeTracker\APRESS.TimeTracker.Test\bin\Debug\APRESS.TimeTracker.BusinessLayer.dll
+E:\Visual Studio Projects\APRESS.TimeTracker\APRESS.TimeTracker.Test\bin\Debug\APRESS.TimeTracker.DataLayer.dll
+E:\Visual Studio Projects\APRESS.TimeTracker\APRESS.TimeTracker.Test\bin\Debug\APRESS.TimeTracker.exe
+E:\Visual Studio Projects\APRESS.TimeTracker\APRESS.TimeTracker.Test\bin\Debug\APRESS.TimeTracker.ServiceLayer.dll
+E:\Visual Studio Projects\APRESS.TimeTracker\APRESS.TimeTracker.Test\bin\Debug\Microsoft.Practices.Unity.dll
+E:\Visual Studio Projects\APRESS.TimeTracker\APRESS.TimeTracker.Test\bin\Debug\Microsoft.Practices.ServiceLocation.dll
+E:\Visual Studio Projects\APRESS.TimeTracker\APRESS.TimeTracker.Test\bin\Debug\APRESS.TimeTracker.BusinessLayer.pdb
+E:\Visual Studio Projects\APRESS.TimeTracker\APRESS.TimeTracker.Test\bin\Debug\APRESS.TimeTracker.DataLayer.pdb
+E:\Visual Studio Projects\APRESS.TimeTracker\APRESS.TimeTracker.Test\bin\Debug\APRESS.TimeTracker.ServiceLayer.pdb
+E:\Visual Studio Projects\APRESS.TimeTracker\APRESS.TimeTracker.Test\bin\Debug\APRESS.TimeTracker.pdb
+E:\Visual Studio Projects\APRESS.TimeTracker\APRESS.TimeTracker.Test\bin\Debug\Microsoft.Practices.Unity.pdb
+E:\Visual Studio Projects\APRESS.TimeTracker\APRESS.TimeTracker.Test\bin\Debug\Microsoft.Practices.Unity.xml
+E:\Visual Studio Projects\APRESS.TimeTracker\APRESS.TimeTracker.Test\obj\Debug\ResolveAssemblyReference.cache
+E:\Visual Studio Projects\APRESS.TimeTracker\APRESS.TimeTracker.Test\obj\Debug\APRESS.TimeTracker.Test.dll
+E:\Visual Studio Projects\APRESS.TimeTracker\APRESS.TimeTracker.Test\obj\Debug\APRESS.TimeTracker.Test.pdb

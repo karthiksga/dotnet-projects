@@ -1,0 +1,12 @@
+F:\Visual Studio Projects\WCF\TestPart1\HelloWorld\bin\Debug\HelloWorld.dll.config
+F:\Visual Studio Projects\WCF\TestPart1\HelloWorld\bin\Debug\HelloWorld.dll
+F:\Visual Studio Projects\WCF\TestPart1\HelloWorld\bin\Debug\HelloWorld.pdb
+F:\Visual Studio Projects\WCF\TestPart1\HelloWorld\obj\Debug\ResolveAssemblyReference.cache
+F:\Visual Studio Projects\WCF\TestPart1\HelloWorld\obj\Debug\HelloWorld.dll
+F:\Visual Studio Projects\WCF\TestPart1\HelloWorld\obj\Debug\HelloWorld.pdb
+E:\Visual Studio Projects\WCF\TestPart1\HelloWorld\bin\Debug\HelloWorld.dll.config
+E:\Visual Studio Projects\WCF\TestPart1\HelloWorld\bin\Debug\HelloWorld.dll
+E:\Visual Studio Projects\WCF\TestPart1\HelloWorld\bin\Debug\HelloWorld.pdb
+E:\Visual Studio Projects\WCF\TestPart1\HelloWorld\obj\Debug\ResolveAssemblyReference.cache
+E:\Visual Studio Projects\WCF\TestPart1\HelloWorld\obj\Debug\HelloWorld.dll
+E:\Visual Studio Projects\WCF\TestPart1\HelloWorld\obj\Debug\HelloWorld.pdb

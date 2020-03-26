@@ -1,0 +1,74 @@
+﻿<fw:FloatWindow 
+	x:Class="MaFamille.Albums.Views.FileUpload"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:fw="clr-namespace:SilverlightControls;assembly=SilverlightControls"  
+    xmlns:app="clr-namespace:MaFamille.Albums.Views"
+    mc:Ignorable="d"
+    Height="506" Width="1045.875">
+	<fw:FloatWindow.Resources>
+		<ResourceDictionary>
+			<ResourceDictionary.MergedDictionaries>
+				<ResourceDictionary Source="/SilverlightControls;component/Themes/generic.xaml"/>
+			</ResourceDictionary.MergedDictionaries>
+		</ResourceDictionary>
+	</fw:FloatWindow.Resources>
+
+    <Grid x:Name="LayoutRoot">
+       <Border BorderBrush="Black" BorderThickness="1" Margin="0" Background="#FF545353">
+            <Grid Margin="-1">
+                <Grid Height="32" VerticalAlignment="Top" Margin="0,0,20,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.148*"/>
+                        <ColumnDefinition Width="0.33*"/>
+                        <ColumnDefinition Width="0.099*"/>
+                        <ColumnDefinition Width="0.087*"/>
+                        <ColumnDefinition Width="0.236*"/>
+                        <ColumnDefinition Width="0.101*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock HorizontalAlignment="Center" Margin="0" TextWrapping="Wrap" Text="Name" Width="115" Grid.Column="1" VerticalAlignment="Center"/>
+                    <TextBlock Margin="8,8,0,8" TextWrapping="Wrap" Text="Status" Grid.Column="2"/>
+                    <TextBlock Margin="8" TextWrapping="Wrap" Text="Size" Grid.Column="3"/>
+                    <TextBlock Margin="0" TextWrapping="Wrap" Text="Progress" Width="66" Grid.Column="4" HorizontalAlignment="Center" d:LayoutOverrides="Width" VerticalAlignment="Center"/>
+                    <TextBlock Margin="0" TextWrapping="Wrap" Text="Remove" Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <TextBlock HorizontalAlignment="Center" Margin="0" TextWrapping="Wrap" Text="Album" Width="115" VerticalAlignment="Center"/>
+                </Grid>
+                <ScrollViewer Margin="0,36,0,89">
+                    <ItemsControl ItemsSource="{Binding Files}">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <app:FileUploadRowControl></app:FileUploadRowControl>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </ScrollViewer>
+                <Grid Height="40" Margin="8,0,0,45" VerticalAlignment="Bottom">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.286*"/>
+                        <ColumnDefinition Width="0.235*"/>
+                        <ColumnDefinition Width="0.479*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Margin="0" TextWrapping="Wrap" Text="{Binding TxtTotalFiles}" Width="100" Height="20" HorizontalAlignment="Center" VerticalAlignment="Center"/>                    
+                    <Grid Grid.Column="2" Margin="8">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.47*"/>
+                            <ColumnDefinition Width="0.53*"/>
+                        </Grid.ColumnDefinitions>
+                        <ProgressBar Margin="0" Grid.Column="1" Minimum="0" Maximum="{Binding TotalUploadSize}" Value="{Binding TotalUploaded}" Width="169" Height="20" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        <TextBlock Margin="0" TextWrapping="Wrap" Text="{Binding TxtTotalSize}" Width="120" Height="20" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Grid>
+                </Grid>
+                <StackPanel Margin="0,0,0,2" Height="39" VerticalAlignment="Bottom" Orientation="Horizontal">
+                    <Button x:Name="AddFilesButton" Command="{Binding SelectClick}" 
+                                    CommandParameter="Browse" Content="Select Files" HorizontalAlignment="Left" Height="32" Margin="26,4,0,3" Width="101"/>
+                    <Button x:Name="UploadFilesButton" Command="{Binding UploadClick}"
+                                    CommandParameter="Upload" Content="Upload" HorizontalAlignment="Left" Height="32" Margin="26,0,0,0" Width="101"/>
+                    <Button x:Name="btnClear" Command="{Binding UploadClick}"
+                    	CommandParameter="Clear" Content="Clear" HorizontalAlignment="Left" Height="32" Margin="26,3.5,0,3.5" Width="101"/>
+                </StackPanel>
+            </Grid>
+        </Border>
+    </Grid>
+</fw:FloatWindow>

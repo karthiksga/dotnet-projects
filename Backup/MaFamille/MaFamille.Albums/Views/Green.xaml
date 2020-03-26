@@ -1,0 +1,18 @@
+﻿<UserControl
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:vm="clr-namespace:MaFamille.Albums.ViewModels"
+    xmlns:SilverlightControls="clr-namespace:SilverlightControls;assembly=SilverlightControls" x:Class="MaFamille.Albums.Views.Green"
+    mc:Ignorable="d"
+    d:DesignHeight="300" d:DesignWidth="400">
+    
+    <Grid x:Name="LayoutRoot" Background="White" d:DataContext="{d:DesignInstance vm:GreenViewModel, IsDesignTimeCreatable=False}">
+        <TextBlock Text="Green"/>
+        <Button Content="Blue" Command="{Binding NavigateCommand}" CommandParameter="Blue" Margin="5" Height="20" Width="50"/>
+    	<SilverlightControls:FloatWindow Name="sdfs">
+    		<SilverlightControls:FloatWindow></SilverlightControls:FloatWindow>
+    		</SilverlightControls:FloatWindow>
+    </Grid>
+</UserControl>

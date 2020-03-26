@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Creating DataView Declaratively - Setting data</title>
+    <link href="styles/list.css" rel="stylesheet" type="text/css" />
+    
+    <script type="text/javascript" src="../MicrosoftAjax/MicrosoftAjax.debug.js"></script>
+    <script type="text/javascript" src="../MicrosoftAjax/MicrosoftAjaxTemplates.debug.js"></script>
+
+    <script type="text/javascript">
+        var images1 = [
+            { Name: "Crashing water", Description: "A splash of waves captured." },
+            { Name: "Dazed", Description: "Mid-day heat?" },
+            { Name: "Close Zoom on Giraffe", Description: "Closeup of a Giraffe at Wild Animal Park." },
+            { Name: "Pier", Description: "A pier in Morro Bay." },
+            { Name: "Seagull reflections", Description: "Seagulls at peace." },
+            { Name: "Spain", Description: "In Balboa Park, in downtown San Diego." },
+            { Name: "Sumatran Tiger", Description: "Restful." }
+        ];
+
+        var images2 = [
+            { Name: "Lone Boat", Description: "Overlooking the cliff in Cabrillo National Park." },
+            { Name: "Morro Rock", Description: "In Morro Bay, along Highway 1." },
+            { Name: "Off the Gliderport trail", Description: "Hang gliding at Torrey Pines." },
+            { Name: "Oryx", Description: "Along the safari ride at Wild Animal Park." },
+            { Name: "Spanish Architecture", Description: "In Balboa Park, in downtown San Diego." }
+        ];
+
+        function setData(data) {
+            $find("imagesListView").set_data(data);
+        }
+   </script>
+</head>
+
+<body xmlns:dataview="javascript:Sys.UI.DataView" xmlns:sys="javascript:Sys">
+    <input type="button" onclick="setData(images1)" value="Gallery One"/>  
+    <input type="button" onclick="setData(images2)" value="Gallery Two"/>  
+    
+    <!--DataView with inline template-->
+    <ul id="imagesListView" class="list sys-template"
+        sys:attach="dataview"
+        dataview:data="{{ images1 }}"
+    >
+        <li>
+            <!--One-time expression evaluation: Evaluating fields-->
+            <span>{{ Name }}</span>
+            <span class="value">{{ Description }}</span>
+        </li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Silverlight" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=KARTHIKSG-PC;Initial Catalog=Silverlight;Integrated Security=True" SettingsObjectName="LinqTest.Properties.Settings" SettingsPropertyName="SilverlightConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Table2" Member="Table2s">
+    <Type Name="Table2">
+      <Column Name="tID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ColID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Txt" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Table3" Member="Table3s">
+    <Type Name="Table3">
+      <Column Name="tID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Field1" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Field2" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Field3" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Table1" Member="Table1s">
+    <Type Name="Table1">
+      <Column Name="ColId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ColName" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="FieldName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

@@ -1,0 +1,10 @@
+D:\Visual Studio Projects\MaFamille1\MaFamille1.Web\bin\MaFamille1.Web.dll
+D:\Visual Studio Projects\MaFamille1\MaFamille1.Web\bin\MaFamille1.Web.pdb
+D:\Visual Studio Projects\MaFamille1\MaFamille1.Web\obj\Debug\ResolveAssemblyReference.cache
+D:\Visual Studio Projects\MaFamille1\MaFamille1.Web\obj\Debug\MaFamille1.Web.dll
+D:\Visual Studio Projects\MaFamille1\MaFamille1.Web\obj\Debug\MaFamille1.Web.pdb
+C:\inetpub\wwwroot\MaFamille1\MaFamille1.Web\bin\MaFamille1.Web.dll
+C:\inetpub\wwwroot\MaFamille1\MaFamille1.Web\bin\MaFamille1.Web.pdb
+C:\inetpub\wwwroot\MaFamille1\MaFamille1.Web\obj\Debug\ResolveAssemblyReference.cache
+C:\inetpub\wwwroot\MaFamille1\MaFamille1.Web\obj\Debug\MaFamille1.Web.dll
+C:\inetpub\wwwroot\MaFamille1\MaFamille1.Web\obj\Debug\MaFamille1.Web.pdb

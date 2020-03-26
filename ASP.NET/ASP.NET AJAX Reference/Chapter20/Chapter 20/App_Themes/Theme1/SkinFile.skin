@@ -1,0 +1,43 @@
+﻿<asp:GridView SkinID="GridView1" runat="server" BackColor="LightGoldenrodYellow"
+BorderColor="Tan" BorderWidth="1px" CellPadding="2" ForeColor="Black"
+GridLines="None">
+  <FooterStyle BackColor="Tan" />
+  <SelectedRowStyle BackColor="DarkSlateBlue" ForeColor="GhostWhite" />
+  <PagerStyle BackColor="PaleGoldenrod" ForeColor="DarkSlateBlue"
+  HorizontalAlign="Center" />
+  <HeaderStyle BackColor="Tan" Font-Bold="True" />
+  <AlternatingRowStyle BackColor="PaleGoldenrod" />
+</asp:GridView>
+
+<asp:DetailsView SkinID="DetailsView1" runat="server" Width="100%"
+BackColor="LightGoldenrodYellow" BorderColor="Tan" BorderWidth="1px"
+CellPadding="2" ForeColor="Black" GridLines="None" HorizontalAlign="Center">
+  <FooterStyle BackColor="Tan" />
+  <EditRowStyle BackColor="DarkSlateBlue" ForeColor="GhostWhite" />
+  <PagerStyle BackColor="PaleGoldenrod" ForeColor="DarkSlateBlue"
+  HorizontalAlign="Center" />
+  <HeaderStyle BackColor="Tan" Font-Bold="True" />
+  <AlternatingRowStyle BackColor="PaleGoldenrod" />
+</asp:DetailsView>
+
+<asp:DropDownList SkinID="DropDownList1" runat="server"
+BackColor="LightGoldenrodYellow" BorderColor="Tan" BorderWidth="1px"
+CellPadding="2" ForeColor="Black" GridLines="None" Width="100%"/>
+
+<asp:ListBox SkinID="ListBox1" runat="server" BackColor="LightGoldenrodYellow"
+BorderColor="Tan" BorderWidth="1px" ForeColor="Black" Width="200"/>
+
+<asp:DetailsView SkinID="RainyDay" runat="server" Width="100%" BackColor="White"
+BorderColor="#999999" BorderStyle="None" BorderWidth="1px" CellPadding="3"
+GridLines="Vertical">
+  <FooterStyle BackColor="#CCCCCC" ForeColor="Black" />
+  <EditRowStyle BackColor="#008A8C" Font-Bold="True" ForeColor="White" />
+  <RowStyle BackColor="#EEEEEE" ForeColor="Black" />
+  <PagerStyle BackColor="#999999" ForeColor="Black" HorizontalAlign="Center" />
+  <HeaderStyle BackColor="#000084" Font-Bold="True" ForeColor="White" />
+  <AlternatingRowStyle BackColor="#DCDCDC" />
+</asp:DetailsView>
+
+<asp:DropDownList SkinID="RainyDay2" runat="server" BackColor="White"
+BorderColor="#999999" BorderStyle="None" BorderWidth="1px" CellPadding="3"
+GridLines="Vertical" Width="100%"/>

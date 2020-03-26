@@ -1,0 +1,129 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Read-write, with DataContext</title>
+    <link href="styles/imageOrganizer.css" rel="stylesheet" type="text/css" />
+    
+    <script type="text/javascript" src="../MicrosoftAjax/MicrosoftAjax.debug.js"></script>
+    <script type="text/javascript" src="../MicrosoftAjax/MicrosoftAjaxTemplates.debug.js"></script>
+    <script type="text/javascript" src="../MicrosoftAjax/MicrosoftAjaxDataContext.debug.js"></script>
+ 
+    <script type="text/javascript">
+        var imageList, imageData;
+        var fetchParameters = { orderby: "Name" }
+
+        var dataContext = $create(
+            Sys.Data.DataContext,
+            {
+                serviceUri: "../Services/ImagesWcfService.svc",
+                saveOperation: "SaveImages"
+            }
+        );
+
+        function onRendering(sender, args) {
+            imageList = sender;
+            imageData = args.get_data();
+            Sys.Observer.makeObservable(imageData);
+        }
+
+        function onSort(orderby) {
+            fetchParameters.orderby = orderby;
+            imageList.fetchData();
+        }
+
+        function onInsert() {
+            var newImage = { Name: "Name", Description: "Description", Contributor: "Contributor", Uri: "../images/question.jpg" };
+
+            dataContext.insertEntity(newImage);
+            imageData.add(newImage);
+
+            var newIndex = imageData.length - 1;
+            imageList.set_selectedIndex(newIndex);
+            imageList.get_contexts()[newIndex].getElementById("listItem").scrollIntoView();
+        }
+
+        function onDetailViewCommand(sender, args) {
+            switch (args.get_commandName()) {
+                // A custom command     
+                case "Delete":
+                    var index = imageList.get_selectedIndex();
+                    var deletedImage = imageData[index];
+
+                    dataContext.removeEntity(deletedImage);
+                    imageData.remove(deletedImage);
+
+                    if (index >= imageData.length) index--;
+                    imageList.set_selectedIndex(index);
+            }
+        }
+    </script>   
+</head>
+
+<body xmlns:dataview="javascript:Sys.UI.DataView" xmlns:sys="javascript:Sys">
+    <div class="title">Image Organizer</div>
+    
+    <!--Toolbar-->
+    <div class="sorttoolbar">
+        Sort:
+        <select onchange="onSort(this.value)">
+            <option value="Name">Name</option>
+            <option value="Contributor">Contributor</option>
+            <option value="Description">Description</option>
+        </select>
+        <a class="editbutton" href="#" onclick="onInsert()">Add Image</a>
+        <a class="editbutton" href="#" onclick="dataContext.saveChanges()">Save Changes</a>
+        <a class="editbutton" href="#" onclick="imageList.fetchData()">Fetch Images</a>
+    </div>
+
+    <!--Master View-->
+    <div id="imagesListView" class="sys-template" 
+        sys:attach="dataview"
+        dataview:autofetch="true"
+        dataview:dataprovider="{{ dataContext }}" 
+        dataview:fetchoperation="GetImages"
+        dataview:fetchparameters="{{ fetchParameters }}"
+        dataview:selecteditemclass="selecteditem" 
+        dataview:onrendering="{{ onRendering }}" 
+        dataview:initialselectedindex="0" 
+        dataview:sys-key="master" 
+    >
+        <span sys:command="Select" class="listitem" id="listItem" >
+            <input type="button" sys:value="{binding Name}" />
+            <!--Live binding oneWay-->
+            <img sys:src="{binding Uri}"/>
+            <span sys:innertext="{binding Contributor}"></span>
+        </span>
+    </div>
+
+    <!--Detail View-->
+    <!--Live binding to Master View-->
+    <div id="detailView" class="sys-template"
+        sys:attach="dataview"
+        dataview:oncommand="{{ onDetailViewCommand }}"
+        dataview:data="{binding selectedData, source=master}" 
+    >
+        <div class="detailbox edit">
+            <a href="#" sys:command="Delete" class="leftbutton" >Delete Image</a>
+            <div class="detailtitle">{binding Name}</div>
+            <div class="fieldblock">
+                <label for="name">Name: </label>
+                <input id="name" type="text" sys:value="{binding Name}"/>
+            </div>
+            <div class="fieldblock">
+                <label for="description">Description: </label>
+                <input id="description" type="text" sys:value="{binding Description}"/>
+            </div>
+            <div class="fieldblock">
+                <label for="uri">Uri: </label>
+                <input id="uri" type="text" sys:value="{binding Uri}"/>
+            </div>
+            <div class="fieldblock">
+                <label for="contributor">Contributor: </label>
+                <input id="contributor" type="text" sys:value="{binding Contributor}"/>
+            </div>
+        </div>
+        <img class="detailimage" sys:alt="{binding Name}" sys:src="{binding Uri}" />
+    </div>
+</body>
+</html>

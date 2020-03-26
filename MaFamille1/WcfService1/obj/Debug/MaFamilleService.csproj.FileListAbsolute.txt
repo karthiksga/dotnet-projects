@@ -1,0 +1,5 @@
+D:\Visual Studio Projects\MaFamille1\WcfService1\bin\WcfService1.dll
+D:\Visual Studio Projects\MaFamille1\WcfService1\bin\WcfService1.pdb
+D:\Visual Studio Projects\MaFamille1\WcfService1\obj\Debug\ResolveAssemblyReference.cache
+D:\Visual Studio Projects\MaFamille1\WcfService1\obj\Debug\WcfService1.dll
+D:\Visual Studio Projects\MaFamille1\WcfService1\obj\Debug\WcfService1.pdb

@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Separate Code and Markup</title>
+    <link href="styles/imageOrganizer.css" rel="stylesheet" type="text/css" />
+    
+    <script type="text/javascript" src="../MicrosoftAjax/MicrosoftAjax.debug.js"></script>
+    <script type="text/javascript" src="../MicrosoftAjax/MicrosoftAjaxTemplates.debug.js"></script>
+    <script type="text/javascript" src="../MicrosoftAjax/MicrosoftAjaxDataContext.debug.js"></script>
+ 
+    <script type="text/javascript" src="Scripts/SeparateCodeMarkupAndBindings.js"></script>   
+</head>
+
+<body xmlns:sys="javascript:Sys">
+    <div class="title">Image Organizer</div>
+    
+    <!--Toolbar-->
+    <div class="sorttoolbar">
+        Sort:
+        <select onchange="onSort(this.value)">
+            <option value="Name">Name</option>
+            <option value="Contributor">Contributor</option>
+            <option value="Description">Description</option>
+        </select>
+        <a class="editbutton" href="#" onclick="onInsert()">Add Image</a>
+        <a class="editbutton" href="#" onclick="dataContext.saveChanges()">Save Changes</a>
+        <a class="editbutton" href="#" onclick="imageList.fetchData()">Fetch Images</a>
+    </div>
+
+    <!--Master View-->
+    <div id="imagesListView" class="sys-template">
+        <span sys:command="Select" class="listitem" id="listItem" >
+            <input sys:key="name" type="button" value="" />
+            <img sys:key="uri" src=""/>
+            <span sys:key="contributor"></span>
+        </span>
+    </div>
+    
+    <!--Detail View-->
+    <!--Live binding to Master View-->
+    <div id="detailView" class="sys-template">
+        <div class="detailbox edit">
+            <a href="#" sys:command="Delete" class="leftbutton" >Delete Image</a>
+            <div id="title" class="detailtitle"></div>
+            <div class="fieldblock">
+                <label for="name">Name: </label>
+                <input id="name" type="text" />
+            </div>
+            <div class="fieldblock">
+                <label for="description">Description: </label>
+                <input id="description" type="text" />
+            </div>
+            <div class="fieldblock">
+                <label for="uri">Uri: </label>
+                <input id="uri" type="text" />
+            </div>
+            <div class="fieldblock">
+                <label for="contributor">Contributor: </label>
+                <input id="contributor" type="text" />
+            </div>
+        </div>
+        <img id="img"  class="detailimage" />
+    </div>
+</body>
+</html>

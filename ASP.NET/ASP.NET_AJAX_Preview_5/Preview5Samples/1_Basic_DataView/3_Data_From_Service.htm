@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Data from Service HTML</title>
+    <link href="styles/list.css"rel="stylesheet" type="text/css" />
+    
+    <script type="text/javascript" src="../MicrosoftAjax/MicrosoftAjax.debug.js"></script>
+    <script type="text/javascript" src="../MicrosoftAjax/MicrosoftAjaxTemplates.debug.js"></script>
+ 
+    <!--Get Web service proxy-->
+    <script src="../Services/ImagesWcfService.svc/jsdebug" type="text/javascript"></script>
+
+    <script type="text/javascript">
+        function pageLoad() {
+            // Create DataView
+            $create(Sys.UI.DataView, null, null, null, $get("imagesListView"));
+
+            // Call Web service proxy from script
+            Uc.ImagesWcfService.GetImages("Name", querySucceeded);
+        }
+
+        function querySucceeded(results) {
+            // Set returned data on DataView
+            $find("imagesListView").set_data(results); 
+        }
+    </script>
+</head>
+
+<body>
+    <!--Client Template used by attached DataView-->
+    <ul id="imagesListView" class="list sys-template" >
+         <li>
+            <span>{{ Name }}</span>
+            <span class="value">{{ Description }}</span>
+        </li>
+   </ul>
+</body>
+</html>

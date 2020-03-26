@@ -1,0 +1,1 @@
+D:\Visual Studio Projects\WF_WCF_Samples\WCF\Basic\Binding\Custom\ReliableSession\CS\client\bin\client.exe.config

@@ -1,0 +1,5 @@
+﻿.sys-template { display:none; }
+li { list-style-type:none; white-space:nowrap; }
+.list { font:14pt Arial; }
+.title { font-size:16pt; font-weight:bold; }
+.selecteditem { color:white; background-color:blue; } 

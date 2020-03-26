@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Image Organizer 1</title>
+    <link href="styles/ImageOrganizer1.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="../MicrosoftAjax/MicrosoftAjax.debug.js"></script>
+    <script type="text/javascript" src="../MicrosoftAjax/MicrosoftAjaxTemplates.debug.js"></script>
+    <script type="text/javascript" src="../MicrosoftAjax/MicrosoftAjaxDataContext.debug.js"></script>
+    <script type="text/javascript" src="../MicrosoftAjax/MicrosoftAjaxAdoNet.debug.js"></script>
+    <script type="text/javascript" src="../MicrosoftAjax/AjaxControlToolkit.Common.Common.js"></script>
+    <script type="text/javascript" src="../MicrosoftAjax/AjaxControlToolkit.ExtenderBase.BaseScripts.js"></script>
+    <script type="text/javascript" src="../MicrosoftAjax/AjaxControlToolkit.TextboxWatermark.TextboxWatermark.js"></script>
+    <script type="text/javascript" src="scripts/ImageOrganizerAndToolkit.js"></script>
+ </head>
+<body xmlns:dataview="javascript:Sys.UI.DataView" xmlns:sys="javascript:Sys"
+    xmlns:wm="javascript:AjaxControlToolkit.TextBoxWatermarkBehavior"
+>
+<div class="title">Image Organizer</div>
+
+<!--Toolbar-->
+<a href="#" onclick="saveChanges()">Save Changes</a>
+<a href="#" onclick="addNewImage()">Add New Image</a>
+
+<!--Master View-->
+<!--Attached DataView control-->
+<div id="imagesListView" sys:attach="dataview"
+    dataview:itemtemplate="masterTemplate"
+    dataview:itemplaceholder="masterItemPlaceholder"
+    dataview:selecteditemclass="selecteditem" 
+    dataview:initialselectedindex="0" 
+    dataview:sys-key="master" 
+>
+    <span id="masterItemPlaceholder">Loading...</span>
+</div>
+
+<!--Detail View-->
+<div id="detailView" class="sys-template" sys:attach="dataview"
+    dataview:data="{binding selectedData, source=master}" 
+>
+    <!-- Detail View template -->
+    <div class="detailbox">
+        <a class="leftbutton" href="#" onclick="deleteImage()">Delete Image</a>
+        <div class="detailtitle">{binding Name, defaultValue=...}</div>
+        <div class="fieldblock">
+            <label for="name">Name: </label>
+            <input id="name" type="text" sys:value="{binding Name, convertBack=emptyToNull, defaultValue=}" 
+                sys:attach="wm" wm:watermarktext="Image Name..." />
+        </div>
+        <div class="fieldblock">
+            <label for="description">Description: </label>
+            <input id="description" type="text" sys:value="{binding Description, defaultValue=}" 
+                sys:attach="wm" wm:watermarktext="Image Description..." />
+        </div>
+        <div class="fieldblock">
+            <label for="uri">Uri: </label>
+            <input id="uri" type="text" sys:value="{binding Uri, defaultValue=}" 
+                sys:attach="wm" wm:watermarktext="Image URI..." />
+        </div>
+    </div>
+    <img class="detailimage" sys:src="{binding Uri, defaultValue=../images/question.jpg}"/>
+</div>    
+
+<!-- Master view template -->
+<div id="masterTemplate" class="sys-template">
+    <span sys:command="Select" class="listitem" sys:key="listitem">
+        <input type="button" sys:value="{binding Name, defaultValue=...}" />
+        <!-- data binding-->
+        <img sys:src="{binding Uri, defaultValue=../images/question.jpg}"/>
+    </span>
+</div>
+</body>
+</html>

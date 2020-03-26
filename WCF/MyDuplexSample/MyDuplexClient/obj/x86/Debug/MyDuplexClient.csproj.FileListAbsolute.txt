@@ -1,0 +1,6 @@
+D:\Visual Studio Projects\WCF\MyDuplexSample\MyDuplexClient\bin\Debug\MyDuplexClient.exe.config
+D:\Visual Studio Projects\WCF\MyDuplexSample\MyDuplexClient\bin\Debug\MyDuplexClient.exe
+D:\Visual Studio Projects\WCF\MyDuplexSample\MyDuplexClient\bin\Debug\MyDuplexClient.pdb
+D:\Visual Studio Projects\WCF\MyDuplexSample\MyDuplexClient\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Visual Studio Projects\WCF\MyDuplexSample\MyDuplexClient\obj\x86\Debug\MyDuplexClient.exe
+D:\Visual Studio Projects\WCF\MyDuplexSample\MyDuplexClient\obj\x86\Debug\MyDuplexClient.pdb

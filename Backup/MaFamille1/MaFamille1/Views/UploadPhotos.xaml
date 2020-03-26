@@ -1,0 +1,51 @@
+﻿<sdk:Page	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk"	
+    x:Class="MaFamille1.UploadPhotos" 
+    xmlns:commands="clr-namespace:Microsoft.Practices.Composite.Presentation.Commands;assembly=Microsoft.Practices.Composite.Presentation"
+    xmlns:converter="clr-namespace:MaFamille1.Converters" 
+	Title="UploadPhotos Page"
+	d:DesignWidth="640" d:DesignHeight="480">
+    <sdk:Page.Resources>
+        <converter:ImageConverter x:Key="ImageConverter"/>
+    </sdk:Page.Resources>
+    <Grid x:Name="LayoutRoot" >
+		<Border BorderBrush="Black" BorderThickness="1" Margin="0">
+			<Grid Margin="0">
+				<Grid.RowDefinitions>
+					<RowDefinition Height="0.751*"/>
+					<RowDefinition Height="0.249*"/>
+				</Grid.RowDefinitions>
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="0.139*"/>
+					<ColumnDefinition Width="0.761*"/>
+				</Grid.ColumnDefinitions>
+                <ListBox Margin="0" Grid.RowSpan="2" ItemsSource="{Binding PictureList, Mode=TwoWay}"
+                         SelectedItem="{Binding Path=SelectedItem,Mode=TwoWay}">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <Button commands:Click.Command="{Binding Click}"
+                                    commands:Click.CommandParameter="{Binding}">
+                                <Image Width="50" Height="40" Source="{Binding ImageStream,Mode=TwoWay,Converter={StaticResource ImageConverter}}"></Image>
+                            </Button>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+                <Border BorderBrush="Black" BorderThickness="1" Grid.Column="1" Margin="0">
+					<Image Source="{Binding Path=SelectedItem.ImageStream, Converter={StaticResource ImageConverter}}"/>
+				</Border>
+				<Grid Grid.Column="1" Margin="0" Grid.Row="1">
+					<Grid.RowDefinitions>
+						<RowDefinition Height="0.504*"/>
+						<RowDefinition Height="0.496*"/>
+					</Grid.RowDefinitions>
+					<Button x:Name="btnUpload" Content="Upload" commands:Click.Command="{Binding CommandClick}" commands:Click.CommandParameter="Upload" HorizontalAlignment="Right" Margin="0,8,8,20" Width="93"/>
+					<Button x:Name="btnBrowse" Content="Browse" commands:Click.Command="{Binding CommandClick}" commands:Click.CommandParameter="Browse" HorizontalAlignment="Right" Margin="0,8,105,20" Width="93"/>
+				</Grid>
+			</Grid>
+		</Border>
+	</Grid>
+</sdk:Page>

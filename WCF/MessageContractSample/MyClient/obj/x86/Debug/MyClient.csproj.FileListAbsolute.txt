@@ -1,0 +1,6 @@
+D:\Visual Studio Projects\WCF\MessageContractSample\MyClient\bin\Debug\MyClient.exe
+D:\Visual Studio Projects\WCF\MessageContractSample\MyClient\bin\Debug\MyClient.pdb
+D:\Visual Studio Projects\WCF\MessageContractSample\MyClient\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Visual Studio Projects\WCF\MessageContractSample\MyClient\obj\x86\Debug\MyClient.exe
+D:\Visual Studio Projects\WCF\MessageContractSample\MyClient\obj\x86\Debug\MyClient.pdb
+D:\Visual Studio Projects\WCF\MessageContractSample\MyClient\bin\Debug\MyClient.exe.config

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<item id="1" parent_id="0" state="open">
+		<content>
+			<name>GridView</name>
+		</content>
+	</item>
+	<item id="2" parent_id="1">
+		<content>
+			<name>GridA</name>
+		</content>
+	</item>  
+	<item id="3" parent_id="1" title="My name is child 2">
+		<content>
+			<name>GridB</name>
+		</content>
+	</item> 
+</root>

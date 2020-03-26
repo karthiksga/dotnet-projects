@@ -1,0 +1,11 @@
+D:\Visual Studio Projects\ResizeImageApp\ResizeImageApp\bin\Debug\ResizeImageApp.exe
+D:\Visual Studio Projects\ResizeImageApp\ResizeImageApp\bin\Debug\ResizeImageApp.pdb
+D:\Visual Studio Projects\ResizeImageApp\ResizeImageApp\obj\x86\Debug\ResizeImageApp.exe
+D:\Visual Studio Projects\ResizeImageApp\ResizeImageApp\obj\x86\Debug\ResizeImageApp.pdb
+D:\Visual Studio Projects\ResizeImageApp\ResizeImageApp\bin\Debug\System.Windows.dll
+D:\Visual Studio Projects\ResizeImageApp\ResizeImageApp\bin\Debug\System.Net.dll
+D:\Visual Studio Projects\ResizeImageApp\ResizeImageApp\bin\Debug\System.Runtime.Serialization.dll
+D:\Visual Studio Projects\ResizeImageApp\ResizeImageApp\bin\Debug\System.Windows.xml
+D:\Visual Studio Projects\ResizeImageApp\ResizeImageApp\bin\Debug\System.Net.xml
+D:\Visual Studio Projects\ResizeImageApp\ResizeImageApp\bin\Debug\System.Runtime.Serialization.xml
+D:\Visual Studio Projects\ResizeImageApp\ResizeImageApp\obj\x86\Debug\ResizeImageApp.csprojResolveAssemblyReference.cache

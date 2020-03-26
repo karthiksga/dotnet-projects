@@ -1,0 +1,157 @@
+﻿<ResourceDictionary 
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    xmlns:ed="http://schemas.microsoft.com/expression/2010/drawing" 
+    mc:Ignorable="d">
+    <Storyboard x:Key="Spinning" RepeatBehavior="Forever" >
+        <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="textBlock">
+            <EasingDoubleKeyFrame KeyTime="0" Value="-357"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:1.333" Value="0"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:1.444" Value="0"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:1.556" Value="5"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:1.667" Value="10"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:1.778" Value="15"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:1.889" Value="20"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:2" Value="25"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:2.111" Value="30"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:2.222" Value="35"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:2.333" Value="40"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:2.444" Value="355"/>
+        </DoubleAnimationUsingKeyFrames>
+        <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="textBlock1">
+            <EasingDoubleKeyFrame KeyTime="0" Value="-357"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:1.222" Value="0"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:1.333" Value="5"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:1.444" Value="10"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:1.556" Value="15"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:1.667" Value="20"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:1.778" Value="25"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:1.889" Value="30"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:2" Value="35"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:2.111" Value="40"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:2.222" Value="45"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:2.333" Value="355"/>
+        </DoubleAnimationUsingKeyFrames>
+        <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="textBlock2">
+            <EasingDoubleKeyFrame KeyTime="0" Value="-357"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:1.111" Value="0"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:1.222" Value="5"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:1.333" Value="10"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:1.444" Value="15"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:1.556" Value="20"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:1.667" Value="25"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:1.778" Value="30"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:1.889" Value="35"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:2" Value="40"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:2.111" Value="45"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:2.222" Value="355"/>
+        </DoubleAnimationUsingKeyFrames>
+        <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="textBlock3">
+            <EasingDoubleKeyFrame KeyTime="0" Value="-357"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:1.111" Value="5"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:1.222" Value="10"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:1.333" Value="15"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:1.444" Value="25"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:1.556" Value="30"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:1.667" Value="35"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:1.778" Value="40"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:1.889" Value="45"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:2" Value="50"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:2.111" Value="355"/>
+        </DoubleAnimationUsingKeyFrames>
+        <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="textBlock4">
+            <EasingDoubleKeyFrame KeyTime="0" Value="-357"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:0.889" Value="0"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:1" Value="5"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:1.111" Value="10"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:1.222" Value="15"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:1.333" Value="20"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:1.444" Value="25"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:1.556" Value="30"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:1.667" Value="35"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:1.778" Value="40"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:1.889" Value="45"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:2" Value="355"/>
+        </DoubleAnimationUsingKeyFrames>
+        <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="textBlock5">
+            <EasingDoubleKeyFrame KeyTime="0" Value="-357"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:0.778" Value="0"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:0.889" Value="5"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:1" Value="10"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:1.111" Value="15"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:1.222" Value="20"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:1.333" Value="25"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:1.444" Value="30"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:1.556" Value="35"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:1.667" Value="40"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:1.778" Value="45"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:1.889" Value="355"/>
+        </DoubleAnimationUsingKeyFrames>
+        <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="textBlock6">
+            <EasingDoubleKeyFrame KeyTime="0" Value="-357"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:0.667" Value="0"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:0.778" Value="5"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:0.889" Value="10"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:1" Value="15"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:1.111" Value="20"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:1.222" Value="25"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:1.333" Value="30"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:1.444" Value="35"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:1.556" Value="40"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:1.667" Value="45"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:1.778" Value="355"/>
+        </DoubleAnimationUsingKeyFrames>
+        <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="textBlock7">
+            <EasingDoubleKeyFrame KeyTime="0" Value="-357"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:0.556" Value="0"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:0.667" Value="5"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:0.778" Value="10"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:0.889" Value="15"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:1" Value="20"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:1.111" Value="25"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:1.222" Value="30"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:1.333" Value="35"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:1.444" Value="40"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:1.556" Value="45"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:1.667" Value="355"/>
+        </DoubleAnimationUsingKeyFrames>
+        <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="textBlock8">
+            <EasingDoubleKeyFrame KeyTime="0" Value="-357"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:0.444" Value="0"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:0.556" Value="5"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:0.667" Value="10"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:0.778" Value="15"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:0.889" Value="20"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:1" Value="25"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:1.111" Value="30"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:1.222" Value="35"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:1.333" Value="40"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:1.444" Value="45"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:1.556" Value="355"/>
+        </DoubleAnimationUsingKeyFrames>
+        <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)" Storyboard.TargetName="textBlock9">
+            <EasingDoubleKeyFrame KeyTime="0" Value="-357"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:0.333" Value="0"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:0.444" Value="5"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:0.556" Value="10"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:0.667" Value="15"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:0.778" Value="20"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:0.889" Value="25"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:1" Value="30"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:1.111" Value="35"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:1.222" Value="40"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:1.333" Value="45"/>
+            <EasingDoubleKeyFrame KeyTime="0:0:1.444" Value="355"/>
+        </DoubleAnimationUsingKeyFrames>
+        <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="stackPanel">
+            <DiscreteObjectKeyFrame KeyTime="0">
+                <DiscreteObjectKeyFrame.Value>
+                    <Visibility>Visible</Visibility>
+                </DiscreteObjectKeyFrame.Value>
+            </DiscreteObjectKeyFrame>
+        </ObjectAnimationUsingKeyFrames>
+    </Storyboard>
+</ResourceDictionary>

@@ -1,0 +1,28 @@
+﻿<configuration>
+    <system.serviceModel>        
+        <bindings>
+            <basicHttpBinding>
+                <binding name="BasicHttpBinding_IService" closeTimeout="00:20:00"
+                    openTimeout="00:20:00" receiveTimeout="00:19:00" sendTimeout="00:20:00"
+                    maxBufferSize="2147483647" maxReceivedMessageSize="2147483647">
+                    <security mode="None" />
+                </binding>
+            </basicHttpBinding>
+            <customBinding>
+                <binding name="NetTcpBinding_IService" closeTimeout="00:20:00"
+                    openTimeout="00:20:00" receiveTimeout="00:19:00" sendTimeout="00:20:00">
+                    <binaryMessageEncoding />
+                    <tcpTransport maxReceivedMessageSize="2147483647" maxBufferSize="2147483647" />
+                </binding>
+            </customBinding>
+        </bindings>
+        <client>
+            <!--<endpoint address="net.tcp://karthiksg-pc:4502/WcfService1/Service.svc"
+                binding="customBinding" bindingConfiguration="NetTcpBinding_IService"
+                contract="MaFamilleService.IService" name="NetTcpBinding_IService" />-->
+            <endpoint address="http://localhost/WcfService1/Service.svc"
+                binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_IService"
+                contract="MaFamilleService.IService" name="BasicHttpBinding_IService" />
+        </client>        
+    </system.serviceModel>    
+</configuration>

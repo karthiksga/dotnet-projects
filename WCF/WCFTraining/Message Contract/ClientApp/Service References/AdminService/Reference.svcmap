@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="ae9eb85c-f2eb-46db-b3d8-b6353d64f594" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8002" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="item.xsd" MetadataType="Schema" ID="379b6c58-ce42-4bb3-aad5-864324e3539f" SourceId="1" SourceUrl="http://localhost:8002/?xsd=xsd1" />
+    <MetadataFile FileName="item.disco" MetadataType="Disco" ID="004cf163-a636-4491-9b1e-8eeb30b40c56" SourceId="1" SourceUrl="http://localhost:8002/?disco" />
+    <MetadataFile FileName="AdminService.wsdl" MetadataType="Wsdl" ID="406495dc-e2c2-4dfc-b3ee-5312036b57ef" SourceId="1" SourceUrl="http://localhost:8002/?wsdl" />
+    <MetadataFile FileName="item1.xsd" MetadataType="Schema" ID="cb893a53-7f3c-4648-945e-78955a8f894e" SourceId="1" SourceUrl="http://localhost:8002/?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

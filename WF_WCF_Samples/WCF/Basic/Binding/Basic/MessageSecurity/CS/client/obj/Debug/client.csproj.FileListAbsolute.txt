@@ -1,0 +1,6 @@
+D:\Visual Studio Projects\WF_WCF_Samples\WCF\Basic\Binding\Basic\MessageSecurity\CS\client\bin\client.exe.config
+D:\Visual Studio Projects\WF_WCF_Samples\WCF\Basic\Binding\Basic\MessageSecurity\CS\client\bin\client.exe
+D:\Visual Studio Projects\WF_WCF_Samples\WCF\Basic\Binding\Basic\MessageSecurity\CS\client\bin\client.pdb
+D:\Visual Studio Projects\WF_WCF_Samples\WCF\Basic\Binding\Basic\MessageSecurity\CS\client\obj\Debug\ResolveAssemblyReference.cache
+D:\Visual Studio Projects\WF_WCF_Samples\WCF\Basic\Binding\Basic\MessageSecurity\CS\client\obj\Debug\client.exe
+D:\Visual Studio Projects\WF_WCF_Samples\WCF\Basic\Binding\Basic\MessageSecurity\CS\client\obj\Debug\client.pdb

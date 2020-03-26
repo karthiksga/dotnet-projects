@@ -1,0 +1,4 @@
+D:\Visual Studio Projects\Silverlight Samples\MaFamille\MaFamille.Web\bin\MaFamille.Web.dll
+D:\Visual Studio Projects\Silverlight Samples\MaFamille\MaFamille.Web\bin\MaFamille.Web.pdb
+D:\Visual Studio Projects\Silverlight Samples\MaFamille\MaFamille.Web\obj\Debug\MaFamille.Web.dll
+D:\Visual Studio Projects\Silverlight Samples\MaFamille\MaFamille.Web\obj\Debug\MaFamille.Web.pdb

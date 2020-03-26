@@ -1,0 +1,7 @@
+[Version]
+1=#P0#=2008	.
+[History]
+1=#P0#=ce	#P1#=gvCustomers_RowDataBound	#P2#=GridView|gvCustomers_RowDataBound	#P3#=GridView.gvCustomers_RowDataBound(object,GridViewRowEventArgs)	#P4#=	#P5#=F:\Visual Studio Projects\ASP.NET\Sample\|GridView.aspx.cs	#P6#=96	#P7#=20090711112319	#P8#=False	#P9#=gvCustomers_RowDataBound   [GridView.aspx.cs]	#P10#=8	.
+2=#P0#=ce	#P1#=Page_Load	#P2#=GridView|Page_Load	#P3#=GridView.Page_Load(object,EventArgs)	#P4#=	#P5#=F:\Visual Studio Projects\ASP.NET\Sample\|GridView.aspx.cs	#P6#=96	#P7#=20090711112146	#P8#=False	#P9#=Page_Load   [GridView.aspx.cs]	#P10#=2	.
+3=#P0#=ce	#P1#=LastName	#P2#=Employee|LastName	#P3#=LastName	#P4#=	#P5#=F:\Visual Studio Projects\ASP.NET\Sample\|App_Code|Employee.cs	#P6#=75	#P7#=20090711111333	#P8#=False	#P9#=LastName (get, set)   [Employee.cs]	#P10#=0	.
+4=#P0#=ce	#P1#=Profession	#P2#=Employee|Profession	#P3#=Profession	#P4#=	#P5#=F:\Visual Studio Projects\ASP.NET\Sample\|App_Code|Employee.cs	#P6#=75	#P7#=20090711111318	#P8#=False	#P9#=Profession (get, set)   [Employee.cs]	#P10#=0	.

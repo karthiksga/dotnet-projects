@@ -1,0 +1,344 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FBD150B3-E936-4E01-9F1B-9F02E56A3FA8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>APRESS.TimeTracker</RootNamespace>
+    <AssemblyName>APRESS.TimeTracker</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper">
+      <HintPath>..\packages\AutoMapper.2.0.0\lib\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\Program Files\Microsoft Unity Application Block 2.1\Bin\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity, Version=2.1.505.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\Program Files\Microsoft Unity Application Block 2.1\Bin\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration, Version=2.1.505.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>F:\Program Files\Microsoft Unity Application Block 2.1\Bin\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="Services\IDialogService.cs" />
+    <Compile Include="Services\INavigationService.cs" />
+    <Compile Include="ViewModels\BaseDetailsViewModel.cs" />
+    <Compile Include="ViewModels\BaseListViewModel.cs" />
+    <Compile Include="ViewModels\BaseViewModel.cs" />
+    <Compile Include="ViewModels\ObservableObject.cs" />
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Resources\BasicControlsDictionary.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources\BigImagesDictionary.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources\CustomControlsDictionary.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources\SmallImagesDictionary.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\APRESS.TimeTracker.BusinessLayer\APRESS.TimeTracker.BusinessLayer.csproj">
+      <Project>{8F0E6DE3-9B26-4DAF-A169-9836D869C196}</Project>
+      <Name>APRESS.TimeTracker.BusinessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\APRESS.TimeTracker.DataLayer\APRESS.TimeTracker.DataLayer.csproj">
+      <Project>{40D3E752-4896-4B04-ACEC-D5EC76758109}</Project>
+      <Name>APRESS.TimeTracker.DataLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\APRESS.TimeTracker.ServiceLayer\APRESS.TimeTracker.ServiceLayer.csproj">
+      <Project>{977DB0A0-3AF0-420E-9A27-059F6A240B1E}</Project>
+      <Name>APRESS.TimeTracker.ServiceLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Utilities\" />
+    <Folder Include="Views\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\activity_monitor.png" />
+    <Resource Include="Resources\Images\activity_monitor_add.png" />
+    <Resource Include="Resources\Images\activity_monitor_chart.png" />
+    <Resource Include="Resources\Images\activity_monitor_close.png" />
+    <Resource Include="Resources\Images\activity_monitor_warning.png" />
+    <Resource Include="Resources\Images\error_button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\Big\address_book_32.png" />
+    <Resource Include="Resources\Images\Big\address_book_add_32.png" />
+    <Resource Include="Resources\Images\Big\address_book_close_32.png" />
+    <Resource Include="Resources\Images\Big\address_book_search_32.png" />
+    <Resource Include="Resources\Images\Big\address_book_warning_32.png" />
+    <Resource Include="Resources\Images\Big\add_32.png" />
+    <Resource Include="Resources\Images\Big\arrow_down_32.png" />
+    <Resource Include="Resources\Images\Big\arrow_left_32.png" />
+    <Resource Include="Resources\Images\Big\arrow_right_32.png" />
+    <Resource Include="Resources\Images\Big\arrow_up_32.png" />
+    <Resource Include="Resources\Images\Big\basket_32.png" />
+    <Resource Include="Resources\Images\Big\basket_add_32.png" />
+    <Resource Include="Resources\Images\Big\basket_back_32.png" />
+    <Resource Include="Resources\Images\Big\basket_chart_32.png" />
+    <Resource Include="Resources\Images\Big\basket_close_32.png" />
+    <Resource Include="Resources\Images\Big\basket_go_32.png" />
+    <Resource Include="Resources\Images\Big\basket_search_32.png" />
+    <Resource Include="Resources\Images\Big\blue_arrow_down_32.png" />
+    <Resource Include="Resources\Images\Big\blue_arrow_left_32.png" />
+    <Resource Include="Resources\Images\Big\blue_arrow_right_32.png" />
+    <Resource Include="Resources\Images\Big\blue_arrow_up_32.png" />
+    <Resource Include="Resources\Images\Big\book_32.png" />
+    <Resource Include="Resources\Images\Big\book_add_32.png" />
+    <Resource Include="Resources\Images\Big\book_bookmarks_32.png" />
+    <Resource Include="Resources\Images\Big\book_close_32.png" />
+    <Resource Include="Resources\Images\Big\book_search_32.png" />
+    <Resource Include="Resources\Images\Big\book_warning_32.png" />
+    <Resource Include="Resources\Images\Big\camera_32.png" />
+    <Resource Include="Resources\Images\Big\camera_add_32.png" />
+    <Resource Include="Resources\Images\Big\camera_close_32.png" />
+    <Resource Include="Resources\Images\Big\chart_32.png" />
+    <Resource Include="Resources\Images\Big\chart_flipped_32.png" />
+    <Resource Include="Resources\Images\Big\clock_32.png" />
+    <Resource Include="Resources\Images\Big\close_32.png" />
+    <Resource Include="Resources\Images\Big\comment_32.png" />
+    <Resource Include="Resources\Images\Big\comment_add_32.png" />
+    <Resource Include="Resources\Images\Big\comment_page_32.png" />
+    <Resource Include="Resources\Images\Big\comment_user_32.png" />
+    <Resource Include="Resources\Images\Big\comment_user_add_32.png" />
+    <Resource Include="Resources\Images\Big\comment_user_chart_32.png" />
+    <Resource Include="Resources\Images\Big\comment_user_close_32.png" />
+    <Resource Include="Resources\Images\Big\comment_user_info_32.png" />
+    <Resource Include="Resources\Images\Big\comment_user_page_32.png" />
+    <Resource Include="Resources\Images\Big\comment_user_rss_32.png" />
+    <Resource Include="Resources\Images\Big\comment_user_search_32.png" />
+    <Resource Include="Resources\Images\Big\comment_user_warning_32.png" />
+    <Resource Include="Resources\Images\Big\database_32.png" />
+    <Resource Include="Resources\Images\Big\database_add_32.png" />
+    <Resource Include="Resources\Images\Big\database_chart_32.png" />
+    <Resource Include="Resources\Images\Big\database_close_32.png" />
+    <Resource Include="Resources\Images\Big\database_page_32.png" />
+    <Resource Include="Resources\Images\Big\database_search_32.png" />
+    <Resource Include="Resources\Images\Big\database_warning_32.png" />
+    <Resource Include="Resources\Images\Big\email_32.png" />
+    <Resource Include="Resources\Images\Big\email_add_32.png" />
+    <Resource Include="Resources\Images\Big\email_close_32.png" />
+    <Resource Include="Resources\Images\Big\email_forward_32.png" />
+    <Resource Include="Resources\Images\Big\email_reply_32.png" />
+    <Resource Include="Resources\Images\Big\email_reply_all_32.png" />
+    <Resource Include="Resources\Images\Big\folder_32.png" />
+    <Resource Include="Resources\Images\Big\folder_add_32.png" />
+    <Resource Include="Resources\Images\Big\folder_chart_32.png" />
+    <Resource Include="Resources\Images\Big\folder_close_32.png" />
+    <Resource Include="Resources\Images\Big\folder_page_32.png" />
+    <Resource Include="Resources\Images\Big\folder_search_32.png" />
+    <Resource Include="Resources\Images\Big\folder_warning_32.png" />
+    <Resource Include="Resources\Images\Big\hammer_32.png" />
+    <Resource Include="Resources\Images\Big\heart_32.png" />
+    <Resource Include="Resources\Images\Big\home_32.png" />
+    <Resource Include="Resources\Images\Big\home_back_32.png" />
+    <Resource Include="Resources\Images\Big\home_go_32.png" />
+    <Resource Include="Resources\Images\Big\info_button_32.png" />
+    <Resource Include="Resources\Images\Big\lightbulb_32.png" />
+    <Resource Include="Resources\Images\Big\lightbulb_off_32.png" />
+    <Resource Include="Resources\Images\Big\lock_32.png" />
+    <Resource Include="Resources\Images\Big\lock_open_32.png" />
+    <Resource Include="Resources\Images\Big\newspaper_32.png" />
+    <Resource Include="Resources\Images\Big\newspaper_add_32.png" />
+    <Resource Include="Resources\Images\Big\newspaper_close_32.png" />
+    <Resource Include="Resources\Images\Big\newspaper_info_32.png" />
+    <Resource Include="Resources\Images\Big\newspaper_rss_32.png" />
+    <Resource Include="Resources\Images\Big\newspaper_search_32.png" />
+    <Resource Include="Resources\Images\Big\page_blank_32.png" />
+    <Resource Include="Resources\Images\Big\page_blank_add_32.png" />
+    <Resource Include="Resources\Images\Big\page_blank_chart_32.png" />
+    <Resource Include="Resources\Images\Big\page_blank_close_32.png" />
+    <Resource Include="Resources\Images\Big\page_blank_warning_32.png" />
+    <Resource Include="Resources\Images\Big\page_table_32.png" />
+    <Resource Include="Resources\Images\Big\page_table_add_32.png" />
+    <Resource Include="Resources\Images\Big\page_table_chart_32.png" />
+    <Resource Include="Resources\Images\Big\page_table_close_32.png" />
+    <Resource Include="Resources\Images\Big\page_table_warning_32.png" />
+    <Resource Include="Resources\Images\Big\page_text_32.png" />
+    <Resource Include="Resources\Images\Big\page_text_add_32.png" />
+    <Resource Include="Resources\Images\Big\page_text_chart_32.png" />
+    <Resource Include="Resources\Images\Big\page_text_close_32.png" />
+    <Resource Include="Resources\Images\Big\page_text_warning_32.png" />
+    <Resource Include="Resources\Images\Big\pencil_32.png" />
+    <Resource Include="Resources\Images\Big\rss_32.png" />
+    <Resource Include="Resources\Images\Big\save_32.png" />
+    <Resource Include="Resources\Images\Big\save_download_32.png" />
+    <Resource Include="Resources\Images\Big\save_upload_32.png" />
+    <Resource Include="Resources\Images\Big\screen_32.png" />
+    <Resource Include="Resources\Images\Big\screen_off_32.png" />
+    <Resource Include="Resources\Images\Big\screwdriver_32.png" />
+    <Resource Include="Resources\Images\Big\search_32.png" />
+    <Resource Include="Resources\Images\Big\search_button_32.png" />
+    <Resource Include="Resources\Images\Big\search_button_green_32.png" />
+    <Resource Include="Resources\Images\Big\search_chart_32.png" />
+    <Resource Include="Resources\Images\Big\search_warning_32.png" />
+    <Resource Include="Resources\Images\Big\star_32.png" />
+    <Resource Include="Resources\Images\Big\star_off_32.png" />
+    <Resource Include="Resources\Images\Big\tools_32.png" />
+    <Resource Include="Resources\Images\Big\twitter_32.png" />
+    <Resource Include="Resources\Images\Big\users_32.png" />
+    <Resource Include="Resources\Images\Big\users_business_32.png" />
+    <Resource Include="Resources\Images\Big\user_32.png" />
+    <Resource Include="Resources\Images\Big\user_add_32.png" />
+    <Resource Include="Resources\Images\Big\user_blue_32.png" />
+    <Resource Include="Resources\Images\Big\user_business_32.png" />
+    <Resource Include="Resources\Images\Big\user_business_add_32.png" />
+    <Resource Include="Resources\Images\Big\user_business_chart_32.png" />
+    <Resource Include="Resources\Images\Big\user_business_close_32.png" />
+    <Resource Include="Resources\Images\Big\user_business_info_32.png" />
+    <Resource Include="Resources\Images\Big\user_business_rss_32.png" />
+    <Resource Include="Resources\Images\Big\user_business_search_32.png" />
+    <Resource Include="Resources\Images\Big\user_business_twitter_32.png" />
+    <Resource Include="Resources\Images\Big\user_business_warning_32.png" />
+    <Resource Include="Resources\Images\Big\user_close_32.png" />
+    <Resource Include="Resources\Images\Big\user_info_32.png" />
+    <Resource Include="Resources\Images\Big\user_rss_32.png" />
+    <Resource Include="Resources\Images\Big\user_search_32.png" />
+    <Resource Include="Resources\Images\Big\user_twitter_32.png" />
+    <Resource Include="Resources\Images\Big\user_warning_32.png" />
+    <Resource Include="Resources\Images\Big\warning_32.png" />
+    <Resource Include="Resources\Images\Big\web_layout_32.png" />
+    <Resource Include="Resources\Images\Big\web_layout_chart_32.png" />
+    <Resource Include="Resources\Images\Big\web_layout_error_32.png" />
+    <Resource Include="Resources\Images\Big\web_layout_error_32_add.png" />
+    <Resource Include="Resources\Images\Big\web_layout_error_32_close.png" />
+    <Resource Include="Resources\Images\Big\web_layout_info_32.png" />
+    <Resource Include="Resources\Images\Big\web_layout_rss_32.png" />
+    <Resource Include="Resources\Images\Big\web_layout_search_32.png" />
+    <Resource Include="Resources\Images\Big\web_layout_twitter_32.png" />
+    <Resource Include="Resources\Images\Big\window_app_32.png" />
+    <Resource Include="Resources\Images\Big\window_app_blank_32.png" />
+    <Resource Include="Resources\Images\Big\window_app_list_32.png" />
+    <Resource Include="Resources\Images\Big\window_app_list_add_32.png" />
+    <Resource Include="Resources\Images\Big\window_app_list_chart_32.png" />
+    <Resource Include="Resources\Images\Big\window_app_list_close_32.png" />
+    <Resource Include="Resources\Images\Big\window_app_list_error_32.png" />
+    <Resource Include="Resources\Images\Big\window_app_list_info_32.png" />
+    <Resource Include="Resources\Images\Big\window_app_list_search_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\Small\add_16.png" />
+    <Resource Include="Resources\Images\Small\arrow_down_16.png" />
+    <Resource Include="Resources\Images\Small\arrow_left_16.png" />
+    <Resource Include="Resources\Images\Small\arrow_right_16.png" />
+    <Resource Include="Resources\Images\Small\arrow_up_16.png" />
+    <Resource Include="Resources\Images\Small\chart_16.png" />
+    <Resource Include="Resources\Images\Small\chart_flipped_16.png" />
+    <Resource Include="Resources\Images\Small\close_16.png" />
+    <Resource Include="Resources\Images\Small\error_button_16.png" />
+    <Resource Include="Resources\Images\Small\heart_16.png" />
+    <Resource Include="Resources\Images\Small\info_button_16.png" />
+    <Resource Include="Resources\Images\Small\page_16.png" />
+    <Resource Include="Resources\Images\Small\rss_16.png" />
+    <Resource Include="Resources\Images\Small\search_button_16.png" />
+    <Resource Include="Resources\Images\Small\search_button_green_16.png" />
+    <Resource Include="Resources\Images\Small\star_16.png" />
+    <Resource Include="Resources\Images\Small\star_off16.png" />
+    <Resource Include="Resources\Images\Small\twitter_16.png" />
+    <Resource Include="Resources\Images\Small\warning_16.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

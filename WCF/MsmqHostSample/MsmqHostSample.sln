@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MsmqHostSample", "MsmqHostSample\MsmqHostSample.csproj", "{59341CEB-C937-4E31-B272-FC3775ECEDAD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MsmqClientSample", "MsmqClientSample\MsmqClientSample.csproj", "{8D3294EA-D242-4EB4-A70F-480A403EABA3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{59341CEB-C937-4E31-B272-FC3775ECEDAD}.Debug|x86.ActiveCfg = Debug|x86
+		{59341CEB-C937-4E31-B272-FC3775ECEDAD}.Debug|x86.Build.0 = Debug|x86
+		{59341CEB-C937-4E31-B272-FC3775ECEDAD}.Release|x86.ActiveCfg = Release|x86
+		{59341CEB-C937-4E31-B272-FC3775ECEDAD}.Release|x86.Build.0 = Release|x86
+		{8D3294EA-D242-4EB4-A70F-480A403EABA3}.Debug|x86.ActiveCfg = Debug|x86
+		{8D3294EA-D242-4EB4-A70F-480A403EABA3}.Debug|x86.Build.0 = Debug|x86
+		{8D3294EA-D242-4EB4-A70F-480A403EABA3}.Release|x86.ActiveCfg = Release|x86
+		{8D3294EA-D242-4EB4-A70F-480A403EABA3}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

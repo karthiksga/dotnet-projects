@@ -1,0 +1,18 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk"
+    xmlns:prism="http://www.codeplex.com/prism"
+	mc:Ignorable="d"    
+	x:Class="MaFamille1.CanvasScreen"
+    xmlns:fw="clr-namespace:SilverlightControls;assembly=SilverlightControls"
+	d:DesignWidth="640" d:DesignHeight="480">    
+	<Grid x:Name="LayoutRoot">
+        <!--<fw:WindowHost Name="host">            
+        </fw:WindowHost>-->        
+        <ContentControl x:Name="ctntMain" HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch" VerticalAlignment="Stretch" VerticalContentAlignment="Stretch" prism:RegionManager.RegionName="ContentRegion"/>
+        <ContentControl x:Name="ctntTaskBar" HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch" VerticalAlignment="Stretch" VerticalContentAlignment="Stretch" prism:RegionManager.RegionName="TaskBarRegion" />        
+	</Grid>
+</UserControl>

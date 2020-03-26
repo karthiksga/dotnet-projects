@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="WCFService">
+</Property><Property Name="Solution File" Value="E:\Visual Studio Projects\WCF\WCFExample\WCFExample\WCFService.sln">
+</Property><Property Name="Date" Value="Saturday, February 25, 2012">
+</Property><Property Name="Time" Value="13:53 PM">
+</Property></Properties><Event ErrorLevel="0" Project="WCFService" Source="WCFService\WCFService.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="WCFService" Source="WCFService\WCFService.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="WCFServiceLibrary" Source="WCFServiceLibrary\WCFServiceLibrary.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="WCFServiceLibrary" Source="WCFServiceLibrary\WCFServiceLibrary.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="WCFClient" Source="WCFClient\WCFClient.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="WCFClient" Source="WCFClient\WCFClient.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="WCFService.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="WCFService.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="WCFService" Source="WCFService\WCFService.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="WCFServiceLibrary" Source="WCFServiceLibrary\WCFServiceLibrary.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="WCFClient" Source="WCFClient\WCFClient.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

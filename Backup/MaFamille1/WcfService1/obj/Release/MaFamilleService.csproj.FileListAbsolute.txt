@@ -1,0 +1,4 @@
+D:\Visual Studio Projects\Backup\MaFamille1\WcfService1\bin\WcfService1.dll
+D:\Visual Studio Projects\Backup\MaFamille1\WcfService1\bin\WcfService1.pdb
+D:\Visual Studio Projects\Backup\MaFamille1\WcfService1\obj\Release\WcfService1.dll
+D:\Visual Studio Projects\Backup\MaFamille1\WcfService1\obj\Release\WcfService1.pdb

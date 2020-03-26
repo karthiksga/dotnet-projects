@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<bridge namespace="MyServices4" className="AmazonService4">
+    <proxy type="CustomComponents3.AmazonService4, App_Code"/>
+    <method name="Search">
+        <input>
+            <parameter name="pageIndex" />
+            <parameter name="searchQuery" />
+        </input>
+        <transforms>
+            <transform type="CustomComponents3.XmlBridgeTransformer"/>
+            <transform type="CustomComponents3.XsltBridgeTransformer">
+                <data>
+                    <attribute name="stylesheetFile"
+                    value="MyFile.xsl"/>
+                </data>
+            </transform>
+        </transforms>
+    </method>
+</bridge>

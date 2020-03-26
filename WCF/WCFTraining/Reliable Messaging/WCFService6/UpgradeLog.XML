@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="WCFService6">
+</Property><Property Name="Solution File" Value="D:\Visual Studio Projects\WCF\WCFTraining\Reliable Messaging\WCFService6\WCFService6.sln">
+</Property><Property Name="Date" Value="Wednesday, August 22, 2012">
+</Property><Property Name="Time" Value="9:40 AM">
+</Property></Properties><Event ErrorLevel="0" Project="WindowsFormsApplication1" Source="WindowsFormsApplication1\WindowsFormsApplication1.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="WindowsFormsApplication1" Source="WindowsFormsApplication1\WindowsFormsApplication1.csproj" Description="Converted">
+</Event><Event ErrorLevel="2" Project="WCFService6" Source="E:\WCFService6\" Description="Unable to open the Web site 'E:\WCFService6'.  The Web site 'E:\WCFService6' does not exist.">
+</Event><Event ErrorLevel="0" Project="" Source="WCFService6.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="WCFService6.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="WindowsFormsApplication1" Source="WindowsFormsApplication1\WindowsFormsApplication1.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

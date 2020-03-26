@@ -1,0 +1,6 @@
+D:\Visual Studio Projects\WCF\WCFTraining\ClientsAndServices\ServiceLib\bin\Debug\ServiceLib.dll.config
+D:\Visual Studio Projects\WCF\WCFTraining\ClientsAndServices\ServiceLib\bin\Debug\ServiceLib.dll
+D:\Visual Studio Projects\WCF\WCFTraining\ClientsAndServices\ServiceLib\bin\Debug\ServiceLib.pdb
+D:\Visual Studio Projects\WCF\WCFTraining\ClientsAndServices\ServiceLib\obj\Debug\ResolveAssemblyReference.cache
+D:\Visual Studio Projects\WCF\WCFTraining\ClientsAndServices\ServiceLib\obj\Debug\ServiceLib.dll
+D:\Visual Studio Projects\WCF\WCFTraining\ClientsAndServices\ServiceLib\obj\Debug\ServiceLib.pdb

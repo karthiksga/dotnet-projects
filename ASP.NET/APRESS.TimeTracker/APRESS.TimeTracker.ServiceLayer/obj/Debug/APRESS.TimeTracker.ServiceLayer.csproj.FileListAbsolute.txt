@@ -1,0 +1,10 @@
+E:\Visual Studio Projects\APRESS.TimeTracker\APRESS.TimeTracker.ServiceLayer\bin\Debug\APRESS.TimeTracker.ServiceLayer.dll.config
+E:\Visual Studio Projects\APRESS.TimeTracker\APRESS.TimeTracker.ServiceLayer\bin\Debug\APRESS.TimeTracker.ServiceLayer.dll
+E:\Visual Studio Projects\APRESS.TimeTracker\APRESS.TimeTracker.ServiceLayer\bin\Debug\APRESS.TimeTracker.ServiceLayer.pdb
+E:\Visual Studio Projects\APRESS.TimeTracker\APRESS.TimeTracker.ServiceLayer\bin\Debug\APRESS.TimeTracker.BusinessLayer.dll
+E:\Visual Studio Projects\APRESS.TimeTracker\APRESS.TimeTracker.ServiceLayer\bin\Debug\APRESS.TimeTracker.DataLayer.dll
+E:\Visual Studio Projects\APRESS.TimeTracker\APRESS.TimeTracker.ServiceLayer\bin\Debug\APRESS.TimeTracker.BusinessLayer.pdb
+E:\Visual Studio Projects\APRESS.TimeTracker\APRESS.TimeTracker.ServiceLayer\bin\Debug\APRESS.TimeTracker.DataLayer.pdb
+E:\Visual Studio Projects\APRESS.TimeTracker\APRESS.TimeTracker.ServiceLayer\obj\Debug\ResolveAssemblyReference.cache
+E:\Visual Studio Projects\APRESS.TimeTracker\APRESS.TimeTracker.ServiceLayer\obj\Debug\APRESS.TimeTracker.ServiceLayer.dll
+E:\Visual Studio Projects\APRESS.TimeTracker\APRESS.TimeTracker.ServiceLayer\obj\Debug\APRESS.TimeTracker.ServiceLayer.pdb

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="56287e02-1c42-4d5f-ad0d-c74437ec1612" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8002/" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="HelloWorldService.wsdl" MetadataType="Wsdl" ID="debce30b-4287-4905-b900-499da9cd3aa6" SourceId="1" SourceUrl="http://localhost:8002/?wsdl" />
+    <MetadataFile FileName="item.wsdl" MetadataType="Wsdl" ID="607677ea-ac45-4b4a-88fa-fafeaccdf718" SourceId="1" SourceUrl="http://localhost:8002/?wsdl=wsdl0" />
+    <MetadataFile FileName="item.xsd" MetadataType="Schema" ID="a8a220b2-3688-425f-b5f4-00ab4840c803" SourceId="1" SourceUrl="http://localhost:8002/?xsd=xsd0" />
+    <MetadataFile FileName="item.disco" MetadataType="Disco" ID="735a66c3-65a8-4135-9d5a-5f655a9d5349" SourceId="1" SourceUrl="http://localhost:8002/?disco" />
+    <MetadataFile FileName="item1.xsd" MetadataType="Schema" ID="d23bfc9c-24cf-4ffb-84ad-f15b92cd01e2" SourceId="1" SourceUrl="http://localhost:8002/?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

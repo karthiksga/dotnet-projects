@@ -1,0 +1,7 @@
+E:\Visual Studio Projects\WCF\WCFTest\WCFBusiness\obj\Debug\ResolveAssemblyReference.cache
+E:\Visual Studio Projects\WCF\WCFTest\WCFBusiness\bin\Debug\WCFBusiness.dll
+E:\Visual Studio Projects\WCF\WCFTest\WCFBusiness\bin\Debug\WCFBusiness.pdb
+E:\Visual Studio Projects\WCF\WCFTest\WCFBusiness\obj\Debug\WCFBusiness.dll
+E:\Visual Studio Projects\WCF\WCFTest\WCFBusiness\obj\Debug\WCFBusiness.pdb
+E:\Visual Studio Projects\WCF\WCFTest\WCFBusiness\bin\Debug\WCFServiceLibrary.dll
+E:\Visual Studio Projects\WCF\WCFTest\WCFBusiness\bin\Debug\WCFServiceLibrary.pdb

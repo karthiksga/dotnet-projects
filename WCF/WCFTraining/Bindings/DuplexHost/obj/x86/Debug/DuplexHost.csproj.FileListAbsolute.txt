@@ -1,0 +1,6 @@
+D:\Visual Studio Projects\WCF\WCFTraining\Bindings\DuplexHost\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Visual Studio Projects\WCF\WCFTraining\Bindings\DuplexHost\bin\Debug\DuplexHost.exe.config
+D:\Visual Studio Projects\WCF\WCFTraining\Bindings\DuplexHost\bin\Debug\DuplexHost.exe
+D:\Visual Studio Projects\WCF\WCFTraining\Bindings\DuplexHost\bin\Debug\DuplexHost.pdb
+D:\Visual Studio Projects\WCF\WCFTraining\Bindings\DuplexHost\obj\x86\Debug\DuplexHost.exe
+D:\Visual Studio Projects\WCF\WCFTraining\Bindings\DuplexHost\obj\x86\Debug\DuplexHost.pdb

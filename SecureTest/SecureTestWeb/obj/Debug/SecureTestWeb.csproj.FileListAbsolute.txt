@@ -1,0 +1,7 @@
+D:\Visual Studio Projects\SecureTest\SecureTestWeb\bin\SecureTestWeb.dll
+D:\Visual Studio Projects\SecureTest\SecureTestWeb\bin\SecureTestWeb.pdb
+D:\Visual Studio Projects\SecureTest\SecureTestWeb\bin\SecureWorldLib.dll
+D:\Visual Studio Projects\SecureTest\SecureTestWeb\bin\SecureWorldLib.pdb
+D:\Visual Studio Projects\SecureTest\SecureTestWeb\obj\Debug\ResolveAssemblyReference.cache
+D:\Visual Studio Projects\SecureTest\SecureTestWeb\obj\Debug\SecureTestWeb.dll
+D:\Visual Studio Projects\SecureTest\SecureTestWeb\obj\Debug\SecureTestWeb.pdb

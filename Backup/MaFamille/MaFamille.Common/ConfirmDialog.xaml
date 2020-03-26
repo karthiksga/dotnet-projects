@@ -1,0 +1,27 @@
+﻿<controls:ChildWindow x:Class="MaFamille.Common.ConfirmDialog"
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:controls="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls"
+           Width="293" Height="170" 
+           Title="ConfirmDialog">
+	<controls:ChildWindow.Resources>
+		<ResourceDictionary>
+			<ResourceDictionary.MergedDictionaries>
+				<ResourceDictionary Source="ConfirmDialogStyle.xaml"/>
+			</ResourceDictionary.MergedDictionaries>
+		</ResourceDictionary>
+	</controls:ChildWindow.Resources>
+	<controls:ChildWindow.Style>
+		<StaticResource ResourceKey="ConfirmDialogWindowStyle"/>
+	</controls:ChildWindow.Style>
+    <Grid x:Name="LayoutRoot" Margin="2">
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Button x:Name="CancelButton" Content="Cancel" Click="CancelButton_Click" Width="75" Height="23" HorizontalAlignment="Right" Margin="0,12,0,0" Grid.Row="1" />
+        <Button x:Name="OKButton" Content="OK" Click="OKButton_Click" Width="75" Height="23" HorizontalAlignment="Right" Margin="0,12,79,0" Grid.Row="1" />
+        <TextBlock HorizontalAlignment="Center" TextWrapping="Wrap" Text="{Binding Message}" VerticalAlignment="Center"/>
+    </Grid>
+</controls:ChildWindow>

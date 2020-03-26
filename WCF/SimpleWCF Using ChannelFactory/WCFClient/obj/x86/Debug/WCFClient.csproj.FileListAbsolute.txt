@@ -1,0 +1,11 @@
+E:\Visual Studio Projects\WCF\SimpleWCF\WCFClient\bin\Debug\WCFClient.exe.config
+E:\Visual Studio Projects\WCF\SimpleWCF\WCFClient\bin\Debug\WCFClient.exe
+E:\Visual Studio Projects\WCF\SimpleWCF\WCFClient\bin\Debug\WCFClient.pdb
+E:\Visual Studio Projects\WCF\SimpleWCF\WCFClient\bin\Debug\WCFServiceLibrary.dll
+E:\Visual Studio Projects\WCF\SimpleWCF\WCFClient\bin\Debug\WCFServiceLibrary.pdb
+E:\Visual Studio Projects\WCF\SimpleWCF\WCFClient\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Visual Studio Projects\WCF\SimpleWCF\WCFClient\obj\x86\Debug\WCFClient.exe
+E:\Visual Studio Projects\WCF\SimpleWCF\WCFClient\obj\x86\Debug\WCFClient.pdb
+D:\Visual Studio Projects\WCF\SimpleWCF\WCFClient\bin\Debug\WCFClient.exe.config
+D:\Visual Studio Projects\WCF\SimpleWCF\WCFClient\obj\x86\Debug\WCFClient.exe
+D:\Visual Studio Projects\WCF\SimpleWCF\WCFClient\obj\x86\Debug\WCFClient.pdb

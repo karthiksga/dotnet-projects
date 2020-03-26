@@ -1,0 +1,5 @@
+F:\Visual Studio Projects\ASP.NET\SampleWebService\TestWebService\bin\TestWebService.dll
+F:\Visual Studio Projects\ASP.NET\SampleWebService\TestWebService\bin\TestWebService.pdb
+F:\Visual Studio Projects\ASP.NET\SampleWebService\TestWebService\obj\Debug\ResolveAssemblyReference.cache
+F:\Visual Studio Projects\ASP.NET\SampleWebService\TestWebService\obj\Debug\TestWebService.dll
+F:\Visual Studio Projects\ASP.NET\SampleWebService\TestWebService\obj\Debug\TestWebService.pdb

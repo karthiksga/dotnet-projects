@@ -1,0 +1,10 @@
+E:\Visual Studio Projects\WCF\WCFTestWeb\ServiceContracts\bin\Debug\ServiceContracts.dll
+E:\Visual Studio Projects\WCF\WCFTestWeb\ServiceContracts\bin\Debug\ServiceContracts.pdb
+E:\Visual Studio Projects\WCF\WCFTestWeb\ServiceContracts\obj\Debug\ResolveAssemblyReference.cache
+E:\Visual Studio Projects\WCF\WCFTestWeb\ServiceContracts\obj\Debug\ServiceContracts.dll
+E:\Visual Studio Projects\WCF\WCFTestWeb\ServiceContracts\obj\Debug\ServiceContracts.pdb
+D:\Visual Studio Projects\WCF\WCFTestWeb\ServiceContracts\bin\Debug\ServiceContracts.dll
+D:\Visual Studio Projects\WCF\WCFTestWeb\ServiceContracts\bin\Debug\ServiceContracts.pdb
+D:\Visual Studio Projects\WCF\WCFTestWeb\ServiceContracts\obj\Debug\ResolveAssemblyReference.cache
+D:\Visual Studio Projects\WCF\WCFTestWeb\ServiceContracts\obj\Debug\ServiceContracts.dll
+D:\Visual Studio Projects\WCF\WCFTestWeb\ServiceContracts\obj\Debug\ServiceContracts.pdb

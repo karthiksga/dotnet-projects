@@ -1,0 +1,6 @@
+F:\Visual Studio Projects\WCF\WCFPart1\HelloIndigo\bin\Debug\HelloIndigo.dll.config
+F:\Visual Studio Projects\WCF\WCFPart1\HelloIndigo\bin\Debug\HelloIndigo.dll
+F:\Visual Studio Projects\WCF\WCFPart1\HelloIndigo\bin\Debug\HelloIndigo.pdb
+F:\Visual Studio Projects\WCF\WCFPart1\HelloIndigo\obj\Debug\ResolveAssemblyReference.cache
+F:\Visual Studio Projects\WCF\WCFPart1\HelloIndigo\obj\Debug\HelloIndigo.dll
+F:\Visual Studio Projects\WCF\WCFPart1\HelloIndigo\obj\Debug\HelloIndigo.pdb

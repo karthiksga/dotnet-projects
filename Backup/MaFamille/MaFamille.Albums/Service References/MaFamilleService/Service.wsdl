@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost/WcfService1/Service.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost/WcfService1/Service.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/MaFamilleService.Model" />
+      <xsd:import schemaLocation="http://localhost/WcfService1/Service.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost/WcfService1/Service.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService_GetPhotos_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPhotos" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetPhotos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPhotosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetPhotos_CustomExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q1="http://schemas.datacontract.org/2004/07/MaFamilleService.Model" name="detail" element="q1:CustomException" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetPhoto_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPhoto" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetPhoto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPhotoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetPhoto_CustomExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://schemas.datacontract.org/2004/07/MaFamilleService.Model" name="detail" element="q2:CustomException" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetUploadedPhoto_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUploadedPhoto" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetUploadedPhoto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUploadedPhotoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetUploadedPhoto_CustomExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q3="http://schemas.datacontract.org/2004/07/MaFamilleService.Model" name="detail" element="q3:CustomException" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetThumbnailPhoto_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetThumbnailPhoto" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetThumbnailPhoto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetThumbnailPhotoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetAlbums_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAlbums" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetAlbums_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAlbumsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetAlbums_CustomExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q4="http://schemas.datacontract.org/2004/07/MaFamilleService.Model" name="detail" element="q4:CustomException" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetWeddingAlbums_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetWeddingAlbums" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetWeddingAlbums_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetWeddingAlbumsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetWeddingAlbums_CustomExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q5="http://schemas.datacontract.org/2004/07/MaFamilleService.Model" name="detail" element="q5:CustomException" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetDefaultAlbumImage_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDefaultAlbumImage" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetDefaultAlbumImage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDefaultAlbumImageResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetDefaultAlbumImage_CustomExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q6="http://schemas.datacontract.org/2004/07/MaFamilleService.Model" name="detail" element="q6:CustomException" />
+  </wsdl:message>
+  <wsdl:message name="IService_UploadPhoto_InputMessage">
+    <wsdl:part name="parameters" element="tns:UploadPhoto" />
+  </wsdl:message>
+  <wsdl:message name="IService_UploadPhoto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UploadPhotoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_UploadPhoto_CustomExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q7="http://schemas.datacontract.org/2004/07/MaFamilleService.Model" name="detail" element="q7:CustomException" />
+  </wsdl:message>
+  <wsdl:message name="IService_RemovePhoto_InputMessage">
+    <wsdl:part name="parameters" element="tns:RemovePhoto" />
+  </wsdl:message>
+  <wsdl:message name="IService_RemovePhoto_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RemovePhotoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_RemovePhoto_CustomExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q8="http://schemas.datacontract.org/2004/07/MaFamilleService.Model" name="detail" element="q8:CustomException" />
+  </wsdl:message>
+  <wsdl:message name="IService_IsFileExists_InputMessage">
+    <wsdl:part name="parameters" element="tns:IsFileExists" />
+  </wsdl:message>
+  <wsdl:message name="IService_IsFileExists_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IsFileExistsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_IsFileExists_CustomExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q9="http://schemas.datacontract.org/2004/07/MaFamilleService.Model" name="detail" element="q9:CustomException" />
+  </wsdl:message>
+  <wsdl:message name="IService_IsAlbumExists_InputMessage">
+    <wsdl:part name="parameters" element="tns:IsAlbumExists" />
+  </wsdl:message>
+  <wsdl:message name="IService_IsAlbumExists_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IsAlbumExistsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_IsAlbumExists_CustomExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q10="http://schemas.datacontract.org/2004/07/MaFamilleService.Model" name="detail" element="q10:CustomException" />
+  </wsdl:message>
+  <wsdl:message name="IService_DeleteAlbum_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAlbum" />
+  </wsdl:message>
+  <wsdl:message name="IService_DeleteAlbum_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAlbumResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_DeleteAlbum_CustomExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q11="http://schemas.datacontract.org/2004/07/MaFamilleService.Model" name="detail" element="q11:CustomException" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetActiveModule_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetActiveModule" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetActiveModule_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetActiveModuleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetActiveModule_CustomExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q12="http://schemas.datacontract.org/2004/07/MaFamilleService.Model" name="detail" element="q12:CustomException" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetWeddingPhotos_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetWeddingPhotos" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetWeddingPhotos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetWeddingPhotosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetWeddingPhotos_CustomExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q13="http://schemas.datacontract.org/2004/07/MaFamilleService.Model" name="detail" element="q13:CustomException" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetWeddingPhotosList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetWeddingPhotosList" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetWeddingPhotosList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetWeddingPhotosListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_GetWeddingPhotosList_CustomExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q14="http://schemas.datacontract.org/2004/07/MaFamilleService.Model" name="detail" element="q14:CustomException" />
+  </wsdl:message>
+  <wsdl:portType name="IService">
+    <wsdl:operation name="GetPhotos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/GetPhotos" message="tns:IService_GetPhotos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/GetPhotosResponse" message="tns:IService_GetPhotos_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IService/GetPhotosCustomExceptionFault" name="CustomExceptionFault" message="tns:IService_GetPhotos_CustomExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPhoto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/GetPhoto" message="tns:IService_GetPhoto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/GetPhotoResponse" message="tns:IService_GetPhoto_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IService/GetPhotoCustomExceptionFault" name="CustomExceptionFault" message="tns:IService_GetPhoto_CustomExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUploadedPhoto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/GetUploadedPhoto" message="tns:IService_GetUploadedPhoto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/GetUploadedPhotoResponse" message="tns:IService_GetUploadedPhoto_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IService/GetUploadedPhotoCustomExceptionFault" name="CustomExceptionFault" message="tns:IService_GetUploadedPhoto_CustomExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetThumbnailPhoto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/GetThumbnailPhoto" message="tns:IService_GetThumbnailPhoto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/GetThumbnailPhotoResponse" message="tns:IService_GetThumbnailPhoto_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAlbums">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/GetAlbums" message="tns:IService_GetAlbums_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/GetAlbumsResponse" message="tns:IService_GetAlbums_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IService/GetAlbumsCustomExceptionFault" name="CustomExceptionFault" message="tns:IService_GetAlbums_CustomExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWeddingAlbums">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/GetWeddingAlbums" message="tns:IService_GetWeddingAlbums_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/GetWeddingAlbumsResponse" message="tns:IService_GetWeddingAlbums_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IService/GetWeddingAlbumsCustomExceptionFault" name="CustomExceptionFault" message="tns:IService_GetWeddingAlbums_CustomExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDefaultAlbumImage">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/GetDefaultAlbumImage" message="tns:IService_GetDefaultAlbumImage_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/GetDefaultAlbumImageResponse" message="tns:IService_GetDefaultAlbumImage_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IService/GetDefaultAlbumImageCustomExceptionFault" name="CustomExceptionFault" message="tns:IService_GetDefaultAlbumImage_CustomExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UploadPhoto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/UploadPhoto" message="tns:IService_UploadPhoto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/UploadPhotoResponse" message="tns:IService_UploadPhoto_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IService/UploadPhotoCustomExceptionFault" name="CustomExceptionFault" message="tns:IService_UploadPhoto_CustomExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RemovePhoto">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/RemovePhoto" message="tns:IService_RemovePhoto_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/RemovePhotoResponse" message="tns:IService_RemovePhoto_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IService/RemovePhotoCustomExceptionFault" name="CustomExceptionFault" message="tns:IService_RemovePhoto_CustomExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IsFileExists">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/IsFileExists" message="tns:IService_IsFileExists_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/IsFileExistsResponse" message="tns:IService_IsFileExists_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IService/IsFileExistsCustomExceptionFault" name="CustomExceptionFault" message="tns:IService_IsFileExists_CustomExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IsAlbumExists">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/IsAlbumExists" message="tns:IService_IsAlbumExists_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/IsAlbumExistsResponse" message="tns:IService_IsAlbumExists_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IService/IsAlbumExistsCustomExceptionFault" name="CustomExceptionFault" message="tns:IService_IsAlbumExists_CustomExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAlbum">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/DeleteAlbum" message="tns:IService_DeleteAlbum_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/DeleteAlbumResponse" message="tns:IService_DeleteAlbum_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IService/DeleteAlbumCustomExceptionFault" name="CustomExceptionFault" message="tns:IService_DeleteAlbum_CustomExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetActiveModule">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/GetActiveModule" message="tns:IService_GetActiveModule_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/GetActiveModuleResponse" message="tns:IService_GetActiveModule_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IService/GetActiveModuleCustomExceptionFault" name="CustomExceptionFault" message="tns:IService_GetActiveModule_CustomExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWeddingPhotos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/GetWeddingPhotos" message="tns:IService_GetWeddingPhotos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/GetWeddingPhotosResponse" message="tns:IService_GetWeddingPhotos_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IService/GetWeddingPhotosCustomExceptionFault" name="CustomExceptionFault" message="tns:IService_GetWeddingPhotos_CustomExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWeddingPhotosList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/GetWeddingPhotosList" message="tns:IService_GetWeddingPhotosList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/GetWeddingPhotosListResponse" message="tns:IService_GetWeddingPhotosList_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IService/GetWeddingPhotosListCustomExceptionFault" name="CustomExceptionFault" message="tns:IService_GetWeddingPhotosList_CustomExceptionFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService" type="tns:IService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetPhotos">
+      <soap:operation soapAction="http://tempuri.org/IService/GetPhotos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="CustomExceptionFault">
+        <soap:fault use="literal" name="CustomExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetPhoto">
+      <soap:operation soapAction="http://tempuri.org/IService/GetPhoto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="CustomExceptionFault">
+        <soap:fault use="literal" name="CustomExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetUploadedPhoto">
+      <soap:operation soapAction="http://tempuri.org/IService/GetUploadedPhoto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="CustomExceptionFault">
+        <soap:fault use="literal" name="CustomExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetThumbnailPhoto">
+      <soap:operation soapAction="http://tempuri.org/IService/GetThumbnailPhoto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAlbums">
+      <soap:operation soapAction="http://tempuri.org/IService/GetAlbums" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="CustomExceptionFault">
+        <soap:fault use="literal" name="CustomExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetWeddingAlbums">
+      <soap:operation soapAction="http://tempuri.org/IService/GetWeddingAlbums" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="CustomExceptionFault">
+        <soap:fault use="literal" name="CustomExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetDefaultAlbumImage">
+      <soap:operation soapAction="http://tempuri.org/IService/GetDefaultAlbumImage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="CustomExceptionFault">
+        <soap:fault use="literal" name="CustomExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UploadPhoto">
+      <soap:operation soapAction="http://tempuri.org/IService/UploadPhoto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="CustomExceptionFault">
+        <soap:fault use="literal" name="CustomExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="RemovePhoto">
+      <soap:operation soapAction="http://tempuri.org/IService/RemovePhoto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="CustomExceptionFault">
+        <soap:fault use="literal" name="CustomExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="IsFileExists">
+      <soap:operation soapAction="http://tempuri.org/IService/IsFileExists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="CustomExceptionFault">
+        <soap:fault use="literal" name="CustomExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="IsAlbumExists">
+      <soap:operation soapAction="http://tempuri.org/IService/IsAlbumExists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="CustomExceptionFault">
+        <soap:fault use="literal" name="CustomExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAlbum">
+      <soap:operation soapAction="http://tempuri.org/IService/DeleteAlbum" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="CustomExceptionFault">
+        <soap:fault use="literal" name="CustomExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetActiveModule">
+      <soap:operation soapAction="http://tempuri.org/IService/GetActiveModule" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="CustomExceptionFault">
+        <soap:fault use="literal" name="CustomExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetWeddingPhotos">
+      <soap:operation soapAction="http://tempuri.org/IService/GetWeddingPhotos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="CustomExceptionFault">
+        <soap:fault use="literal" name="CustomExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="GetWeddingPhotosList">
+      <soap:operation soapAction="http://tempuri.org/IService/GetWeddingPhotosList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="CustomExceptionFault">
+        <soap:fault use="literal" name="CustomExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service">
+    <wsdl:port name="BasicHttpBinding_IService" binding="tns:BasicHttpBinding_IService">
+      <soap:address location="http://localhost/WcfService1/Service.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

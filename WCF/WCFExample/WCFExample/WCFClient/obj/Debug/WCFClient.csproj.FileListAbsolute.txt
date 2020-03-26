@@ -1,0 +1,24 @@
+C:\Dummy\WCFService\WCFClient\bin\Debug\WCFClient.exe.config
+C:\Dummy\WCFService\WCFClient\bin\Debug\WCFClient.exe
+C:\Dummy\WCFService\WCFClient\bin\Debug\WCFClient.pdb
+C:\Dummy\WCFService\WCFClient\bin\Debug\WCFServiceLibrary.dll
+C:\Dummy\WCFService\WCFClient\bin\Debug\WCFServiceLibrary.pdb
+C:\Dummy\WCFService\WCFClient\obj\Debug\ResolveAssemblyReference.cache
+C:\Dummy\WCFService\WCFClient\obj\Debug\WCFClient.exe
+C:\Dummy\WCFService\WCFClient\obj\Debug\WCFClient.pdb
+E:\Visual Studio Projects\WCF\WCFExample\WCFExample\WCFClient\bin\Debug\WCFClient.exe.config
+E:\Visual Studio Projects\WCF\WCFExample\WCFExample\WCFClient\bin\Debug\WCFClient.exe
+E:\Visual Studio Projects\WCF\WCFExample\WCFExample\WCFClient\bin\Debug\WCFClient.pdb
+E:\Visual Studio Projects\WCF\WCFExample\WCFExample\WCFClient\bin\Debug\WCFServiceLibrary.dll
+E:\Visual Studio Projects\WCF\WCFExample\WCFExample\WCFClient\bin\Debug\WCFServiceLibrary.pdb
+E:\Visual Studio Projects\WCF\WCFExample\WCFExample\WCFClient\obj\Debug\ResolveAssemblyReference.cache
+E:\Visual Studio Projects\WCF\WCFExample\WCFExample\WCFClient\obj\Debug\WCFClient.exe
+E:\Visual Studio Projects\WCF\WCFExample\WCFExample\WCFClient\obj\Debug\WCFClient.pdb
+D:\Visual Studio Projects\WCF\WCFExample\WCFExample\WCFClient\bin\Debug\WCFClient.exe.config
+D:\Visual Studio Projects\WCF\WCFExample\WCFExample\WCFClient\bin\Debug\WCFClient.exe
+D:\Visual Studio Projects\WCF\WCFExample\WCFExample\WCFClient\bin\Debug\WCFClient.pdb
+D:\Visual Studio Projects\WCF\WCFExample\WCFExample\WCFClient\bin\Debug\WCFServiceLibrary.dll
+D:\Visual Studio Projects\WCF\WCFExample\WCFExample\WCFClient\bin\Debug\WCFServiceLibrary.pdb
+D:\Visual Studio Projects\WCF\WCFExample\WCFExample\WCFClient\obj\Debug\ResolveAssemblyReference.cache
+D:\Visual Studio Projects\WCF\WCFExample\WCFExample\WCFClient\obj\Debug\WCFClient.exe
+D:\Visual Studio Projects\WCF\WCFExample\WCFExample\WCFClient\obj\Debug\WCFClient.pdb

@@ -1,0 +1,66 @@
+﻿<fw:FloatWindow
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:app="clr-namespace:MaFamille.Modules.Core.Controls"
+	mc:Ignorable="d"
+	x:Class="MaFamille.Modules.Core.Views.UploadPhotosNew"
+    xmlns:fw="clr-namespace:SilverlightControls;assembly=SilverlightControls"
+    xmlns:commands="clr-namespace:Microsoft.Practices.Composite.Presentation.Commands;assembly=Microsoft.Practices.Composite.Presentation" Height="513" Width="727">
+    
+	<Grid x:Name="LayoutRoot">
+		<Border BorderBrush="Black" BorderThickness="1" Margin="0" Background="#FF545353">
+			<Grid Margin="-1">
+				<Grid Height="32" VerticalAlignment="Top" Margin="0,0,20,0">
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="0.502*"/>
+						<ColumnDefinition Width="0.144*"/>
+						<ColumnDefinition Width="0.106*"/>
+						<ColumnDefinition Width="0.248*"/>
+						<ColumnDefinition Width="0.106*"/>
+					</Grid.ColumnDefinitions>
+					<TextBlock HorizontalAlignment="Left" Margin="33,8,0,8" TextWrapping="Wrap" Text="Name" Width="115"/>
+					<TextBlock Margin="8,8,0,8" TextWrapping="Wrap" Text="Status" Grid.Column="1"/>
+					<TextBlock Margin="8" TextWrapping="Wrap" Text="Size" Grid.Column="2"/>
+					<TextBlock Margin="0,8" TextWrapping="Wrap" Text="Progress" Width="66" Grid.Column="3"/>
+					<TextBlock Margin="8" TextWrapping="Wrap" Text="Remove" Grid.Column="4"/>
+				</Grid>
+                <ScrollViewer Margin="0,36,0,89">
+                    <ItemsControl ItemsSource="{Binding Files}">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <app:FileUploadRowControl></app:FileUploadRowControl>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>                        
+                    </ItemsControl>
+                </ScrollViewer>
+                <Grid Height="44" Margin="8,0,0,41" VerticalAlignment="Bottom">
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="0.286*"/>
+						<ColumnDefinition Width="0.235*"/>
+						<ColumnDefinition Width="0.479*"/>
+					</Grid.ColumnDefinitions>
+                    <TextBlock Margin="0" TextWrapping="Wrap" Text="{Binding TxtTotalFiles}" Width="100" Height="20" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <!--<TextBlock Margin="51,8,0,20" TextWrapping="Wrap" Text="{Binding FilesCount}" HorizontalAlignment="Left" Width="52"/>-->
+					<Grid Grid.Column="2" Margin="8">
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition Width="0.47*"/>
+							<ColumnDefinition Width="0.53*"/>
+						</Grid.ColumnDefinitions>
+                        <ProgressBar Margin="0" Grid.Column="1" Minimum="0" Maximum="{Binding TotalUploadSize}" Value="{Binding TotalUploaded}" Width="169" Height="20" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        <TextBlock Margin="0" TextWrapping="Wrap" Text="{Binding TxtTotalSize}" Width="120" Height="20" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+					</Grid>
+				</Grid>
+				<StackPanel Margin="0,0,0,2" Height="39" VerticalAlignment="Bottom" Orientation="Horizontal">
+                    <Button x:Name="AddFilesButton" commands:Click.Command="{Binding CommandClick}" IsEnabled="{Binding IsUploadEnabled}"
+                                    commands:Click.CommandParameter="Browse" Content="Select Files" HorizontalAlignment="Left" Height="32" Margin="26,4,0,3" Width="101"/>
+                    <Button x:Name="UploadFilesButton" commands:Click.Command="{Binding CommandClick}" IsEnabled="{Binding IsUploadEnabled}"
+                                    commands:Click.CommandParameter="Upload" Content="Upload" HorizontalAlignment="Left" Height="32" Margin="26,0,0,0" Width="101"/>
+                    <Button x:Name="btnClear" commands:Click.Command="{Binding CommandClick}"
+                    	commands:Click.CommandParameter="Clear" Content="Clear" HorizontalAlignment="Left" Height="32" Margin="26,3.5,0,3.5" Width="101"/>
+				</StackPanel>
+			</Grid>
+		</Border>
+	</Grid>
+</fw:FloatWindow>

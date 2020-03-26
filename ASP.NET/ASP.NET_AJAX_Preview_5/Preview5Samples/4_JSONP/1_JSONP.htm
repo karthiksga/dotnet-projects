@@ -1,0 +1,94 @@
+﻿    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>3 JSONP - Search Delicious</title>
+    <link href="styles/jsonp.css" rel="stylesheet" type="text/css" />
+ 
+    <script type="text/javascript" src="../MicrosoftAjax/MicrosoftAjax.debug.js"></script>
+    <script type="text/javascript" src="../MicrosoftAjax/MicrosoftAjaxTemplates.debug.js"></script>
+        
+    <script type="text/javascript">
+        var queryScript;
+        
+        function pageLoad() {
+            queryPopularLinksForTag("viewstate");
+
+            $addHandler($get("tag"), "keydown",
+                function(e) {
+                    if (e.keyCode === Sys.UI.Key.enter) {
+                        e.preventDefault();
+                        queryPopularLinksForTag($get("tag").value);
+                    }
+                });
+
+            $addHandler($get("go"), "click",
+                function(e) {
+                    queryPopularLinksForTag($get("tag").value);
+                });
+        }
+
+        function queryPopularLinksForTag(tag) {
+            sendJsonpRequest("http://feeds.delicious.com/v2/json/popular/" + encodeURI(tag), "queryComplete");
+            $get("tag").value = tag;
+        }
+
+        function queryComplete(results) {
+            $find("dataView").set_data(results);
+        }
+
+        function sendJsonpRequest(url, callback) {
+            var head = document.getElementsByTagName("head")[0];
+            if (queryScript) {
+                head.removeChild(queryScript);
+            }
+            queryScript = document.createElement("script");
+            // JSONP URL has query parameter specifying name of callback function  
+            queryScript.src = url + "?callback=" + callback;
+            head.appendChild(queryScript);
+        }
+
+        function onTaglistCommand(sender, args) {
+            queryPopularLinksForTag(args.get_commandArgument());
+        }
+    </script>
+</head>
+
+<body xmlns:dv="javascript:Sys.UI.DataView">
+    <div>
+        Popular Links for: 
+        <input id="tag" type="text" size="20" /> 
+        <input id="go" type="button" value="Go"/>
+        
+        <!--Links list-->
+        <div id="dataView" sys:attach="dv" class="sys-template">
+            <p class="linkItem">
+                <p class="linkTitle">
+                    <span class="title">
+                        <a sys:href="{{ u }}" target="delicious">{{ d }}</a>
+                    </span>
+                    <span class="href">
+                        <a sys:href="{{ u }}" target="delicious">{{ u }}</a>
+                    </span>
+                </p>
+                
+                <!--Nested tags list-->
+                <span class="taglist sys-template" 
+                    sys:attach="dv" 
+                    dv:data="{{ t }}" 
+                    dv:oncommand="{{ onTaglistCommand }}"
+                >
+                    <span class="tag" sys:command="viewtag" sys:commandargument="{{ $dataItem }}" >
+                        {{ $dataItem }}
+                    </span> |
+                </span>
+                
+                <span class="date">
+                    {{ Date.parseInvariant(dt, "yyyy-MM-ddTHH:mm:ssZ")
+                    .localeFormat("@ MM/dd/yyyy hh:mm tt") }}
+                </span>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

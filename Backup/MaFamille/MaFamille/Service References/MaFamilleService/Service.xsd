@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/MaFamilleService.Model" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/MaFamilleService.Model" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfPhotoModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="PhotoModel" nillable="true" type="tns:PhotoModel" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfPhotoModel" nillable="true" type="tns:ArrayOfPhotoModel" />
+  <xs:complexType name="PhotoModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AlbumName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ImageStream" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ThumbnailImageStream" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="Transform" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PhotoModel" nillable="true" type="tns:PhotoModel" />
+  <xs:complexType name="CustomException">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Message" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CustomException" nillable="true" type="tns:CustomException" />
+  <xs:complexType name="ArrayOfAlbumModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="AlbumModel" nillable="true" type="tns:AlbumModel" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAlbumModel" nillable="true" type="tns:ArrayOfAlbumModel" />
+  <xs:complexType name="AlbumModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AlbumImage" nillable="true" type="tns:ArrayOfAlbumImage" />
+      <xs:element minOccurs="0" name="AlbumName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsAlbumExists" type="xs:boolean" />
+      <xs:element minOccurs="0" name="OldAlbumName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AlbumModel" nillable="true" type="tns:AlbumModel" />
+  <xs:complexType name="ArrayOfAlbumImage">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="AlbumImage" nillable="true" type="tns:AlbumImage" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfAlbumImage" nillable="true" type="tns:ArrayOfAlbumImage" />
+  <xs:complexType name="AlbumImage">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ImageStream" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="Transform" type="xs:double" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AlbumImage" nillable="true" type="tns:AlbumImage" />
+  <xs:complexType name="FileUploadModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ID" type="xs:int" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FileUploadModel" nillable="true" type="tns:FileUploadModel" />
+</xs:schema>

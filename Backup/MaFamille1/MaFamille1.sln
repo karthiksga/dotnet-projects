@@ -1,0 +1,76 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaFamille1", "MaFamille1\MaFamille1.csproj", "{D1EC296E-228D-4270-8764-C4234451EB92}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BD6F3C00-D312-4422-A493-AF0840BA263B} = {BD6F3C00-D312-4422-A493-AF0840BA263B}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaFamille1.Web", "MaFamille1.Web\MaFamille1.Web.csproj", "{A330D5DD-9124-4E6D-A764-BD45630C1FC0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaFamilleService", "WcfService1\MaFamilleService.csproj", "{BD6F3C00-D312-4422-A493-AF0840BA263B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{3E002C0E-F715-4B98-B084-A093404D2DDF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SilverlightControls", "SilverlightControls\SilverlightControls.csproj", "{C8AF5B2B-CD83-4EA5-B9BA-F6FC870739F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaFamille.Modules.Core", "MaFamille.Modules.Core\MaFamille.Modules.Core.csproj", "{FADD3370-6AF0-4431-BF2C-AB4EAB5BA61F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BD6F3C00-D312-4422-A493-AF0840BA263B} = {BD6F3C00-D312-4422-A493-AF0840BA263B}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaFamille.Modules.TaskBar", "MaFamille.Modules.TaskBar\MaFamille.Modules.TaskBar.csproj", "{DDA1855A-A55D-4859-96DE-DFF85269F82D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BD6F3C00-D312-4422-A493-AF0840BA263B} = {BD6F3C00-D312-4422-A493-AF0840BA263B}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExternalReferences", "ExternalReferences", "{C83E98D0-EF2A-434C-84B2-8CE06636790D}"
+	ProjectSection(SolutionItems) = preProject
+		ExternalReferences\GalaSoft.MvvmLight.SL4.dll = ExternalReferences\GalaSoft.MvvmLight.SL4.dll
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaFamille.Common", "MaFamille.Common\MaFamille.Common.csproj", "{D0DB64B4-D1C5-4C57-AAC9-EB77FCA8A959}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D1EC296E-228D-4270-8764-C4234451EB92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1EC296E-228D-4270-8764-C4234451EB92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1EC296E-228D-4270-8764-C4234451EB92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1EC296E-228D-4270-8764-C4234451EB92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A330D5DD-9124-4E6D-A764-BD45630C1FC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A330D5DD-9124-4E6D-A764-BD45630C1FC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A330D5DD-9124-4E6D-A764-BD45630C1FC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A330D5DD-9124-4E6D-A764-BD45630C1FC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD6F3C00-D312-4422-A493-AF0840BA263B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD6F3C00-D312-4422-A493-AF0840BA263B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD6F3C00-D312-4422-A493-AF0840BA263B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD6F3C00-D312-4422-A493-AF0840BA263B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E002C0E-F715-4B98-B084-A093404D2DDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E002C0E-F715-4B98-B084-A093404D2DDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E002C0E-F715-4B98-B084-A093404D2DDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E002C0E-F715-4B98-B084-A093404D2DDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8AF5B2B-CD83-4EA5-B9BA-F6FC870739F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8AF5B2B-CD83-4EA5-B9BA-F6FC870739F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8AF5B2B-CD83-4EA5-B9BA-F6FC870739F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8AF5B2B-CD83-4EA5-B9BA-F6FC870739F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FADD3370-6AF0-4431-BF2C-AB4EAB5BA61F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FADD3370-6AF0-4431-BF2C-AB4EAB5BA61F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FADD3370-6AF0-4431-BF2C-AB4EAB5BA61F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FADD3370-6AF0-4431-BF2C-AB4EAB5BA61F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDA1855A-A55D-4859-96DE-DFF85269F82D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDA1855A-A55D-4859-96DE-DFF85269F82D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDA1855A-A55D-4859-96DE-DFF85269F82D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDA1855A-A55D-4859-96DE-DFF85269F82D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0DB64B4-D1C5-4C57-AAC9-EB77FCA8A959}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0DB64B4-D1C5-4C57-AAC9-EB77FCA8A959}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0DB64B4-D1C5-4C57-AAC9-EB77FCA8A959}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0DB64B4-D1C5-4C57-AAC9-EB77FCA8A959}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

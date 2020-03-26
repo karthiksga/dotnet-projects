@@ -1,0 +1,9 @@
+D:\Visual Studio Projects\WCF\WCFTraining\Bindings\SecureHelloWorld\bin\SecureHelloWorld.dll
+D:\Visual Studio Projects\WCF\WCFTraining\Bindings\SecureHelloWorld\bin\SecureHelloWorld.pdb
+D:\Visual Studio Projects\WCF\WCFTraining\Bindings\SecureHelloWorld\bin\ServiceLib.dll
+D:\Visual Studio Projects\WCF\WCFTraining\Bindings\SecureHelloWorld\bin\Domain.dll
+D:\Visual Studio Projects\WCF\WCFTraining\Bindings\SecureHelloWorld\bin\ServiceLib.pdb
+D:\Visual Studio Projects\WCF\WCFTraining\Bindings\SecureHelloWorld\bin\Domain.pdb
+D:\Visual Studio Projects\WCF\WCFTraining\Bindings\SecureHelloWorld\obj\Debug\ResolveAssemblyReference.cache
+D:\Visual Studio Projects\WCF\WCFTraining\Bindings\SecureHelloWorld\obj\Debug\SecureHelloWorld.dll
+D:\Visual Studio Projects\WCF\WCFTraining\Bindings\SecureHelloWorld\obj\Debug\SecureHelloWorld.pdb

@@ -1,0 +1,14 @@
+E:\Visual Studio Projects\WCF\WCFTestWeb\Business\bin\Debug\Business.dll
+E:\Visual Studio Projects\WCF\WCFTestWeb\Business\bin\Debug\Business.pdb
+E:\Visual Studio Projects\WCF\WCFTestWeb\Business\bin\Debug\ServiceContracts.dll
+E:\Visual Studio Projects\WCF\WCFTestWeb\Business\bin\Debug\ServiceContracts.pdb
+E:\Visual Studio Projects\WCF\WCFTestWeb\Business\obj\Debug\ResolveAssemblyReference.cache
+E:\Visual Studio Projects\WCF\WCFTestWeb\Business\obj\Debug\Business.dll
+E:\Visual Studio Projects\WCF\WCFTestWeb\Business\obj\Debug\Business.pdb
+D:\Visual Studio Projects\WCF\WCFTestWeb\Business\bin\Debug\Business.dll
+D:\Visual Studio Projects\WCF\WCFTestWeb\Business\bin\Debug\Business.pdb
+D:\Visual Studio Projects\WCF\WCFTestWeb\Business\bin\Debug\ServiceContracts.dll
+D:\Visual Studio Projects\WCF\WCFTestWeb\Business\bin\Debug\ServiceContracts.pdb
+D:\Visual Studio Projects\WCF\WCFTestWeb\Business\obj\Debug\ResolveAssemblyReference.cache
+D:\Visual Studio Projects\WCF\WCFTestWeb\Business\obj\Debug\Business.dll
+D:\Visual Studio Projects\WCF\WCFTestWeb\Business\obj\Debug\Business.pdb

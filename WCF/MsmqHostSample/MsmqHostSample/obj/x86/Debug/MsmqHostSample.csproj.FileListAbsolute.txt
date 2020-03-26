@@ -1,0 +1,6 @@
+D:\Visual Studio Projects\MsmqHostSample\MsmqHostSample\bin\Debug\MsmqHostSample.exe.config
+D:\Visual Studio Projects\MsmqHostSample\MsmqHostSample\bin\Debug\MsmqHostSample.exe
+D:\Visual Studio Projects\MsmqHostSample\MsmqHostSample\bin\Debug\MsmqHostSample.pdb
+D:\Visual Studio Projects\MsmqHostSample\MsmqHostSample\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Visual Studio Projects\MsmqHostSample\MsmqHostSample\obj\x86\Debug\MsmqHostSample.exe
+D:\Visual Studio Projects\MsmqHostSample\MsmqHostSample\obj\x86\Debug\MsmqHostSample.pdb

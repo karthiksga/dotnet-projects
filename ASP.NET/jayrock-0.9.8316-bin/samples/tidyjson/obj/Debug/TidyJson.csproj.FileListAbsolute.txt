@@ -1,0 +1,8 @@
+C:\Users\karthiksg\Desktop\jayrock-0.9.8316-bin\samples\tidyjson\bin\Debug\tidyjson.exe.config
+C:\Users\karthiksg\Desktop\jayrock-0.9.8316-bin\samples\tidyjson\bin\Debug\tidyjson.exe
+C:\Users\karthiksg\Desktop\jayrock-0.9.8316-bin\samples\tidyjson\bin\Debug\tidyjson.pdb
+C:\Users\karthiksg\Desktop\jayrock-0.9.8316-bin\samples\tidyjson\bin\Debug\Jayrock.Json.dll
+C:\Users\karthiksg\Desktop\jayrock-0.9.8316-bin\samples\tidyjson\bin\Debug\Jayrock.Json.pdb
+C:\Users\karthiksg\Desktop\jayrock-0.9.8316-bin\samples\tidyjson\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\karthiksg\Desktop\jayrock-0.9.8316-bin\samples\tidyjson\obj\Debug\tidyjson.exe
+C:\Users\karthiksg\Desktop\jayrock-0.9.8316-bin\samples\tidyjson\obj\Debug\tidyjson.pdb

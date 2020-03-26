@@ -1,0 +1,41 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+    xmlns:converter="clr-namespace:MaFamille.Modules.TaskBar.Converters" 
+    xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk"
+    xmlns:commands="clr-namespace:Microsoft.Practices.Composite.Presentation.Commands;assembly=Microsoft.Practices.Composite.Presentation"
+	x:Class="MaFamille.Modules.TaskBar.Controls.FileUploadRowControl" Height="165" Width="707">       
+	<Grid x:Name="LayoutRoot" Background="#FF787575">        
+		<Grid Height="37" VerticalAlignment="Top">
+            <Grid.Resources>
+                <converter:ImageConverter x:Key="ImageConverter"/>
+                <converter:ByteConverter x:Key="ByteConverter"/>
+                <converter:BoolToValueConverter x:Key="BoolToVisibility"/>
+            </Grid.Resources>
+            <Grid.ColumnDefinitions>
+				<ColumnDefinition Width="0.502*"/>
+						<ColumnDefinition Width="0.144*"/>
+						<ColumnDefinition Width="0.106*"/>
+						<ColumnDefinition Width="0.248*"/>
+						<ColumnDefinition Width="0.106*"/>
+			</Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>                
+                <RowDefinition MaxHeight="200" />
+            </Grid.RowDefinitions>
+            <StackPanel Orientation="Vertical" Grid.Column="0" Margin="0,0,0,1">
+                <TextBlock HorizontalAlignment="Left" Height="17" Margin="0" TextWrapping="Wrap" Text="{Binding Name}" Width="94" Grid.Column="0"/>                
+            </StackPanel>
+            <Image Source="{Binding FileContent,Converter={StaticResource ImageConverter}}" MaxHeight="200" Grid.Column="0" Width="200" Height="200" Margin="78,0,77,-163"/>
+            <TextBlock Height="17" Margin="0,12,0,8" TextWrapping="Wrap" Text="{Binding Status}" Grid.Column="1"/>
+            <TextBlock Height="17" Margin="0,12,0,8" TextWrapping="Wrap" Text="{Binding Length,Converter={StaticResource ByteConverter}}" Grid.Column="2"/>
+			<Grid Grid.Column="3" Height="32" Margin="0,4,0,1">
+                <ProgressBar Margin="8,4,8,8" Minimum="0" Maximum="100"  Value="{Binding UploadPercent}" />
+			</Grid>
+            <Button Content="Remove" commands:Click.Command="{Binding CommandClick}"
+                    	commands:Click.CommandParameter="Remove" IsEnabled="{Binding Status,Mode=TwoWay,Converter={StaticResource BoolToVisibility}}"  Grid.Column="4" Margin="4,8,8,8"/>
+		</Grid>
+	</Grid>
+</UserControl>

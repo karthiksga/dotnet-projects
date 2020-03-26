@@ -1,0 +1,21 @@
+﻿<UserControl
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:SilverlightControls="clr-namespace:SilverlightControls;assembly=SilverlightControls" xmlns:toolkit="http://schemas.microsoft.com/winfx/2006/xaml/presentation/toolkit" x:Name="userControl" x:Class="MaFamille.Modules.TaskBar.TaskBarView"
+    mc:Ignorable="d" d:DesignWidth="640" d:DesignHeight="480">
+    <Grid x:Name="LayoutRoot" MinWidth="640" MinHeight="480">    	
+    	<SilverlightControls:WindowHost x:Name="host" Content="WindowHost" Height="{Binding ActualHeight, ElementName=LayoutRoot}" Width="{Binding ActualWidth, ElementName=LayoutRoot}" VerticalAlignment="Top">    					
+		
+    	</SilverlightControls:WindowHost>
+    	<Border x:Name="border" BorderBrush="Black" BorderThickness="1" Margin="0" Width="{Binding Width, ElementName=LayoutRoot}" Height="{Binding Height, ElementName=LayoutRoot}">
+    		<toolkit:DockPanel LastChildFill="False" Width="{Binding Width, ElementName=border}" Height="{Binding Height, ElementName=border}" Margin="0,0,-2,-2">
+    			<StackPanel VerticalAlignment="Center" Orientation="Horizontal" HorizontalAlignment="Center" toolkit:DockPanel.Dock="Bottom">
+    				<Button x:Name="btnMyAlbum" Content="My Album"/>
+    				<Button x:Name="btnMyUpload" Content="My Upload" Click="btnMyUpload_Click"/>
+    			</StackPanel>
+    		</toolkit:DockPanel>
+    	</Border>
+    </Grid>
+</UserControl>
