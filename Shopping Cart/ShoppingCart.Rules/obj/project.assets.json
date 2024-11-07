@@ -5,10 +5,14 @@
       "Autofac/4.9.2": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/Autofac.dll": {}
+          "lib/netstandard2.0/Autofac.dll": {
+            "related": ".pdb;.xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Autofac.dll": {}
+          "lib/netstandard2.0/Autofac.dll": {
+            "related": ".pdb;.xml"
+          }
         }
       },
       "Microsoft.NETCore.Platforms/1.1.0": {
@@ -38,10 +42,14 @@
       "Newtonsoft.Json/12.0.2": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
         }
       },
       "ShoppingCart.DataAccess/1.0.0": {
@@ -92,7 +100,7 @@
       ]
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
-      "sha512": "bLpT1f/SFlO1CzqXG12KnJzpZs6lv24uX2Rzi4Fmm0noJpNlnWRVryuO3yK18Ca04t/YHcO1e1Z0WDfjseqNzw==",
+      "sha512": "kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
       "type": "package",
       "path": "microsoft.netcore.platforms/1.1.0",
       "files": [
@@ -235,7 +243,7 @@
       ]
     },
     "Newtonsoft.Json/12.0.2": {
-      "sha512": "mtweBXPWhp1CMQATtBT7ZfMZrbZBTKfjGwz6Y75NwGjx/GztDaUnfw8GK9KZ2T4fDIqKJyDjc9Rxlw5+G2FcVA==",
+      "sha512": "rTK0s2EKlfHsQsH6Yx2smvcTCeyoDNgCW7FEYyV01drPlh2T243PR2DiDXqtC5N4GDm4Ma/lkxfW5a/4793vbA==",
       "type": "package",
       "path": "newtonsoft.json/12.0.2",
       "files": [
@@ -284,23 +292,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ksubram3\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "J:\\karth\\.nuget\\packages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ksubram3\\Source\\Repos\\KarthikGangadaranDevTest\\src\\ShoppingCart.Rules\\ShoppingCart.RulesService.csproj",
+      "projectUniqueName": "J:\\source\\dotnet-projects\\Shopping Cart\\ShoppingCart.Rules\\ShoppingCart.RulesService.csproj",
       "projectName": "ShoppingCart.RulesService",
-      "projectPath": "C:\\Users\\ksubram3\\Source\\Repos\\KarthikGangadaranDevTest\\src\\ShoppingCart.Rules\\ShoppingCart.RulesService.csproj",
-      "packagesPath": "C:\\Users\\ksubram3\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ksubram3\\Source\\Repos\\KarthikGangadaranDevTest\\src\\ShoppingCart.Rules\\obj\\",
+      "projectPath": "J:\\source\\dotnet-projects\\Shopping Cart\\ShoppingCart.Rules\\ShoppingCart.RulesService.csproj",
+      "packagesPath": "J:\\karth\\.nuget\\packages",
+      "outputPath": "J:\\source\\dotnet-projects\\Shopping Cart\\ShoppingCart.Rules\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\ksubram3\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\karth\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -308,16 +312,18 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
           "projectReferences": {
-            "C:\\Users\\ksubram3\\Source\\Repos\\KarthikGangadaranDevTest\\src\\ShoppingCart.DataAccess\\ShoppingCart.DataAccess.csproj": {
-              "projectPath": "C:\\Users\\ksubram3\\Source\\Repos\\KarthikGangadaranDevTest\\src\\ShoppingCart.DataAccess\\ShoppingCart.DataAccess.csproj"
+            "J:\\source\\dotnet-projects\\Shopping Cart\\ShoppingCart.DataAccess\\ShoppingCart.DataAccess.csproj": {
+              "projectPath": "J:\\source\\dotnet-projects\\Shopping Cart\\ShoppingCart.DataAccess\\ShoppingCart.DataAccess.csproj"
             },
-            "C:\\Users\\ksubram3\\Source\\Repos\\KarthikGangadaranDevTest\\src\\ShoppingCart.DataModel\\ShoppingCart.DataModel.csproj": {
-              "projectPath": "C:\\Users\\ksubram3\\Source\\Repos\\KarthikGangadaranDevTest\\src\\ShoppingCart.DataModel\\ShoppingCart.DataModel.csproj"
+            "J:\\source\\dotnet-projects\\Shopping Cart\\ShoppingCart.DataModel\\ShoppingCart.DataModel.csproj": {
+              "projectPath": "J:\\source\\dotnet-projects\\Shopping Cart\\ShoppingCart.DataModel\\ShoppingCart.DataModel.csproj"
             }
           }
         }
@@ -326,10 +332,16 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
       "netstandard2.0": {
+        "targetAlias": "netstandard2.0",
         "dependencies": {
           "Autofac": {
             "target": "Package",
@@ -343,10 +355,17 @@
           }
         },
         "imports": [
-          "net461"
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
-        "warn": true
+        "warn": true,
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303\\RuntimeIdentifierGraph.json"
       }
     }
   }
