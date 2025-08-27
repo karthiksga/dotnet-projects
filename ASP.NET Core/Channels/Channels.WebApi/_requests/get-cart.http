@@ -1,0 +1,5 @@
+@Channels_HostAddress = http://localhost:5108
+
+### Get a product cart by ID
+GET {{Channels_HostAddress}}/api/ProductCart/7fc411df-8c2b-4516-aeb2-ce9fb8f47774
+Accept: application/json
