@@ -1,0 +1,10 @@
+PUT https://localhost:5000/api/books/9e9a2166-36c6-430c-bd9e-8fbc163a160a
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+    "Id": "9e9a2166-36c6-430c-bd9e-8fbc163a160a",
+    "Title": "Updated Book Title",
+    "Year": 2024,
+    "AuthorId": "370ec868-cee6-462d-bdf1-f1509c2e438a"
+}

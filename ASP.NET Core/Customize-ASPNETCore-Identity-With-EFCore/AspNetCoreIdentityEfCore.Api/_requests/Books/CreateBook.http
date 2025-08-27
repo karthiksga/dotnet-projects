@@ -1,0 +1,9 @@
+POST https://localhost:5000/api/books
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+    "Title": "New Book",
+    "Year": 2024,
+    "AuthorId": "bff6c372-09bf-405e-8d11-46bc72fd902c"
+}

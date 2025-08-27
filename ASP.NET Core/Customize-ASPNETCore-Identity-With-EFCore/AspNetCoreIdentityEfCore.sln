@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCoreIdentityEfCore.Api", "AspNetCoreIdentityEfCore.Api\AspNetCoreIdentityEfCore.Api.csproj", "{690B1BAD-C2A3-41A2-B33D-9659AD25B3F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "Domain\Domain.csproj", "{5875333D-F85F-451F-9D66-4707C303C815}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{F41A9A60-A03E-4E56-9933-EE0EFB995A83}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{690B1BAD-C2A3-41A2-B33D-9659AD25B3F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{690B1BAD-C2A3-41A2-B33D-9659AD25B3F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{690B1BAD-C2A3-41A2-B33D-9659AD25B3F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{690B1BAD-C2A3-41A2-B33D-9659AD25B3F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5875333D-F85F-451F-9D66-4707C303C815}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5875333D-F85F-451F-9D66-4707C303C815}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5875333D-F85F-451F-9D66-4707C303C815}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5875333D-F85F-451F-9D66-4707C303C815}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F41A9A60-A03E-4E56-9933-EE0EFB995A83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F41A9A60-A03E-4E56-9933-EE0EFB995A83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F41A9A60-A03E-4E56-9933-EE0EFB995A83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F41A9A60-A03E-4E56-9933-EE0EFB995A83}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
