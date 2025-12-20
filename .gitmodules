@@ -4,3 +4,6 @@
 [submodule "C#/GitHub Projects"]
 	path = "C#/GitHub Projects"
 	url = https://github.com/dotnet/eShop.git
+[submodule "C#/GitHub-Projects/eShop"]
+	path = "C#/GitHub-Projects/eShop"
+	url = https://github.com/dotnet/eShop.git
