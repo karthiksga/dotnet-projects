@@ -1,6 +1,0 @@
-D:\Visual Studio Projects\WF_WCF_Samples\WCF\Basic\Binding\Basic\MessageSecurity\CS\service\bin\service.exe.config
-D:\Visual Studio Projects\WF_WCF_Samples\WCF\Basic\Binding\Basic\MessageSecurity\CS\service\bin\service.exe
-D:\Visual Studio Projects\WF_WCF_Samples\WCF\Basic\Binding\Basic\MessageSecurity\CS\service\bin\service.pdb
-D:\Visual Studio Projects\WF_WCF_Samples\WCF\Basic\Binding\Basic\MessageSecurity\CS\service\obj\Debug\ResolveAssemblyReference.cache
-D:\Visual Studio Projects\WF_WCF_Samples\WCF\Basic\Binding\Basic\MessageSecurity\CS\service\obj\Debug\service.exe
-D:\Visual Studio Projects\WF_WCF_Samples\WCF\Basic\Binding\Basic\MessageSecurity\CS\service\obj\Debug\service.pdb

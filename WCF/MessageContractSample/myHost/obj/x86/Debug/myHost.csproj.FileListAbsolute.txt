@@ -1,8 +1,0 @@
-D:\Visual Studio Projects\WCF\MessageContractSample\myHost\bin\Debug\myHost.exe
-D:\Visual Studio Projects\WCF\MessageContractSample\myHost\bin\Debug\myHost.pdb
-D:\Visual Studio Projects\WCF\MessageContractSample\myHost\obj\x86\Debug\ResolveAssemblyReference.cache
-D:\Visual Studio Projects\WCF\MessageContractSample\myHost\obj\x86\Debug\myHost.exe
-D:\Visual Studio Projects\WCF\MessageContractSample\myHost\obj\x86\Debug\myHost.pdb
-D:\Visual Studio Projects\WCF\MessageContractSample\myHost\bin\Debug\myHost.exe.config
-D:\Visual Studio Projects\WCF\MessageContractSample\myHost\bin\Debug\MyLibrary.dll
-D:\Visual Studio Projects\WCF\MessageContractSample\myHost\bin\Debug\MyLibrary.pdb

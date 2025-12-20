@@ -1,8 +1,0 @@
-D:\Visual Studio Projects\SecureTest\Client\bin\Debug\Client.exe
-D:\Visual Studio Projects\SecureTest\Client\bin\Debug\Client.pdb
-D:\Visual Studio Projects\SecureTest\Client\obj\x86\Debug\ResolveAssemblyReference.cache
-D:\Visual Studio Projects\SecureTest\Client\obj\x86\Debug\Client.exe
-D:\Visual Studio Projects\SecureTest\Client\obj\x86\Debug\Client.pdb
-D:\Visual Studio Projects\SecureTest\Client\bin\Debug\Client.exe.config
-D:\Visual Studio Projects\SecureTest\Client\bin\Debug\SecureWorldLib.dll
-D:\Visual Studio Projects\SecureTest\Client\bin\Debug\SecureWorldLib.pdb

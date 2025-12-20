@@ -1,8 +1,0 @@
-D:\OneDrive\Documents\My Web Sites\AngularCustomerWebAPI\AngularCustomerService\bin\AngularCustomerService.dll.config
-D:\OneDrive\Documents\My Web Sites\AngularCustomerWebAPI\AngularCustomerService\bin\AngularCustomerService.dll
-D:\OneDrive\Documents\My Web Sites\AngularCustomerWebAPI\AngularCustomerService\bin\AngularCustomerService.pdb
-D:\OneDrive\Documents\My Web Sites\AngularCustomerWebAPI\AngularCustomerService\bin\CustomerModel.dll
-D:\OneDrive\Documents\My Web Sites\AngularCustomerWebAPI\AngularCustomerService\bin\CustomerModel.pdb
-D:\OneDrive\Documents\My Web Sites\AngularCustomerWebAPI\AngularCustomerService\obj\Debug\AngularCustomerService.csprojResolveAssemblyReference.cache
-D:\OneDrive\Documents\My Web Sites\AngularCustomerWebAPI\AngularCustomerService\obj\Debug\AngularCustomerService.dll
-D:\OneDrive\Documents\My Web Sites\AngularCustomerWebAPI\AngularCustomerService\obj\Debug\AngularCustomerService.pdb

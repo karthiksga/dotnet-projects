@@ -1,4 +1,0 @@
-D:\One Drive\OneDrive\Source\TaxCalculator\ShoppingCart.DataModel\obj\Debug\netstandard2.0\ShoppingCart.DataModel.csprojAssemblyReference.cache
-D:\One Drive\OneDrive\Source\TaxCalculator\ShoppingCart.DataModel\obj\Debug\netstandard2.0\ShoppingCart.DataModel.csproj.CoreCompileInputs.cache
-D:\One Drive\OneDrive\Source\TaxCalculator\ShoppingCart.DataModel\obj\Debug\netstandard2.0\ShoppingCart.DataModel.AssemblyInfoInputs.cache
-D:\One Drive\OneDrive\Source\TaxCalculator\ShoppingCart.DataModel\obj\Debug\netstandard2.0\ShoppingCart.DataModel.AssemblyInfo.cs

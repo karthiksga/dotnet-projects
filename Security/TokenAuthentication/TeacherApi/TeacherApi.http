@@ -1,0 +1,14 @@
+@TeacherApi_HostAddress = http://localhost:5171
+
+GET {{TeacherApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+POST {{TeacherApi_HostAddress}}/api/Teacher/teacher-data
+Content-Type: application/json
+Authorization: Bearer <your-token>
+{
+  "email": "teacher@gmail.com",
+  "password": "teach123"
+}

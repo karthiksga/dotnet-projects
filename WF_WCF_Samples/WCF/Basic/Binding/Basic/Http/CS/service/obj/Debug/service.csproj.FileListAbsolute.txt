@@ -1,5 +1,0 @@
-D:\Visual Studio Projects\WF_WCF_Samples\WCF\Basic\Binding\Basic\Http\CS\service\bin\service.dll
-D:\Visual Studio Projects\WF_WCF_Samples\WCF\Basic\Binding\Basic\Http\CS\service\bin\service.pdb
-D:\Visual Studio Projects\WF_WCF_Samples\WCF\Basic\Binding\Basic\Http\CS\service\obj\Debug\ResolveAssemblyReference.cache
-D:\Visual Studio Projects\WF_WCF_Samples\WCF\Basic\Binding\Basic\Http\CS\service\obj\Debug\service.dll
-D:\Visual Studio Projects\WF_WCF_Samples\WCF\Basic\Binding\Basic\Http\CS\service\obj\Debug\service.pdb

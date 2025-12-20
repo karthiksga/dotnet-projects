@@ -1,5 +1,0 @@
-D:\OneDrive\Documents\My Web Sites\AngularCustomerWebAPI\CustomerModel\obj\Debug\CustomerModel.csprojResolveAssemblyReference.cache
-D:\OneDrive\Documents\My Web Sites\AngularCustomerWebAPI\CustomerModel\bin\Debug\CustomerModel.dll
-D:\OneDrive\Documents\My Web Sites\AngularCustomerWebAPI\CustomerModel\bin\Debug\CustomerModel.pdb
-D:\OneDrive\Documents\My Web Sites\AngularCustomerWebAPI\CustomerModel\obj\Debug\CustomerModel.dll
-D:\OneDrive\Documents\My Web Sites\AngularCustomerWebAPI\CustomerModel\obj\Debug\CustomerModel.pdb

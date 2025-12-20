@@ -1,6 +1,0 @@
-D:\Visual Studio Projects\WCF\WCFTestWeb\ConsoleClient\bin\Debug\ConsoleClient.exe
-D:\Visual Studio Projects\WCF\WCFTestWeb\ConsoleClient\bin\Debug\ConsoleClient.pdb
-D:\Visual Studio Projects\WCF\WCFTestWeb\ConsoleClient\obj\x86\Debug\ResolveAssemblyReference.cache
-D:\Visual Studio Projects\WCF\WCFTestWeb\ConsoleClient\obj\x86\Debug\ConsoleClient.exe
-D:\Visual Studio Projects\WCF\WCFTestWeb\ConsoleClient\obj\x86\Debug\ConsoleClient.pdb
-D:\Visual Studio Projects\WCF\WCFTestWeb\ConsoleClient\bin\Debug\ConsoleClient.exe.config

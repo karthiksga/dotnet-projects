@@ -1,5 +1,0 @@
-D:\One Drive\OneDrive\Documents\My Web Sites\ntier-identity-without-signinmanager-master\dto\bin\Debug\dto.dll
-D:\One Drive\OneDrive\Documents\My Web Sites\ntier-identity-without-signinmanager-master\dto\bin\Debug\dto.pdb
-D:\One Drive\OneDrive\Documents\My Web Sites\ntier-identity-without-signinmanager-master\dto\obj\Debug\dto.csproj.CoreCompileInputs.cache
-D:\One Drive\OneDrive\Documents\My Web Sites\ntier-identity-without-signinmanager-master\dto\obj\Debug\dto.dll
-D:\One Drive\OneDrive\Documents\My Web Sites\ntier-identity-without-signinmanager-master\dto\obj\Debug\dto.pdb

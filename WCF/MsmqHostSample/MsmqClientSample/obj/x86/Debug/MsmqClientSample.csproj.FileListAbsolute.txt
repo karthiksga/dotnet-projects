@@ -1,6 +1,0 @@
-D:\Visual Studio Projects\MsmqHostSample\MsmqClientSample\bin\Debug\MsmqClientSample.exe
-D:\Visual Studio Projects\MsmqHostSample\MsmqClientSample\bin\Debug\MsmqClientSample.pdb
-D:\Visual Studio Projects\MsmqHostSample\MsmqClientSample\obj\x86\Debug\ResolveAssemblyReference.cache
-D:\Visual Studio Projects\MsmqHostSample\MsmqClientSample\obj\x86\Debug\MsmqClientSample.exe
-D:\Visual Studio Projects\MsmqHostSample\MsmqClientSample\obj\x86\Debug\MsmqClientSample.pdb
-D:\Visual Studio Projects\MsmqHostSample\MsmqClientSample\bin\Debug\MsmqClientSample.exe.config

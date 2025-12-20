@@ -1,8 +1,0 @@
-D:\Visual Studio Projects\Backup\MaFamille1\MaFamille.Common\Bin\Release\MaFamille.Common.dll
-D:\Visual Studio Projects\Backup\MaFamille1\MaFamille.Common\Bin\Release\MaFamille.Common.pdb
-D:\Visual Studio Projects\Backup\MaFamille1\MaFamille.Common\Bin\Release\AppManifest.xaml
-D:\Visual Studio Projects\Backup\MaFamille1\MaFamille.Common\Bin\Release\MaFamille.Common.xap
-D:\Visual Studio Projects\Backup\MaFamille1\MaFamille.Common\Bin\Release\MaFamille.CommonTestPage.html
-D:\Visual Studio Projects\Backup\MaFamille1\MaFamille.Common\obj\Release\MaFamille.Common.dll
-D:\Visual Studio Projects\Backup\MaFamille1\MaFamille.Common\obj\Release\MaFamille.Common.pdb
-D:\Visual Studio Projects\Backup\MaFamille1\MaFamille.Common\obj\Release\XapCacheFile.xml

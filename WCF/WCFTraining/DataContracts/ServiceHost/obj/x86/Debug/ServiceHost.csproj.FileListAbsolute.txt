@@ -1,1 +1,0 @@
-D:\Visual Studio Projects\WCF\WCFTraining\ClientsAndServices\ServiceHost\bin\Debug\ServiceHost.exe.config

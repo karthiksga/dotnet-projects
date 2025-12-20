@@ -1,5 +1,0 @@
-D:\Visual Studio Projects\WCF\WCFTraining\Bindings\SampleWcfService1\bin\SampleWcfService1.dll
-D:\Visual Studio Projects\WCF\WCFTraining\Bindings\SampleWcfService1\bin\SampleWcfService1.pdb
-D:\Visual Studio Projects\WCF\WCFTraining\Bindings\SampleWcfService1\obj\Debug\ResolveAssemblyReference.cache
-D:\Visual Studio Projects\WCF\WCFTraining\Bindings\SampleWcfService1\obj\Debug\SampleWcfService1.dll
-D:\Visual Studio Projects\WCF\WCFTraining\Bindings\SampleWcfService1\obj\Debug\SampleWcfService1.pdb

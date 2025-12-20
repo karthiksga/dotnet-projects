@@ -1,8 +1,0 @@
-F:\Visual Studio Projects\WCF\WCFPart1\Host\bin\Debug\Host.exe
-F:\Visual Studio Projects\WCF\WCFPart1\Host\bin\Debug\Host.pdb
-F:\Visual Studio Projects\WCF\WCFPart1\Host\bin\Debug\HelloIndigo.dll
-F:\Visual Studio Projects\WCF\WCFPart1\Host\bin\Debug\HelloIndigo.pdb
-F:\Visual Studio Projects\WCF\WCFPart1\Host\obj\Debug\ResolveAssemblyReference.cache
-F:\Visual Studio Projects\WCF\WCFPart1\Host\obj\Debug\Host.exe
-F:\Visual Studio Projects\WCF\WCFPart1\Host\obj\Debug\Host.pdb
-F:\Visual Studio Projects\WCF\WCFPart1\Host\bin\Debug\Host.exe.config

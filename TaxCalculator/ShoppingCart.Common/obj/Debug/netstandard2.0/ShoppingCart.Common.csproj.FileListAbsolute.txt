@@ -1,9 +1,0 @@
-D:\One Drive\OneDrive\Source\TaxCalculator\ShoppingCart.Common\bin\Debug\netstandard2.0\ShoppingCart.Common.deps.json
-D:\One Drive\OneDrive\Source\TaxCalculator\ShoppingCart.Common\bin\Debug\netstandard2.0\ShoppingCart.Common.dll
-D:\One Drive\OneDrive\Source\TaxCalculator\ShoppingCart.Common\bin\Debug\netstandard2.0\ShoppingCart.Common.pdb
-D:\One Drive\OneDrive\Source\TaxCalculator\ShoppingCart.Common\obj\Debug\netstandard2.0\ShoppingCart.Common.csprojAssemblyReference.cache
-D:\One Drive\OneDrive\Source\TaxCalculator\ShoppingCart.Common\obj\Debug\netstandard2.0\ShoppingCart.Common.csproj.CoreCompileInputs.cache
-D:\One Drive\OneDrive\Source\TaxCalculator\ShoppingCart.Common\obj\Debug\netstandard2.0\ShoppingCart.Common.AssemblyInfoInputs.cache
-D:\One Drive\OneDrive\Source\TaxCalculator\ShoppingCart.Common\obj\Debug\netstandard2.0\ShoppingCart.Common.AssemblyInfo.cs
-D:\One Drive\OneDrive\Source\TaxCalculator\ShoppingCart.Common\obj\Debug\netstandard2.0\ShoppingCart.Common.dll
-D:\One Drive\OneDrive\Source\TaxCalculator\ShoppingCart.Common\obj\Debug\netstandard2.0\ShoppingCart.Common.pdb

@@ -1,9 +1,0 @@
-C:\inetpub\wwwroot\MaFamille1\MaFamille.Common\Bin\Debug\MaFamille.Common.dll
-C:\inetpub\wwwroot\MaFamille1\MaFamille.Common\Bin\Debug\MaFamille.Common.pdb
-C:\inetpub\wwwroot\MaFamille1\MaFamille.Common\Bin\Debug\AppManifest.xaml
-C:\inetpub\wwwroot\MaFamille1\MaFamille.Common\Bin\Debug\MaFamille.Common.xap
-C:\inetpub\wwwroot\MaFamille1\MaFamille.Common\Bin\Debug\MaFamille.CommonTestPage.html
-C:\inetpub\wwwroot\MaFamille1\MaFamille.Common\obj\Debug\ResolveAssemblyReference.cache
-C:\inetpub\wwwroot\MaFamille1\MaFamille.Common\obj\Debug\MaFamille.Common.dll
-C:\inetpub\wwwroot\MaFamille1\MaFamille.Common\obj\Debug\MaFamille.Common.pdb
-C:\inetpub\wwwroot\MaFamille1\MaFamille.Common\obj\Debug\XapCacheFile.xml

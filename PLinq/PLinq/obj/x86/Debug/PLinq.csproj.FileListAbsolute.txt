@@ -1,4 +1,0 @@
-D:\Visual Studio Projects\PLinq\PLinq\bin\Debug\PLinq.exe
-D:\Visual Studio Projects\PLinq\PLinq\bin\Debug\PLinq.pdb
-D:\Visual Studio Projects\PLinq\PLinq\obj\x86\Debug\PLinq.exe
-D:\Visual Studio Projects\PLinq\PLinq\obj\x86\Debug\PLinq.pdb

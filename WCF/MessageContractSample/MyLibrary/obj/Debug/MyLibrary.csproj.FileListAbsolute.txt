@@ -1,5 +1,0 @@
-D:\Visual Studio Projects\WCF\MessageContractSample\MyLibrary\bin\Debug\MyLibrary.dll
-D:\Visual Studio Projects\WCF\MessageContractSample\MyLibrary\bin\Debug\MyLibrary.pdb
-D:\Visual Studio Projects\WCF\MessageContractSample\MyLibrary\obj\Debug\ResolveAssemblyReference.cache
-D:\Visual Studio Projects\WCF\MessageContractSample\MyLibrary\obj\Debug\MyLibrary.dll
-D:\Visual Studio Projects\WCF\MessageContractSample\MyLibrary\obj\Debug\MyLibrary.pdb

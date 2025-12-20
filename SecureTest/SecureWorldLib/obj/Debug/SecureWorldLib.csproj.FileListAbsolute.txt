@@ -1,5 +1,0 @@
-D:\Visual Studio Projects\SecureTest\SecureWorldLib\bin\Debug\SecureWorldLib.dll
-D:\Visual Studio Projects\SecureTest\SecureWorldLib\bin\Debug\SecureWorldLib.pdb
-D:\Visual Studio Projects\SecureTest\SecureWorldLib\obj\Debug\ResolveAssemblyReference.cache
-D:\Visual Studio Projects\SecureTest\SecureWorldLib\obj\Debug\SecureWorldLib.dll
-D:\Visual Studio Projects\SecureTest\SecureWorldLib\obj\Debug\SecureWorldLib.pdb

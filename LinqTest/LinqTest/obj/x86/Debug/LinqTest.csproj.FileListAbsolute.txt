@@ -1,6 +1,0 @@
-D:\Visual Studio Projects\LinqTest\LinqTest\bin\Debug\LinqTest.exe
-D:\Visual Studio Projects\LinqTest\LinqTest\bin\Debug\LinqTest.pdb
-D:\Visual Studio Projects\LinqTest\LinqTest\obj\x86\Debug\LinqTest.exe
-D:\Visual Studio Projects\LinqTest\LinqTest\obj\x86\Debug\LinqTest.pdb
-D:\Visual Studio Projects\LinqTest\LinqTest\bin\Debug\LinqTest.exe.config
-D:\Visual Studio Projects\LinqTest\LinqTest\obj\x86\Debug\LinqTest.csprojResolveAssemblyReference.cache

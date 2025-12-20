@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="../DynamicLinq.Console/DynamicLinq.ConsoleApp.csproj" />
+  <Project Path="../DynamicLinq.Model/DynamicLinq.Model.csproj" />
+  <Project Path="../DynamicLinq.Test/DynamicLinq.Test.csproj" />
+  <Project Path="DynamicLinq.csproj" />
+</Solution>

@@ -1,6 +1,0 @@
-D:\Visual Studio Projects\WCF\MyDuplexSample\MyDuplexSample\bin\Debug\MyDuplexSample.exe.config
-D:\Visual Studio Projects\WCF\MyDuplexSample\MyDuplexSample\bin\Debug\MyDuplexSample.exe
-D:\Visual Studio Projects\WCF\MyDuplexSample\MyDuplexSample\bin\Debug\MyDuplexSample.pdb
-D:\Visual Studio Projects\WCF\MyDuplexSample\MyDuplexSample\obj\x86\Debug\ResolveAssemblyReference.cache
-D:\Visual Studio Projects\WCF\MyDuplexSample\MyDuplexSample\obj\x86\Debug\MyDuplexSample.exe
-D:\Visual Studio Projects\WCF\MyDuplexSample\MyDuplexSample\obj\x86\Debug\MyDuplexSample.pdb
