@@ -1,13 +1,16 @@
-@TeacherApi_HostAddress = http://localhost:5171
+@TeacherApi_HostAddress = https://localhost:7220
+
+#this wont work if you have turn on https redirection in middleware.
+# @TeacherApi_HostAddress = http://localhost:5171 
 
 GET {{TeacherApi_HostAddress}}/weatherforecast/
 Accept: application/json
 
 ###
 
-POST {{TeacherApi_HostAddress}}/api/Teacher/teacher-data
+GET {{TeacherApi_HostAddress}}/api/Teacher/teacher-data
 Content-Type: application/json
-Authorization: Bearer <your-token>
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9lbWFpbGFkZHJlc3MiOiJ0ZWFjaGVyQGdtYWlsLmNvbSIsImh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd3MvMjAwOC8wNi9pZGVudGl0eS9jbGFpbXMvcm9sZSI6IlRlYWNoZXIiLCJleHAiOjE3NjY0NTcxNjgsImlzcyI6InRlc3QuY29tIiwiYXVkIjoidGVzdC5jb20ifQ.2rlZvzxVUIYkswwhp6E5oLDPV9F7do225EQ5KpceGfo
 {
   "email": "teacher@gmail.com",
   "password": "teach123"

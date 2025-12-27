@@ -8,8 +8,8 @@ Accept: application/json
 POST {{TokenGenerator_HostAddress}}/api/AuthToken/generate
 Content-Type: application/json
 {
-  "email": "test@example.com",
-  "password": "password"
+  "email": "teacher@gmail.com",
+  "password": "teach123"
 }
 
 ### Response
