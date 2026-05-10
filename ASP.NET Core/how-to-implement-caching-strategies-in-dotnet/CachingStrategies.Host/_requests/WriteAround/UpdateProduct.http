@@ -1,0 +1,17 @@
+﻿PUT http://localhost:5001/write-around/products/{{productId}}
+Content-Type: application/json
+
+{
+  "name": "Updated Product Name",
+  "price": 150.00
+}
+
+### Example Usage
+# To update an existing product by ID, use this payload
+PUT http://localhost:5001/write-around/products/44
+Content-Type: application/json
+
+{
+  "name": "Updated Product",
+  "price": 89.99
+}

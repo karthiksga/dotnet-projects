@@ -1,0 +1,35 @@
+﻿POST http://localhost:5001/write-back/product-carts
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "productCartItems": [
+    {
+      "productId": 40,
+      "quantity": 2
+    },
+    {
+      "productId": 42,
+      "quantity": 1
+    }
+  ]
+}
+
+### Example Usage
+# A sample payload for creating a ProductCart
+POST http://localhost:5001/write-back/product-carts
+Content-Type: application/json
+
+{
+  "userId": 2,
+  "productCartItems": [
+    {
+      "productId": 120,
+      "quantity": 5
+    },
+    {
+      "productId": 121,
+      "quantity": 3
+    }
+  ]
+}

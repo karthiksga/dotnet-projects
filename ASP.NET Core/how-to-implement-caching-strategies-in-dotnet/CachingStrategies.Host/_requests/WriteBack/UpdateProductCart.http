@@ -1,0 +1,35 @@
+﻿PUT http://localhost:5001/write-back/product-carts/{{userId}}
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "productCartItems": [
+    {
+      "productId": 100,
+      "quantity": 3
+    },
+    {
+      "productId": 101,
+      "quantity": 2
+    }
+  ]
+}
+
+### Example Usage
+# To test with dynamic userId:
+PUT http://localhost:5001/write-back/product-carts/6260c12e-e670-4f4a-8dbc-02829b5e57c7
+Content-Type: application/json
+
+{
+  "userId": 1,
+  "productCartItems": [
+    {
+      "productId": 40,
+      "quantity": 3
+    },
+    {
+      "productId": 42,
+      "quantity": 2
+    }
+  ]
+}

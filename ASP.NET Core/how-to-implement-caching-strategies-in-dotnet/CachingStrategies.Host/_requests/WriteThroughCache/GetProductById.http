@@ -1,0 +1,6 @@
+﻿GET http://localhost:5001/write-through-cache/products/{{productId}}
+Content-Type: application/json
+
+### Example Usage
+# To retrieve a product by ID
+GET http://localhost:5001/write-through-cache/products/56

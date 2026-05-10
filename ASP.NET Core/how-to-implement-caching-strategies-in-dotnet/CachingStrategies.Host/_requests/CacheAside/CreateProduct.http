@@ -1,0 +1,17 @@
+﻿POST http://localhost:5001/cache-aside/products
+Content-Type: application/json
+
+{
+  "name": "Sample Product",
+  "price": 99.99
+}
+
+### Example Usage
+# To create a new product, use this payload
+POST http://localhost:5001/cache-aside/products
+Content-Type: application/json
+
+{
+  "name": "Another Product",
+  "price": 49.99
+}

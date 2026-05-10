@@ -1,0 +1,6 @@
+﻿DELETE http://localhost:5001/write-back/product-carts/{{productCartId}}
+Content-Type: application/json
+
+### Example Usage
+# To test with a specific ProductCart id:
+DELETE http://localhost:5001/write-back/product-carts/3531ef73-9802-4ba3-bce8-1dd1a04afd04
