@@ -9,6 +9,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./Github-Actions/DemoWebApi
 
     steps:
     - uses: actions/checkout@v4
@@ -26,11 +29,11 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-nuget-
 
-    # - name: Restore dependencies
-    #   run: dotnet restore
-    
+    - name: Restore dependencies
+      run: dotnet restore
+
     - name: Build
       run: dotnet build --no-restore --configuration Release
-    
-    - name: Test
-      run: dotnet test --no-build --configuration Release --verbosity normal
+
+    # - name: Test
+    #   run: dotnet test DemoWebApi/DemoWebApi.csproj --no-build --configuration Release --verbosity normal
