@@ -10,3 +10,6 @@
 [submodule "C#/GitHub-Projects/csharp_codes"]
 	path = "C#/GitHub-Projects/csharp_codes"
 	url = https://github.com/gcfernando/csharp_codes.git
+[submodule "GitHub-Projects/Azure-Service-Bus-Emulator"]
+	path = GitHub-Projects/Azure-Service-Bus-Emulator
+	url = https://github.com/Azure/azure-service-bus-emulator-installer
