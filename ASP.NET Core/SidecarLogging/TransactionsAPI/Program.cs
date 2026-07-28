@@ -13,6 +13,10 @@ builder.Services.AddSingleton<IThreadSafeFileLogger, ThreadSafeFileLogger>();
 builder.Services.AddSingleton<ISidecarMessageQueue, SidecarMessageQueue>();
 builder.Services.AddHostedService<TransactionsBackgroundService>();
 
+//builder.Services
+//    .AddHealthChecks()
+//    .AddCheck<ElasticHealthCheck>("elasticsearch");
+
 builder.Services.AddControllers().AddJsonOptions(options =>
 {
     options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());

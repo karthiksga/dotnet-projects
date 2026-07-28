@@ -1,10 +1,19 @@
+using SidecarAPI.Background;
+using SidecarAPI.Infrastructure;
+using SidecarAPI.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-builder.Services.AddControllers();
+//builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
-builder.Services.AddOpenApi();
+//builder.Services.AddOpenApi();
+
+builder.Services.Configure<SidecarSettings>(builder.Configuration.GetSection("Sidecar"));
+builder.Services.AddScoped<IElasticSearchClientService, ElasticSearchClientService>();
+builder.Services.AddHostedService<SidecarBackgroundService>();
+builder.Services.AddControllers();
 builder.Services.AddMemoryCache();
 
 var app = builder.Build();

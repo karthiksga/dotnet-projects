@@ -1,6 +1,6 @@
 @SidecarAPI_HostAddress = http://localhost:5146
 
-GET {{SidecarAPI_HostAddress}}/weatherforecast/
+GET {{SidecarAPI_HostAddress}}/api/Logs
 Accept: application/json
 
 ###

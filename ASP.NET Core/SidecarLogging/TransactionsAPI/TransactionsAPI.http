@@ -2,5 +2,19 @@
 
 GET {{TransactionsAPI_HostAddress}}/weatherforecast/
 Accept: application/json
-
 ###
+
+POST {{TransactionsAPI_HostAddress}}/api/transactions
+Content-Type: application/json
+Accept: application/json
+
+{
+  "transactionId": 1,
+  "transactionType": "Shipped",
+  "transactionQuantity": 19,
+  "transactionDate":"2026-07-27T14:23:45.1234567Z"
+}
+###
+
+GET {{TransactionsAPI_HostAddress}}/api/Logs
+Content-Type: application/json

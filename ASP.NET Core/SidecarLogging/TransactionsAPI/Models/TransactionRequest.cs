@@ -1,4 +1,6 @@
-﻿namespace TransactionsAPI.Models
+﻿using System.Text.Json.Serialization;
+
+namespace TransactionsAPI.Models
 {
     public record TransactionRequest
     {
