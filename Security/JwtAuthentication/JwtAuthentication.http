@@ -1,0 +1,50 @@
+@host = https://localhost:7129
+
+### Register a new user (starts with the "User" role)
+POST {{host}}/api/auth/register
+Content-Type: application/json
+
+{
+  "firstName": "Mukesh",
+  "lastName": "Murugan",
+  "email": "mukesh@codewithmukesh.com",
+  "password": "Password123!"
+}
+
+### Log in as the seeded admin to get a JWT
+# @name login
+POST {{host}}/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "admin@codewithmukesh.com",
+  "password": "Admin123!"
+}
+
+### Call a protected endpoint (any authenticated user)
+# GET {{host}}/api/secured
+# Authorization: Bearer {{login.response.body.$.accessToken}}
+
+GET {{host}}/api/secured
+Authorization: Bearer {{refresh.response.body.$.accessToken}}
+
+### Call an admin-only endpoint
+GET {{host}}/api/secured/admin
+Authorization: Bearer {{login.response.body.$.accessToken}}
+
+### Get a new access token using the refresh token (rotates the refresh token)
+# @name refresh
+POST {{host}}/api/auth/refresh
+Content-Type: application/json
+
+{
+  "refreshToken": "{{login.response.body.$.refreshToken}}"
+}
+
+### Revoke a refresh token (logout)
+POST {{host}}/api/auth/revoke
+Content-Type: application/json
+
+{
+  "refreshToken": "{{refresh.response.body.$.refreshToken}}"
+}

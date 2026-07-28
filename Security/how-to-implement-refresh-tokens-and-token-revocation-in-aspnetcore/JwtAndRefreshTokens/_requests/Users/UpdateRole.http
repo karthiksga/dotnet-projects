@@ -1,0 +1,8 @@
+### Refresh user token
+POST https://localhost:5000/api/users/6d4feb73-39b1-4263-9622-30f446ab61be/role
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+    "NewRole": "Author"
+}

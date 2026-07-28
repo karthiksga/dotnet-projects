@@ -1,0 +1,8 @@
+### Refresh user token
+POST https://localhost:5000/api/users/refresh
+Content-Type: application/json
+
+{
+    "Token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJhZG1pbkB0ZXN0LmNvbSIsInVzZXJpZCI6IjdhOGJmYmFiLWRmZmItNDMzNS05ZDU5LTM4ZmI3MGQ4ZTQ4NCIsInJvbGUiOiJBZG1pbiIsImp0aSI6IjU0OWM1MmMyLWU1YTktNDEwYS04MjRlLTE5NzQ0MDlkNTk2MCIsInVzZXJzOmNyZWF0ZSI6InRydWUiLCJ1c2Vyczp1cGRhdGUiOiJ0cnVlIiwidXNlcnM6ZGVsZXRlIjoidHJ1ZSIsImJvb2tzOmNyZWF0ZSI6InRydWUiLCJib29rczp1cGRhdGUiOiJ0cnVlIiwiYm9va3M6ZGVsZXRlIjoidHJ1ZSIsImV4cCI6MTc0NzA1MDgxMywiaXNzIjoiRGV2VGlwcyIsImF1ZCI6IkRldlRpcHMifQ.X-VmhFa5V7TaEkqDxBoiIBZChpRik-YfPBE2OgagKac",
+    "RefreshToken": "10b7fbb1-cb23-4347-af86-3cb34976e3bd"
+}
