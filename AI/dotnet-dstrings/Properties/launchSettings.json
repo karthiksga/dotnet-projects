@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "dotnet-dstrings": {
+      "commandName": "Project",
+      "commandLineArgs": "C:\\Conferences\\2026_CLItools\\Dumps\\dump_20260408_172646.dmp"
+    }
+  }
+}
