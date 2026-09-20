@@ -27,14 +27,57 @@ var channelOptions = new CreateChannelOptions(
 
 await using var channel = await connection.CreateChannelAsync(channelOptions);
 
-var exchangeName = "demo.exchange";
-var queueName1 = "demo.queue.1";
-var queueName2 = "demo.queue.2";
-var routingKey = "demo.key";
+#region'Direct Exchange Setup'
+//var exchangeName = "direct.exchange";
+//var queueName1 = "direct.queue.1";
+//var queueName2 = "direct.queue.2";
+//var routingKey = "direct.key";
+
+//await channel.ExchangeDeclareAsync(
+//    exchange: exchangeName,
+//    type: ExchangeType.Direct,
+//    durable: true,
+//    autoDelete: false
+//);
+
+//await channel.QueueDeclareAsync(
+//    queue: queueName1,
+//    durable: true,
+//    exclusive: false,
+//    autoDelete: false,
+//    arguments: null
+//);
+
+//await channel.QueueDeclareAsync(
+//    queue: queueName2,
+//    durable: true,
+//    exclusive: false,
+//    autoDelete: false,
+//    arguments: null
+//);
+
+//await channel.QueueBindAsync(
+//    queue: queueName1,
+//    exchange: exchangeName,
+//    routingKey: routingKey
+//);
+
+//await channel.QueueBindAsync(
+//    queue: queueName2,
+//    exchange: exchangeName,
+//    routingKey: routingKey
+//);
+#endregion
+
+#region'Fanout Exchange Setup'var exchangeName = "direct.exchange";
+var exchangeName = "fanout.exchange";
+var queueName1 = "fanout.queue.1";
+var queueName2 = "fanout.queue.2";
+var routingKey = "fanout.key";
 
 await channel.ExchangeDeclareAsync(
     exchange: exchangeName,
-    type: ExchangeType.Direct   ,
+    type: ExchangeType.Fanout,
     durable: true,
     autoDelete: false
 );
@@ -66,6 +109,7 @@ await channel.QueueBindAsync(
     exchange: exchangeName,
     routingKey: routingKey
 );
+#endregion
 
 while (true)
 {

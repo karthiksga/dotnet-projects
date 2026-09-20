@@ -18,7 +18,8 @@ var factory = new ConnectionFactory
 await using var connection = await factory.CreateConnectionAsync();
 await using var channel = await connection.CreateChannelAsync();
 
-var queueName = "demo.queue.1";
+//var queueName = "demo.queue.1";
+var queueName = "fanout.queue.1";
 
 await channel.QueueDeclareAsync(
     queue: queueName,

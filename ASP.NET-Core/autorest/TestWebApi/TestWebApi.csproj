@@ -1,0 +1,102 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>96aff418-efdd-4e1f-a3d4-59d138653183</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <DockerfileContext>.</DockerfileContext>
+  </PropertyGroup>
+  
+  <PropertyGroup>
+    <!-- Forces the build engine to output the OpenAPI file on compile -->
+    <OpenApiGenerateDocumentsOnBuild>true</OpenApiGenerateDocumentsOnBuild>
+
+    <!-- Specify the EXACT directory where you want the file written -->
+    <OpenApiDocumentsDirectory>$(MSBuildProjectDirectory)\..\typespec</OpenApiDocumentsDirectory>
+
+    <!-- Rename the output file to openapi.json (Defaults to {ProjectName}.json) -->
+    <OpenApiGenerateDocumentsOptions>--file-name openapi</OpenApiGenerateDocumentsOptions>
+  </PropertyGroup>
+
+  <Target Name="AutomateTypeSpecMigration" AfterTargets="GenerateOpenApiDocuments">
+    <Message Importance="high" Text="Starting automated TypeSpec migration step..." />
+
+    <!-- Define the working directory context paths -->
+    <PropertyGroup>
+      <TypeSpecFolder>$(MSBuildProjectDirectory)\..\typespec</TypeSpecFolder>
+      <InputSpecFile>$(TypeSpecFolder)\openapi.json</InputSpecFile>
+    </PropertyGroup>
+
+    <!-- Execute the tsp-openapi3 converter utility -->
+    <Exec Command="tsp-openapi3 &quot;$(InputSpecFile)&quot; --output-dir &quot;$(TypeSpecFolder)&quot;"
+          ContinueOnError="false" />
+
+    <Message Importance="high" Text="SUCCESS: TypeSpec design source files refreshed from build schema." />
+  </Target>
+
+  <Target Name="EndToEndTypeSpecAndKiotaPipeline" AfterTargets="GenerateOpenApiDocuments">
+    <Message Importance="high" Text="====================================================" />
+    <Message Importance="high" Text="🚀 STARTING AUTOMATED TYPESTEC &amp; KIOTA PIPELINE" />
+    <Message Importance="high" Text="====================================================" />
+
+    <PropertyGroup>
+      <!-- Target directories -->
+      <TypeSpecFolder>$(MSBuildProjectDirectory)\..\typespec</TypeSpecFolder>
+      <ClientProjectFolder>$(MSBuildProjectDirectory)\..\src\client-cs</ClientProjectFolder>
+      <ClientRootFolder>$(MSBuildProjectDirectory)\..\src</ClientRootFolder>
+
+      <!-- File path targets -->
+      <InputSpecFile>$(TypeSpecFolder)\openapi.json</InputSpecFile>
+      <CompiledTspSpec>$(TypeSpecFolder)\tsp-output\@typespec/openapi3/openapi.yaml</CompiledTspSpec>
+    </PropertyGroup>
+
+    <!-- NEW STEP: Ensure the local node workspace packages are initialized and available -->
+    <Message Importance="high" Text="[*] Synchronizing workspace Node packages..." />
+    <Exec Command="npm install @typespec/compiler @typespec/http @typespec/openapi @typespec/openapi3" WorkingDirectory="$(TypeSpecFolder)" />
+
+    <!-- Step 1: Run reverse-engineering migration mapping to TypeSpec -->
+    <Message Importance="high" Text="[1/3] Translating API schema into TypeSpec source syntax..." />
+    <Exec Command="tsp-openapi3 &quot;$(InputSpecFile)&quot; --output-dir &quot;$(TypeSpecFolder)&quot;" />
+
+    <!-- Step 2: Compile TypeSpec into the production-ready OpenAPI 3.0 Contract -->
+    <Message Importance="high" Text="[2/3] Compiling TypeSpec design workspace..." />
+    <Exec Command="tsp compile . --emit @typespec/openapi3 --option &quot;@typespec/openapi3.file-type=yaml&quot;" WorkingDirectory="$(TypeSpecFolder)" />
+
+    <!-- Step 3: Run Kiota generation engine to output modern C# client SDK files -->
+    <Message Importance="high" Text="[3/3] Executing Kiota client code generation..." />
+    <Exec Command="kiota generate -l CSharp -d &quot;$(CompiledTspSpec)&quot; -o &quot;$(ClientProjectFolder)&quot; -n weatherforecast --clean-output true" />
+
+    <!-- NEW STEP 4: Package the client project with a designated version layout -->
+    <Message Importance="high" Text="[4/4] Packing client library into versioned NuGet package..." />
+
+    <PropertyGroup>
+      <!-- Define your desired package target version statically here, or pass it via CLI -->
+      <TargetClientVersion>1.0.4-preview</TargetClientVersion>
+      <!--<NuGetOutputDir>$(TypeSpecFolder)\dist</NuGetOutputDir>
+      <ClientProjectFile>$(MSBuildProjectDirectory)\..\..\src\client-cs.csproj</ClientProjectFile>-->
+      <NuGetOutputDir>$([System.IO.Path]::GetFullPath('$(MSBuildProjectDirectory)\..\..\typespec\dist'))</NuGetOutputDir>
+      <ClientProjectFile>$([System.IO.Path]::GetFullPath('$(MSBuildProjectDirectory)\..\..\src\client-cs.csproj'))</ClientProjectFile>
+    </PropertyGroup>
+
+    <Exec Command="dotnet pack &quot;$(ClientRootFolder)\client-cs.csproj&quot; -c Release -p:PackageVersion=$(TargetClientVersion) -o &quot;$(NuGetOutputDir)&quot;" />
+    
+    <Message Importance="high" Text="====================================================" />
+    <Message Importance="high" Text="✅ SUCCESS: API, TypeSpec Design, and Client SDK Synced!" />
+    <Message Importance="high" Text="====================================================" />
+  </Target>
+
+
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.11" />
+    <PackageReference Include="Microsoft.Extensions.ApiDescription.Server" Version="10.0.11">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.23.0" />
+    <PackageReference Include="Scalar.AspNetCore.Microsoft" Version="2.17.1" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <PackageId>Weatherforecast.Client</PackageId>
+    <Authors>YourCompany</Authors>
+    <Version Condition="'$(PackageVersion)' == ''">1.0.0</Version>
+
+    <!-- Forces the compiler to look into the subfolder for source code files -->
+    <EnableDefaultItems>false</EnableDefaultItems>
+  </PropertyGroup>
+
+  <!-- Include all generated code inside the client-cs subfolder explicitly -->
+  <ItemGroup>
+    <Compile Include="client-cs/**/*.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+      <!-- Upgraded to 1.22.0 to patch the CVE-2026-44503 security header leak flaw -->
+      <PackageReference Include="Microsoft.Kiota.Abstractions" Version="1.22.0" />
+      <PackageReference Include="Microsoft.Kiota.Http.HttpClientLibrary" Version="1.22.0" />
+      <PackageReference Include="Microsoft.Kiota.Serialization.Json" Version="1.22.0" />
+      <PackageReference Include="Microsoft.Kiota.Serialization.Text" Version="1.22.0" />
+      <PackageReference Include="Microsoft.Kiota.Serialization.Form" Version="1.22.0" />
+
+      <!-- FIX: Added missing dependency package required for modern Kiota multipart request building -->
+      <PackageReference Include="Microsoft.Kiota.Serialization.Multipart" Version="1.22.0" />
+    </ItemGroup>
+</Project>

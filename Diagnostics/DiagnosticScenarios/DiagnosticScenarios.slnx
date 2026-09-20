@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="../Diagnostics.Job/Diagnostics.Job.csproj" />
+  <Project Path="DiagnosticScenarios.csproj" />
+</Solution>

@@ -1,0 +1,11 @@
+{
+    "CrossLanguagePackageId": null,
+    "CrossLanguageDefinitionId": {
+        "azure-pets.PetClient.get_dog": null,
+        "azure-pets.aio.PetClient.get_dog": null,
+        "azure-pets.PetClient.put_cat": null,
+        "azure-pets.aio.PetClient.put_cat": null,
+        "azure-pets.PetClient.post_kitten": null,
+        "azure-pets.aio.PetClient.post_kitten": null
+    }
+}
