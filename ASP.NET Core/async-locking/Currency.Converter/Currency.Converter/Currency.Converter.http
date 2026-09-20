@@ -1,6 +1,0 @@
-@Currency.Converter_HostAddress = http://localhost:5169
-
-GET {{Currency.Converter_HostAddress}}
-Accept: application/json
-
-###
