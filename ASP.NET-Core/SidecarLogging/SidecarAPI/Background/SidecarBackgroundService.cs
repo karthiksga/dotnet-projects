@@ -91,6 +91,10 @@ public class SidecarBackgroundService: BackgroundService
                         {
                             string[] data = str.Split('|');
                             string key = data[0].Trim();
+                            if(key != messageKey)
+                            {
+                                _cache.Remove(key);
+                            }
 
                             LogMessage logMessage = new LogMessage()
                             {
